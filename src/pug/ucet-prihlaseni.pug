@@ -1,0 +1,100 @@
+doctype html
+include _variables.pug  
+html(lang=lang)
+    head
+        meta(charset="utf-8")
+        meta(content="IE=edge" http-equiv="X-UA-Compatible")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        title #{title}
+        meta(content="index,follow,snippet,archive" name="robots")
+        meta(content=metaDescription name="description")
+        meta(content=metaKeywords lang="cs" name="keywords")
+        meta(content=metaAuthor name="author")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
+
+        link(rel="canonical" href=metaURL)
+        meta(property="og:locale" content="cs_CZ")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content=title)
+        meta(property="og:description" content=metaDescription)
+        meta(property="og:url" content=metaURL)
+        meta(property="og:site_name" content=metaSitename)
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:site" content=metaTwitterName)
+        meta(name="twitter:title" content=title)
+        meta(name="twitter:description" content=metaDescription)
+        meta(name="twitter:image" content=metaTwitterImg)
+        include _css-include.pug  
+    body
+        include _nav.pug
+        section.page-heading.post__image-container
+            .container
+                h1.page-heading__title Uživatelský účet
+            img.lazy.post__featured-image(src="http://via.placeholder.com/510x510" data-src=URLbase+"img/user-thumb-large.jpg" alt="#" title="#")
+                
+        include _breadcrumb.pug
+        main
+            .container
+                .print-area
+                    article.page
+                        .page-message
+                            h3.page-message__title  Přihlášení bylo úspěšné.
+                            .page-message__buttons
+                                a.btn.page-message__btn(href="#") Začít nakupovat
+                                a.btn.btn-ghost.page-message__btns(href="#") Detail účtu
+
+        include _news-section.pug
+
+        include _footer.pug
+
+        include _js-include.pug
+
+        script.
+            // Wait for the DOM to be ready
+            $(function() {
+              // Initialize form validation on the registration form.
+              // It has the name attribute "registration"
+              $("form[name='register_form']").validate({
+                // Specify validation rules
+                rules: {
+                  // The key name on the left side is the name attribute
+                  // of an input field. Validation rules are defined
+                  // on the right side
+                  register_form_name: "required",      
+                  register_form_email: {
+                    required: true,
+                    email: true
+                  },
+                  register_form_tel: {
+                    required: false,
+                    minlength: 9
+                  },
+                  register_form_password: {
+                    required: true,
+                    minlength: 5
+                  },
+                  register_form_address: {
+                    required: true
+                  },
+                  route: {
+                    required: true
+                  }
+                },
+                // Specify validation error messages
+                messages: {
+                  register_form_name: "Prosím zadejte své celé jméno",
+                  register_form_email: "Prosím zadejte platnou emailovou adresu",
+                  register_form_tel: {required: "Prosím zadejte telefonní číslo", minlength: "Telefonní číslo je neplatné"},
+                  register_form_password: {required: "Prosím zadejte heslo", minlength: "Vaše heslo musí být alespoň 5 znaků dlouhé"},
+                  register_form_address: "Zadejte svou adresu"
+                },
+                // Make sure the form is submitted to the destination defined
+                // in the "action" attribute of the form when valid
+                submitHandler: function(form) {
+                  form.submit();
+                }
+              });
+            });
+            jQuery.extend(jQuery.validator.messages, {
+                required: "Toto pole je povinné"
+            });

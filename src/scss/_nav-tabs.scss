@@ -1,0 +1,45 @@
+/*------------------------------------*\
+     NAV TABS
+\*------------------------------------*/
+
+.nav-tabs{ 
+    & .nav-item{
+        & .nav-link{
+            min-height: 46px;
+            @include flexbox();
+            @include align-items(center);
+            @include flex-direction(row);
+            padding: 10px 2rem;
+            color: $dark-grey;
+            background: $light-grey;
+            border: 1px solid $border-grey;
+            border-right: 0;
+            border-radius: 0;
+            &.active{
+                background: transparent;
+                border-bottom-color: $white;
+            }
+        }
+        &:last-child .nav-link{
+            border-right: 1px solid $border-grey;
+        }
+        &:first-child .nav-link.active{
+            border-right-color: transparent;
+        }
+
+        &:last-child .nav-link.active{
+            border-left-color: $border-grey;
+        }
+        &:not(:first-child):not(:last-child) .nav-link.active{
+            border-left-color: $border-grey;
+            border-right-color: transparent;
+        }
+    }
+}
+@media screen and (max-width:460px){
+    .nav-tabs{ 
+        & .nav-item{
+            @include flex-grow(1);
+        }
+    }
+}

@@ -1,0 +1,201 @@
+doctype html
+include _variables.pug  
+html(lang=lang)
+    head
+        meta(charset="utf-8")
+        meta(content="IE=edge" http-equiv="X-UA-Compatible")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        title #{title}
+        meta(content="index,follow,snippet,archive" name="robots")
+        meta(content=metaDescription name="description")
+        meta(content=metaKeywords lang="cs" name="keywords")
+        meta(content=metaAuthor name="author")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
+
+        link(rel="canonical" href=metaURL)
+        meta(property="og:locale" content="cs_CZ")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content=title)
+        meta(property="og:description" content=metaDescription)
+        meta(property="og:url" content=metaURL)
+        meta(property="og:site_name" content=metaSitename)
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:site" content=metaTwitterName)
+        meta(name="twitter:title" content=title)
+        meta(name="twitter:description" content=metaDescription)
+        meta(name="twitter:image" content=metaTwitterImg)
+        include _css-include.pug  
+    body
+        include _nav.pug
+        section.hero
+            .container.hero__container
+                .hero__swiper
+                    .hero__swiper-wrap
+                        .swiper-wrapper.hero__swiper-wrapper
+                            .swiper-slide.hero__swiper-slide
+                                .hero__content
+                                    .hero__title 1 CA Aeromax 6 + Yamaha A-S301
+                                    .hero__text Aeromax6+Yas301
+                                    .hero__price-old 44 980 Kč
+                                    .hero__price 31 780 Kč
+                                    .hero__btn
+                                        a.btn(href="#") Zobrazit nabídku #[span.btn__icon.arrow-icon.right.white]
+                                .hero__image
+                                    .hero__sale-tag -30%
+                                    img.swiper-lazy.hero__img(src=URLbase+"img/product-thumb-medium.jpg")
+                                    .swiper-lazy-preloader.swiper-lazy-preloader-white
+
+                            .swiper-slide.hero__swiper-slide
+                                .hero__content
+                                    .hero__title 2 CA Aeromax 6 + Yamaha A-S301
+                                    .hero__text Aeromax6+Yas301
+                                    .hero__price-old 44 980 Kč
+                                    .hero__price 31 780 Kč
+                                    .hero__btn
+                                        a.btn(href="#") Zobrazit nabídku #[span.btn__icon.arrow-icon.right.white]
+                                .hero__image
+                                    .hero__sale-tag -30%
+                                    img.swiper-lazy.hero__img(src=URLbase+"http://via.placeholder.com/360x360")
+                                    .swiper-lazy-preloader.swiper-lazy-preloader-white
+
+                            .swiper-slide.hero__swiper-slide
+                                .hero__content
+                                    .hero__title 3 CA Aeromax 6 + Yamaha A-S301
+                                    .hero__text Aeromax6+Yas301
+                                    .hero__price-old 44 980 Kč
+                                    .hero__price 31 780 Kč
+                                    .hero__btn
+                                        a.btn(href="#") Zobrazit nabídku #[span.btn__icon.arrow-icon.right.white]
+                                .hero__image
+                                    .hero__sale-tag -30%
+                                    img.swiper-lazy.hero__img(src=URLbase+"http://via.placeholder.com/360x360")
+                                    .swiper-lazy-preloader.swiper-lazy-preloader-white
+
+                            .swiper-slide.hero__swiper-slide
+                                .hero__content
+                                    .hero__title 4 CA Aeromax 6 + Yamaha A-S301
+                                    .hero__text Aeromax6+Yas301
+                                    .hero__price-old 44 980 Kč
+                                    .hero__price 31 780 Kč
+                                    .hero__btn
+                                        a.btn(href="#") Zobrazit nabídku #[span.btn__icon.arrow-icon.right.white]
+                                .hero__image
+                                    .hero__sale-tag -30%
+                                    img.swiper-lazy.hero__img(src=URLbase+"http://via.placeholder.com/360x360")
+                                    .swiper-lazy-preloader.swiper-lazy-preloader-white
+
+                        .swiper-pagination.swiper-pagination-white.swiper-pagination--hero
+                    .swiper-button-prev.swiper-button-prev--hero
+                    .swiper-button-next.swiper-button-next--hero 
+
+
+        section.benefits
+            .container.benefits__container
+                .benefits__single
+                    .benefits__img-wrap
+                        img.benefits__img(src=URLbase+"images/benefits-delivery.svg")
+                    p.benefits__text Doprava zdarma nad 5000 Kč
+
+                .benefits__single
+                    .benefits__img-wrap
+                        img.benefits__img(src=URLbase+"images/benefits-stock.svg")
+                    p.benefits__text 5727 produktů skladem
+
+                .benefits__single
+                    .benefits__img-wrap
+                        img.benefits__img(src=URLbase+"images/benefits-gift.svg")
+                    p.benefits__text Dárek k objednávce nad 6000 Kč
+
+                .benefits__single
+                    .benefits__img-wrap
+                        img.benefits__img(src=URLbase+"images/benefits-marker.svg")
+                    p.benefits__text 1400 výdejních míst po celé ČR
+
+
+        include _index-categories.pug
+
+        section.index-products
+            .container  
+                .filter-sort
+                    ul.nav.nav-tabs
+                        li.nav-item
+                            a.nav-link.active(onclick="#") Akční nabídka
+                        li.nav-item
+                            a.nav-link(onclick="#") Doporučené
+                        li.nav-item
+                            a.nav-link(onclick="#") Novinky
+                        li.nav-item
+                            a.nav-link(onclick="#") Nejprodávanější
+                .swiper-container-5-products-wrap     
+                    .swiper-container-5-products
+                        .swiper-wrapper
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug         
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+
+                    .swiper-pagination.swiper-pagination-white
+                    .swiper-button-prev.swiper-button-prev--5
+                    .swiper-button-next.swiper-button-next--5
+
+
+        section.index-cta
+            .container
+                .row
+
+
+
+        include _news-section.pug
+        
+        include _footer.pug
+
+        include _js-include.pug
+
+        script.
+            var carousel_main = new Swiper('.hero__swiper-wrap', {
+            lazy: true,
+            spaceBetween: 0,
+            grabCursor: true,
+            zoom: false,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination--hero',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next--hero',
+                prevEl: '.swiper-button-prev--hero',
+            },
+            });
+
+            $('#slide1').click(carousel_main,function(){
+                carousel_main.slideTo(1);
+            })
+            $('#slide2').click(carousel_main,function(){
+                carousel_main.slideTo(2);
+            })
+            $('#slide3').click(carousel_main,function(){
+                carousel_main.slideTo(3);
+            })
+            $('#slide4').click(carousel_main,function(){
+                carousel_main.slideTo(4);
+            })
+
+            $(".hero__tab-single").click(function() {
+                if ($(".hero__tab-single").removeClass("active")) {
+                    $(this).removeClass("active");
+                }
+                $(this).addClass("active");
+            });
