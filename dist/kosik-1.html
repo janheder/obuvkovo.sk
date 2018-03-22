@@ -65,17 +65,18 @@
       <nav class="navbar navbar-top" id="anchor-navbar-top">
         <div class="container">
           <div class="navbar-top__left">
-            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fas fa-phone"></span></span> +420 777 888 042</p>
-            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="far fa-clock"></span></span> Po-Pá: 8:00 - 16:00</p>
+            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fas fa-phone-square"></span></span> 0918 669 804</p>
+            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fas fa-envelope-square"></span></span> info@obuvkovo.sk</p>
+            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fab fa-facebook-square"></span></span> facebook.com</p>
           </div>
-          <div class="navbar-top__right"><a class="navbar-top__link" href="#">O nás</a><a class="navbar-top__link" href="#">Poslechová místnost</a><a class="navbar-top__link" href="#">Kamenná prodejna</a><a class="navbar-top__link" href="#">Obchodní podmínky</a><a class="navbar-top__link" href="#">Kontakty</a></div>
+          <div class="navbar-top__right"><a class="navbar-top__link" href="#">O nás</a><a class="navbar-top__link" href="#">Obchodnie podmienky</a><a class="navbar-top__link" href="#">Doprava</a><a class="navbar-top__link" href="#">Kontakty</a></div>
         </div>
       </nav>
       <nav class="navbar navbar-expand-lg navbar-main">
         <div class="container navbar-main__container">
           <div class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-toggle="collapse" data-target="#navbarNav" role="button"><span class="hamburger-icon"></span>
             <p>Menu</p>
-          </div><a class="navbar-brand" href="#"><img class="navbar-brand__img" src="images/logo.svg" title="#" alt="#"></a>
+          </div><a class="navbar-brand" href="#"><img class="navbar-brand__img" src="images/logo.png" title="#" alt="#"></a>
           <div class="navbar-search-responsive-toggler" id="search-toggler-responsive"><span class="search-icon"></span></div>
           <div class="navbar-search">
             <form class="navbar-search__form" method="POST" id="search-form">
@@ -108,7 +109,7 @@
               <div class="dropdown-toggle navbar-user__dropdown-toggle" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-icon navbar-user__icon"></span>
                 <div class="navbar-user__text-wrap">
                   <p class="navbar-user__text">Petroslav Novakovič</p>
-                </div><span class="caret-icon white navbar-user__caret"></span>
+                </div><span class="caret-icon navbar-user__caret"></span>
               </div>
               <div class="dropdown-menu dropdown-menu-left navbar-user__dropdown-menu" aria-labelledby="userDropdown"><a class="dropdown-item navbar-user__item" href="#">Detail účtu</a><a class="dropdown-item navbar-user__item" href="#">Historie objednávek</a><a class="dropdown-item navbar-user__item" href="#">Odhlásit</a></div>
             </div>
@@ -116,7 +117,7 @@
           <!-- Přihlášený uživatel
           .navbar-user
           	a.navbar-user__link(href="#")
-          		span.user-icon.white.navbar-user__icon
+          		span.user-icon.navbar-user__icon
           		.navbar-user__text-wrap
           			p.navbar-user__text Můj účet
           
@@ -273,33 +274,31 @@
           </div>
         </div>
       </nav>
-      <!-- nav.navbar.navbar-expand-lg.navbar-responsive-bottom
-      a.active(href="#")
-      	span.fa.fa-home
-      	p Domů
-      a(href="#")
-      	span.user-icon.white
-      	p Můj účet
-      a(href="#")
-      	span.fa.fa-heart-o
-      	p Oblíbené
-      a(href="#")
-      	span.fa.fa-balance-scale
-      	p Porovnání
-      
-      --><span id="dark-overlay" aria-label="Toggle navigation" data-target="#navbarNav" data-toggle="collapse"></span><span id="dark-overlay-cart"></span>
+      <div class="sub-cat">
+        <div class="container sub-cat__container">
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
+              <p>Podľa výrobcu</p></a><a class="sub-cat__single">
+              <p>Podľa veľkosti</p></a><a class="sub-cat__single">
+              <p>Podľa pohlavia</p></a></div>
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
+              <p>Podľa výrobcu</p></a><a class="sub-cat__single">
+              <p>Podľa veľkosti</p></a></div>
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
+              <p>Podľa výrobcu</p></a></div>
+        </div>
+      </div><span id="dark-overlay" aria-label="Toggle navigation" data-target="#navbarNav" data-toggle="collapse"></span><span id="dark-overlay-cart"></span>
     </header>
     <section class="page-heading page-heading--cart">
       <div class="container page-heading--cart__container">
         <div class="page-heading--cart__wrap"><a class="page-heading--cart__single active" href="#">
-            <p class="page-heading--cart__title">1. Nákupní košík</p></a><a class="page-heading--cart__single" href="#">
-            <p class="page-heading--cart__title">2. Osobní údaje</p></a><a class="page-heading--cart__single" href="#">
-            <p class="page-heading--cart__title">3. Souhrn objednávky</p></a><a class="page-heading--cart__single" href="#">
-            <p class="page-heading--cart__title">4. Dokončení objednávky</p></a></div>
+            <p class="page-heading--cart__title">1. Nákupný košík</p></a><a class="page-heading--cart__single" href="#">
+            <p class="page-heading--cart__title">2. Osobné údaje</p></a><a class="page-heading--cart__single" href="#">
+            <p class="page-heading--cart__title">3. Súhrn objednávky</p></a><a class="page-heading--cart__single" href="#">
+            <p class="page-heading--cart__title">4. Dokončenie objednávky</p></a></div>
       </div>
     </section>
     <section class="page-heading page-heading--cart-responsive"><a class="page-heading--cart__control" href="#"><span class="caret-icon left disabled"></span></a>
-      <p class="page-heading--cart__title">1/4 Nákupní košík</p><a class="page-heading--cart__control" href="#"><span class="caret-icon right"></span></a>
+      <p class="page-heading--cart__title">1/4 Nákupný košík</p><a class="page-heading--cart__control" href="#"><span class="caret-icon right"></span></a>
     </section>
     <div class="page-heading--cart-responsive-push"></div>
     <main>
@@ -315,13 +314,13 @@
               <div class="cart-item-top__name"></div>
               <div class="cart-item-top__inner">
                 <div class="cart-item-top__qty">
-                  <p class="cart-item-top__heading">Počet kusů</p>
+                  <p class="cart-item-top__heading">Počet kusov</p>
                 </div>
                 <div class="cart-item-top__price">
                   <p class="cart-item-top__heading">Cena za kus</p>
                 </div>
                 <div class="cart-item-top__sum">
-                  <p class="cart-item-top__heading">Cena celkem</p>
+                  <p class="cart-item-top__heading">Cena celkOm</p>
                 </div>
                 <div class="cart-item-top__delete"></div>
               </div>
@@ -335,7 +334,7 @@
             </div>
             <div class="cart-item-single__col-2">  
               <div class="cart-item-single__name-wrap"><a class="cart-item-single__name" href="#">MAYORAL chlapčenská obuv 42764-028 red</a>
-                <p class="cart-item-single__stock">Dostupné skladem   </p>
+                <p class="cart-item-single__stock">Dostupné skladOm   </p>
               </div>
               <div class="cart-item-single__inner">   
                 <div class="cart-item-single__qty-wrap"> 
@@ -347,11 +346,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="cart-item-single__price-wrap"><span class="cart-item-single__price-old">14 290 Kč</span>
-                  <p class="cart-item-single__price">8 489 Kč</p>
+                <div class="cart-item-single__price-wrap"><span class="cart-item-single__price-old">45.00 €</span>
+                  <p class="cart-item-single__price">29.00 €</p>
                 </div>
                 <div class="cart-item-single__sum-wrap">
-                  <p class="cart-item-single__sum"><span>8 489</span> Kč</p>
+                  <p class="cart-item-single__sum"><span>29</span> €</p>
                 </div>
                 <div class="cart-item-single__delete-wrap"><a class="cart-item-single__delete" href="#"><span class="cross-icon cart-item-single__delete-icon"></span></a></div>
               </div>
@@ -365,7 +364,7 @@
             </div>
             <div class="cart-item-single__col-2">  
               <div class="cart-item-single__name-wrap"><a class="cart-item-single__name" href="#">MAYORAL chlapčenská obuv 42764-028 red</a>
-                <p class="cart-item-single__stock">Dostupné skladem   </p>
+                <p class="cart-item-single__stock">Dostupné skladOm   </p>
               </div>
               <div class="cart-item-single__inner">   
                 <div class="cart-item-single__qty-wrap"> 
@@ -377,11 +376,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="cart-item-single__price-wrap"><span class="cart-item-single__price-old">14 290 Kč</span>
-                  <p class="cart-item-single__price">8 489 Kč</p>
+                <div class="cart-item-single__price-wrap"><span class="cart-item-single__price-old">45.00 €</span>
+                  <p class="cart-item-single__price">29.00 €</p>
                 </div>
                 <div class="cart-item-single__sum-wrap">
-                  <p class="cart-item-single__sum"><span>8 489</span> Kč</p>
+                  <p class="cart-item-single__sum"><span>29</span> €</p>
                 </div>
                 <div class="cart-item-single__delete-wrap"><a class="cart-item-single__delete" href="#"><span class="cross-icon cart-item-single__delete-icon"></span></a></div>
               </div>
@@ -393,61 +392,38 @@
           </div>
           <div class="cart-free-shipping">
             <div class="cart-free-shipping__img"><span class="delivery-icon"></span></div>
-            <p class="cart-free-shipping__text">Při nákupu nad 5 000 Kč doprava zdarma</p>
+            <p class="cart-free-shipping__text">Pri nákupe nad 100 € doprava zadarmo</p>
           </div>
           <div class="form-group cart-shipping-option">
-            <h3>Zvolte způsob dopravy</h3>
+            <h3>Výber dopravy a platby</h3>
             <div class="form-check">
               <label class="form-check__label">
-                <input class="form-check__input" type="radio" name="cart_form_shipping" id="osobni" required>Česká pošta Balík do ruky<span class="form-check__description">Doručuje následující pracovní den od odeslání. Max. hmotnost zásilky 30 kg.</span><span class="form-check__price">115 Kč</span><span class="form-check__box radio"></span>
+                <input class="form-check__input" type="radio" name="cart_form_shipping" id="osobni" required> platba vopred na účet do hodnoty 10 eur Slov. poštou<span class="form-check__description"> </span><span class="form-check__price">2.00 €</span><span class="form-check__box radio"></span>
               </label>
             </div>
             <div class="form-check">
               <label class="form-check__label">
-                <input class="form-check__input" type="radio" name="cart_form_shipping" id="cp" required>Česká pošta Balík na poštu<span class="form-check__description">Zde je nutné uvést do poznámky v objednávce (bod č. 3) PSČ pošty, na kterou si zásilku přejete zaslat. Doručuje následující pracovní den od odeslání. Max. hmotnost zásilky 30 kg.</span><span class="form-check__price">99 Kč</span><span class="form-check__box radio"></span>
+                <input class="form-check__input" type="radio" name="cart_form_shipping" id="cp" required>platba vopred na účet kuriér GLS<span class="form-check__description"></span><span class="form-check__price">3.00 €</span><span class="form-check__box radio"></span>
               </label>
             </div>
             <div class="form-check">
               <label class="form-check__label">
-                <input class="form-check__input" type="radio" name="cart_form_shipping" id="ppl" required>PPL do 5 kg na soukromou nebo firemní adresu.<span class="form-check__description">Nabídne se pouze u drobného zboží jako jsou hudební nosiče a podobně. Doručení do druhého pracovního dne ode dne odeslání.</span><span class="form-check__price">89 Kč</span><span class="form-check__box radio"></span>
+                <input class="form-check__input" type="radio" name="cart_form_shipping" id="ppl" required>platba vopred na účet do hodnoty nad 10 eur Slov. poštou<span class="form-check__description"> </span><span class="form-check__price">3.30 €</span><span class="form-check__box radio"></span>
               </label>
             </div>
             <div class="form-check">
               <label class="form-check__label">
-                <input class="form-check__input" type="radio" name="cart_form_shipping" id="ppl2" required>PPL Soukromá nebo firemní adresa do 50 kg <span class="form-check__description">Doručuje zásilky do druhého pracovního dne ode dne odeslání.</span><span class="form-check__price">115 Kč</span><span class="form-check__box radio"></span>
+                <input class="form-check__input" type="radio" name="cart_form_shipping" id="ppl2" required>dobierka GLS kurier<span class="form-check__description"> </span><span class="form-check__price">4.00 €</span><span class="form-check__box radio"></span>
               </label>
             </div>
             <div class="form-check">
               <label class="form-check__label">
-                <input class="form-check__input" type="radio" name="cart_form_shipping" id="ppl3" required>PPL partner<span class="form-check__description">Při výběru tohoto typu dopravy budete přesměrováni na pplbalik.cz, kde vyberte konkretní odběrné místo, následně budete navráceni do našeho nákupního košíku.</span><span class="form-check__price">99 Kč</span><span class="form-check__box radio"></span>
+                <input class="form-check__input" type="radio" name="cart_form_shipping" id="ppl3" required>doručenie do Českej republiky službou GLS - platba vopred na účet<span class="form-check__description"></span><span class="form-check__price">4.00 €</span><span class="form-check__box radio"></span>
               </label>
             </div>
             <div class="form-check">
               <label class="form-check__label">
-                <input class="form-check__input" type="radio" name="cart_form_shipping" id="ppl4" required>PPL SOBOTNÍ DORUČENÍ ve větších městech<span class="form-check__description">Zásilka Vám bude doručena v nejbližší sobotu.</span><span class="form-check__price">129 Kč</span><span class="form-check__box radio"></span>
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check__label">
-                <input class="form-check__input" type="radio" name="cart_form_shipping" id="ppl" required>Osobní odběr v naší prodejně<span class="form-check__description">(Podpuklí 288, Frýdek-Místek), platba kartou nebo hotově.</span><span class="form-check__price">0 Kč</span><span class="form-check__box radio"></span>
-              </label>
-            </div>
-          </div>
-          <div class="form-group cart-payment-option">
-            <h3>Zvolte způsob platby</h3>
-            <div class="form-check">
-              <label class="form-check__label">
-                <input class="form-check__input" type="radio" name="cart_form_payment" id="hotove" required>Převodem předem na náš účet<span class="form-check__description">115-820780217/0100 vedený u Komerční banky. Var. symbol je ČÍSLO OBJEDNÁVKY.</span><span class="form-check__price">0 Kč</span><span class="form-check__box radio"></span>
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check__label">
-                <input class="form-check__input" type="radio" name="cart_form_payment" id="bankovni" required>Dobírka<span class="form-check__description">Celkovou částku za zboží a přepravu uhradíte dovozci nebo na odběrném místě</span><span class="form-check__price">20 Kč</span><span class="form-check__box radio"></span>
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check__label">
-                <input class="form-check__input" type="radio" name="cart_form_payment" id="dobirka" required>ESSOX<span class="form-check__description">Splátkování přes společnost ESSOX</span><span class="form-check__price">0 Kč</span><span class="form-check__box radio"></span>
+                <input class="form-check__input" type="radio" name="cart_form_shipping" id="ppl4" required>Osobný odber - ZDARMA<span class="form-check__description"></span><span class="form-check__price">0 €</span><span class="form-check__box radio"></span>
               </label>
             </div>
           </div>
@@ -460,13 +436,13 @@
                 </div>
               </div>
               <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <p>Chcete nám sdělit ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře.</p>
-                <p>Napsat do něj můžete také upřesňující informace o místě, kam máme Vaše zboží doručit (nejbližší orientační bod apod.)</p>
+                <p>Chcete nám povedať ešte nejakú dôležitú správu k vašej objednávke? Využite prosím, tohto formulára.</p>
+                <p>Napísať do neho môžete tiež upresňujúce informácie o mieste, kam máme Váš tovar doručiť (najbližší orientačný bod a pod.)</p>
               </div>
             </div>
           </div>
-          <div class="cart-bottom-btns"><a class="btn btn-dark" href="#"><span class="btn__icon arrow-icon left white"></span> Zpět do obchodu</a><a class="btn btn-ghost" href="#"><span class="btn__icon cross-icon"></span> Vyprázdnit košík</a>
-            <button class="btn" type="submit" id="delivery-form-submit">Osobní údaje <span class="btn__icon arrow-icon white"></span>      </button>
+          <div class="cart-bottom-btns"><a class="btn btn-dark" href="#"><span class="btn__icon arrow-icon left white"></span> Späť do obchodu</a><a class="btn btn-ghost" href="#"><span class="btn__icon cross-icon"></span> Vyprázdniť košík</a>
+            <button class="btn" type="submit" id="delivery-form-submit">Osobné údaje <span class="btn__icon arrow-icon white"></span>      </button>
           </div>
         </form>
       </div>
@@ -476,7 +452,7 @@
           <h3 class="cart-price-overview-responsive__price"><span>16 989</span> Kč</h3>
         </div>
         <div class="cart-price-overview-responsive__btn-wrap">
-          <button class="btn cart-price-overview-responsive__btn" onclick="$('#delivery-form-submit').trigger('click');">Osobní údaje <span class="btn__icon arrow-icon white"></span>  </button>
+          <button class="btn cart-price-overview-responsive__btn" onclick="$('#delivery-form-submit').trigger('click');">Osobné údaje <span class="btn__icon arrow-icon white"></span>  </button>
         </div>
       </div>
     </main><a class="scroll-to-top" href="#anchor-navbar-top"><span class="caret-icon top"></span></a>
@@ -496,10 +472,10 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">O nákupu</h5><a class="footer-main__link" href="#">Obchodní podmínky</a><a class="footer-main__link" href="#">Reklamační řád</a><a class="footer-main__link" href="#">Jak nakupovat</a><a class="footer-main__link" href="#">Doprava zdarma</a><a class="footer-main__link" href="#">Ochrana osobních údajů</a><a class="footer-main__link" href="#">Časté dotazy</a><a class="footer-main__link" href="#">Nákup na splátky ESSOX</a>
+              <h5 class="footer-main__h5">O nákupu</h5><a class="footer-main__link" href="#">Obchodní podmínky</a><a class="footer-main__link" href="#">O nás</a><a class="footer-main__link" href="#">Ako nakupovať</a><a class="footer-main__link" href="#">Poštovné</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">O společnosti</h5><a class="footer-main__link" href="#">Proč nakupovat u nás</a><a class="footer-main__link" href="#">O audio technice</a><a class="footer-main__link" href="#">Kamenná prodejna</a><a class="footer-main__link" href="#">Poslechová místnost</a><a class="footer-main__link" href="#">Kontakty</a><a class="footer-main__link" href="#">Aktuality</a>
+              <h5 class="footer-main__h5">O společnosti</h5><a class="footer-main__link" href="#">Výhody nákupu u nás</a><a class="footer-main__link" href="#">Kamenná prodejna</a><a class="footer-main__link" href="#">Kontakty</a><a class="footer-main__link" href="#">Aktuality</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
               <h5 class="footer-main__h5">Uživatel</h5><a class="footer-main__link" href="#">Přihlášení</a><a class="footer-main__link" href="#">Registrace</a><a class="footer-main__link" href="#">Zapomenuté údaje</a>

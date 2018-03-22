@@ -485,7 +485,7 @@
     padding: 10rem 0 6rem 0;
     background: $light-grey;
     position: relative;
-    margin-top: -42px;
+    margin-top: -60px;
 
 	&::after{
 	    content: "";
@@ -535,13 +535,15 @@
     font-family: $font-family-alt;
     font-weight: 600;
     text-align: left;
+    margin-bottom: 2rem;
 }
 .page-heading--category__subtitle-excerpt, .page-heading--category__subtitle{ 
     color: $dark-grey;
     text-align: left;
+    font-weight: 500;
 }
 .page-heading--category__toggle{
-    color: $orange-main;
+    color: $brand-primary;
     font-weight: 600;
     cursor: pointer;
 }
@@ -560,6 +562,7 @@ section.news-bottom{
         margin-bottom: 3rem;
         font-family: $font-family-alt;
         font-weight: 600;
+        color: $brand-secondary;
     }
     .news-bottom-btn{
         margin-top: 2rem;

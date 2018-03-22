@@ -72,17 +72,18 @@
       <nav class="navbar navbar-top" id="anchor-navbar-top">
         <div class="container">
           <div class="navbar-top__left">
-            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fas fa-phone"></span></span> +420 777 888 042</p>
-            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="far fa-clock"></span></span> Po-Pá: 8:00 - 16:00</p>
+            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fas fa-phone-square"></span></span> 0918 669 804</p>
+            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fas fa-envelope-square"></span></span> info@obuvkovo.sk</p>
+            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fab fa-facebook-square"></span></span> facebook.com</p>
           </div>
-          <div class="navbar-top__right"><a class="navbar-top__link" href="#">O nás</a><a class="navbar-top__link" href="#">Poslechová místnost</a><a class="navbar-top__link" href="#">Kamenná prodejna</a><a class="navbar-top__link" href="#">Obchodní podmínky</a><a class="navbar-top__link" href="#">Kontakty</a></div>
+          <div class="navbar-top__right"><a class="navbar-top__link" href="#">O nás</a><a class="navbar-top__link" href="#">Obchodnie podmienky</a><a class="navbar-top__link" href="#">Doprava</a><a class="navbar-top__link" href="#">Kontakty</a></div>
         </div>
       </nav>
       <nav class="navbar navbar-expand-lg navbar-main">
         <div class="container navbar-main__container">
           <div class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-toggle="collapse" data-target="#navbarNav" role="button"><span class="hamburger-icon"></span>
             <p>Menu</p>
-          </div><a class="navbar-brand" href="#"><img class="navbar-brand__img" src="images/logo.svg" title="#" alt="#"></a>
+          </div><a class="navbar-brand" href="#"><img class="navbar-brand__img" src="images/logo.png" title="#" alt="#"></a>
           <div class="navbar-search-responsive-toggler" id="search-toggler-responsive"><span class="search-icon"></span></div>
           <div class="navbar-search">
             <form class="navbar-search__form" method="POST" id="search-form">
@@ -115,7 +116,7 @@
               <div class="dropdown-toggle navbar-user__dropdown-toggle" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-icon navbar-user__icon"></span>
                 <div class="navbar-user__text-wrap">
                   <p class="navbar-user__text">Petroslav Novakovič</p>
-                </div><span class="caret-icon white navbar-user__caret"></span>
+                </div><span class="caret-icon navbar-user__caret"></span>
               </div>
               <div class="dropdown-menu dropdown-menu-left navbar-user__dropdown-menu" aria-labelledby="userDropdown"><a class="dropdown-item navbar-user__item" href="#">Detail účtu</a><a class="dropdown-item navbar-user__item" href="#">Historie objednávek</a><a class="dropdown-item navbar-user__item" href="#">Odhlásit</a></div>
             </div>
@@ -123,7 +124,7 @@
           <!-- Přihlášený uživatel
           .navbar-user
           	a.navbar-user__link(href="#")
-          		span.user-icon.white.navbar-user__icon
+          		span.user-icon.navbar-user__icon
           		.navbar-user__text-wrap
           			p.navbar-user__text Můj účet
           
@@ -280,21 +281,19 @@
           </div>
         </div>
       </nav>
-      <!-- nav.navbar.navbar-expand-lg.navbar-responsive-bottom
-      a.active(href="#")
-      	span.fa.fa-home
-      	p Domů
-      a(href="#")
-      	span.user-icon.white
-      	p Můj účet
-      a(href="#")
-      	span.fa.fa-heart-o
-      	p Oblíbené
-      a(href="#")
-      	span.fa.fa-balance-scale
-      	p Porovnání
-      
-      --><span id="dark-overlay" aria-label="Toggle navigation" data-target="#navbarNav" data-toggle="collapse"></span><span id="dark-overlay-cart"></span>
+      <div class="sub-cat">
+        <div class="container sub-cat__container">
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
+              <p>Podľa výrobcu</p></a><a class="sub-cat__single">
+              <p>Podľa veľkosti</p></a><a class="sub-cat__single">
+              <p>Podľa pohlavia</p></a></div>
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
+              <p>Podľa výrobcu</p></a><a class="sub-cat__single">
+              <p>Podľa veľkosti</p></a></div>
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
+              <p>Podľa výrobcu</p></a></div>
+        </div>
+      </div><span id="dark-overlay" aria-label="Toggle navigation" data-target="#navbarNav" data-toggle="collapse"></span><span id="dark-overlay-cart"></span>
     </header>
     <div class="modal fade" id="modal-add-to-cart" tabindex="-1" role="dialog" aria-labelledby="modal-add-to-cart-heading" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -319,11 +318,11 @@
                   <div class="cart-item-single__qty-wrap"> 
                     <p class="cart-item-single__qty-text">1 kus/ů</p>
                   </div>
-                  <div class="cart-item-single__price-wrap"><span class="cart-item-single__price-old">14 290 Kč</span>
-                    <p class="cart-item-single__price">8 489 Kč</p>
+                  <div class="cart-item-single__price-wrap"><span class="cart-item-single__price-old">22.04 €</span>
+                    <p class="cart-item-single__price">22.04 €</p>
                   </div>
                   <div class="cart-item-single__sum-wrap text-right">
-                    <p class="cart-item-single__sum"><span>8 489</span> Kč</p>
+                    <p class="cart-item-single__sum"><span>22.04</span> €</p>
                   </div>
                 </div>
               </div>
@@ -346,8 +345,8 @@
               <div class="product-detail__name">
                 <h1 class="product-detail__title">MAYORAL chlapčenská obuv 42764-028 red</h1>
                 <div class="product-detail__under-title">
-                  <p class="product-detail__brand">Výrobce: Onkyo</p>
-                  <p class="product-detail__code">Katalogové číslo: TX8270+CH706</p>
+                  <p class="product-detail__brand">Výrobce: Mayoral</p>
+                  <p class="product-detail__code">Katalogové číslo: MAYORAL 42770-040 blue</p>
                 </div>
               </div>
             </div>
@@ -355,27 +354,24 @@
               <div class="product-detail__images">
                 <div class="product-tags product-tags--detail">
                   <div class="product-tags__single">
-                    <div class="product-tags__text new">Novinka</div>
+                    <div class="product-tags__text sale"></div>
                   </div>
                   <div class="product-tags__single">
-                    <div class="product-tags__text top">Nejprodávanější</div>
+                    <div class="product-tags__text new"></div>
                   </div>
                   <div class="product-tags__single">
-                    <div class="product-tags__text recommended">Náš tip</div>
+                    <div class="product-tags__text top"> </div>
                   </div>
                   <div class="product-tags__single">
-                    <div class="product-tags__text free-shipping">Doprava zdarma</div>
+                    <div class="product-tags__text recommended"></div>
                   </div>
                 </div>
                 <div class="product-tags--right product-tags--right-detail">
                   <div class="product-tags__single">
-                    <div class="product-tags__text sale circle">-30%</div>
+                    <div class="product-tags__text gender circle"><img src="images/girl-icon.svg"></div>
                   </div>
                   <div class="product-tags__single">
-                    <div class="product-tags__text vinyl circle bottom">Vinyl</div>
-                  </div>
-                  <div class="product-tags__single">
-                    <div class="product-tags__text cd circle bottom">CD</div>
+                    <div class="product-tags__text gender circle"><img src="images/boy-icon.svg"></div>
                   </div>
                 </div>
                 <div class="product-detail-gallery" itemscope itemtype="http://schema.org/ImageGallery">
@@ -504,20 +500,39 @@
               <div class="product-detail-side-info">
                 <div class="product-detail-main__price-wrap">
                   <div class="product-detail-main__price-old"><small class="product-detail-main__price-old-percentage">-20%</small>
-                    <p class="product-detail-main__price-old-text"><span class="product-detail-main__price-old-span">14 290 Kč</span> (ušetříte 6 598 Kč)</p>
+                    <p class="product-detail-main__price-old-text"><span class="product-detail-main__price-old-span">33.90 €</span> (ušetříte 33.90 €)</p>
                   </div>
                   <div class="product-detail-main__price">
-                    <h2 class="product-detail-main__price-title">8 489 Kč</h2>
+                    <h2 class="product-detail-main__price-title">22.04 €</h2>
                   </div>
                   <div class="product-detail-main__price-dph">
-                    <p class="product-detail-main__price-dph-text">7 016 Kč bez DPH   </p>
+                    <p class="product-detail-main__price-dph-text">22.04 € bez DPH   </p>
                   </div>
                 </div>
                 <div class="product-detail-main__stock">
                   <p class="product-detail-main__stock-text"><span class="fas fa-check-circle"></span> 10 kusů skladem</p>
-                  <div class="product-detail-main__stock-note"> <span><span class="far fa-clock"></span> Zboží je skladem, může být dodáno následující pracovní den</span></div>
                 </div>
                 <form method="post" name="product_detail_form">
+                  <div class="product-detail-main__size">
+                    <h4 class="product-detail-main__size-title">Vyberte veľkosť</h4>
+                    <div class="product-detail-main__size-wrap">
+                      <div class="product-detail-main__size-single">
+                        <label>
+                          <input type="radio" name="velikost" value="1" required><span>1</span>
+                        </label>
+                      </div>
+                      <div class="product-detail-main__size-single">
+                        <label>
+                          <input type="radio" name="velikost" value="2" required><span>2</span>
+                        </label>
+                      </div>
+                      <div class="product-detail-main__size-single">
+                        <label>
+                          <input type="radio" name="velikost" value="3" required><span>3</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                   <div class="product-detail-main__cta">
                     <div class="product-detail-main__cta-number-stepper">
                       <div class="number-stepper">
@@ -527,13 +542,10 @@
                       </div>
                     </div>
                     <div class="product-detail-main__cta-button-wrap">
-                      <button class="btn product-detail-main__cta-button" type="submit" name="buy-button"><span class="btn__icon cart-icon"></span> Přidat do košíku</button>
+                      <button class="btn product-detail-main__cta-button" type="submit" name="buy-button"><span class="btn__icon cart-icon"></span> Pridať do košíka</button>
                     </div>
                   </div>
                 </form>
-                <div class="essox-bar"><img class="essox-bar__img" src="img/essox-logo.png">
-                  <p class="essox-bar__text">Nákup na splátky s Essoxem</p>
-                </div>
                 <div class="product-detail-main__description">
                   <p class="product-detail-main__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. <a href="#anchor-product-detail-description">Celý popis produktu <span class="fa fa-angle-down"></span></a></p>
                 </div>
@@ -541,416 +553,31 @@
                   <div class="product-detail-main__free-delivery-wrap">
                     <div class="product-detail-main__free-delivery-img"><span class="delivery-icon"></span></div>
                     <div class="product-detail-main__free-delivery-text-wrap">
-                      <p class="product-detail-main__free-delivery-text">Při nákupu nad 5 000 Kč doprava zdarma</p>
+                      <p class="product-detail-main__free-delivery-text">Pri nákupe nad 100 € doprava zadarmo</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="product-accessories">
-            <h2 class="product-accessories__heading">Doporučené příslušenství</h2>
-            <div class="swiper-container-5-products-wrap">
-              <div class="swiper-container-5-products">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><a class="single-product-cell single-product-cell-small" href="#">
-                      <div class="single-product-cell-top">
-                        <div class="product-tags">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text new">Novinka</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text top">Nejprodávanější</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text recommended">Náš tip</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text free-shipping">Doprava zdarma</div>
-                          </div>
-                        </div>
-                        <div class="product-tags--right">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text sale circle">-30%</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text vinyl circle bottom">Vinyl</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-top-img">
-                          <div class="single-product-cell-top-img-wrap"><img class="swiper-lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-medium.jpg"></div>
-                        </div>
-                        <h4>MAYORAL chlapčenská obuv 42764-028 red</h4>
-                      </div>
-                      <div class="single-product-cell-bottom">
-                        <div class="single-product-cell-price-wrap">
-                          <div class="single-product-cell-price">
-                            <div class="single-product-cell-price-old">1 099 Kč </div>
-                            <div class="single-product-cell-price-main">899 Kč</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-delivery-info">
-                          <div class="single-product-cell-delivery">
-                            <p><span>Skladem více jak</span> 5 kusů</p>
-                          </div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide"><a class="single-product-cell single-product-cell-small" href="#">
-                      <div class="single-product-cell-top">
-                        <div class="product-tags">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text new">Novinka</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text top">Nejprodávanější</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text recommended">Náš tip</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text free-shipping">Doprava zdarma</div>
-                          </div>
-                        </div>
-                        <div class="product-tags--right">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text sale circle">-30%</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text vinyl circle bottom">Vinyl</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-top-img">
-                          <div class="single-product-cell-top-img-wrap"><img class="swiper-lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-medium.jpg"></div>
-                        </div>
-                        <h4>MAYORAL chlapčenská obuv 42764-028 red</h4>
-                      </div>
-                      <div class="single-product-cell-bottom">
-                        <div class="single-product-cell-price-wrap">
-                          <div class="single-product-cell-price">
-                            <div class="single-product-cell-price-old">1 099 Kč </div>
-                            <div class="single-product-cell-price-main">899 Kč</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-delivery-info">
-                          <div class="single-product-cell-delivery">
-                            <p><span>Skladem více jak</span> 5 kusů</p>
-                          </div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide"><a class="single-product-cell single-product-cell-small" href="#">
-                      <div class="single-product-cell-top">
-                        <div class="product-tags">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text new">Novinka</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text top">Nejprodávanější</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text recommended">Náš tip</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text free-shipping">Doprava zdarma</div>
-                          </div>
-                        </div>
-                        <div class="product-tags--right">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text sale circle">-30%</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text vinyl circle bottom">Vinyl</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-top-img">
-                          <div class="single-product-cell-top-img-wrap"><img class="swiper-lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-medium.jpg"></div>
-                        </div>
-                        <h4>MAYORAL chlapčenská obuv 42764-028 red</h4>
-                      </div>
-                      <div class="single-product-cell-bottom">
-                        <div class="single-product-cell-price-wrap">
-                          <div class="single-product-cell-price">
-                            <div class="single-product-cell-price-old">1 099 Kč </div>
-                            <div class="single-product-cell-price-main">899 Kč</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-delivery-info">
-                          <div class="single-product-cell-delivery">
-                            <p><span>Skladem více jak</span> 5 kusů</p>
-                          </div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide"><a class="single-product-cell single-product-cell-small" href="#">
-                      <div class="single-product-cell-top">
-                        <div class="product-tags">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text new">Novinka</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text top">Nejprodávanější</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text recommended">Náš tip</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text free-shipping">Doprava zdarma</div>
-                          </div>
-                        </div>
-                        <div class="product-tags--right">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text sale circle">-30%</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text vinyl circle bottom">Vinyl</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-top-img">
-                          <div class="single-product-cell-top-img-wrap"><img class="swiper-lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-medium.jpg"></div>
-                        </div>
-                        <h4>MAYORAL chlapčenská obuv 42764-028 red</h4>
-                      </div>
-                      <div class="single-product-cell-bottom">
-                        <div class="single-product-cell-price-wrap">
-                          <div class="single-product-cell-price">
-                            <div class="single-product-cell-price-old">1 099 Kč </div>
-                            <div class="single-product-cell-price-main">899 Kč</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-delivery-info">
-                          <div class="single-product-cell-delivery">
-                            <p><span>Skladem více jak</span> 5 kusů</p>
-                          </div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide"><a class="single-product-cell single-product-cell-small" href="#">
-                      <div class="single-product-cell-top">
-                        <div class="product-tags">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text new">Novinka</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text top">Nejprodávanější</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text recommended">Náš tip</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text free-shipping">Doprava zdarma</div>
-                          </div>
-                        </div>
-                        <div class="product-tags--right">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text sale circle">-30%</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text vinyl circle bottom">Vinyl</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-top-img">
-                          <div class="single-product-cell-top-img-wrap"><img class="swiper-lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-medium.jpg"></div>
-                        </div>
-                        <h4>MAYORAL chlapčenská obuv 42764-028 red</h4>
-                      </div>
-                      <div class="single-product-cell-bottom">
-                        <div class="single-product-cell-price-wrap">
-                          <div class="single-product-cell-price">
-                            <div class="single-product-cell-price-old">1 099 Kč </div>
-                            <div class="single-product-cell-price-main">899 Kč</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-delivery-info">
-                          <div class="single-product-cell-delivery">
-                            <p><span>Skladem více jak</span> 5 kusů</p>
-                          </div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide"><a class="single-product-cell single-product-cell-small" href="#">
-                      <div class="single-product-cell-top">
-                        <div class="product-tags">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text new">Novinka</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text top">Nejprodávanější</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text recommended">Náš tip</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text free-shipping">Doprava zdarma</div>
-                          </div>
-                        </div>
-                        <div class="product-tags--right">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text sale circle">-30%</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text vinyl circle bottom">Vinyl</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-top-img">
-                          <div class="single-product-cell-top-img-wrap"><img class="swiper-lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-medium.jpg"></div>
-                        </div>
-                        <h4>MAYORAL chlapčenská obuv 42764-028 red</h4>
-                      </div>
-                      <div class="single-product-cell-bottom">
-                        <div class="single-product-cell-price-wrap">
-                          <div class="single-product-cell-price">
-                            <div class="single-product-cell-price-old">1 099 Kč </div>
-                            <div class="single-product-cell-price-main">899 Kč</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-delivery-info">
-                          <div class="single-product-cell-delivery">
-                            <p><span>Skladem více jak</span> 5 kusů</p>
-                          </div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide"><a class="single-product-cell single-product-cell-small" href="#">
-                      <div class="single-product-cell-top">
-                        <div class="product-tags">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text new">Novinka</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text top">Nejprodávanější</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text recommended">Náš tip</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text free-shipping">Doprava zdarma</div>
-                          </div>
-                        </div>
-                        <div class="product-tags--right">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text sale circle">-30%</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text vinyl circle bottom">Vinyl</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-top-img">
-                          <div class="single-product-cell-top-img-wrap"><img class="swiper-lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-medium.jpg"></div>
-                        </div>
-                        <h4>MAYORAL chlapčenská obuv 42764-028 red</h4>
-                      </div>
-                      <div class="single-product-cell-bottom">
-                        <div class="single-product-cell-price-wrap">
-                          <div class="single-product-cell-price">
-                            <div class="single-product-cell-price-old">1 099 Kč </div>
-                            <div class="single-product-cell-price-main">899 Kč</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-delivery-info">
-                          <div class="single-product-cell-delivery">
-                            <p><span>Skladem více jak</span> 5 kusů</p>
-                          </div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide"><a class="single-product-cell single-product-cell-small" href="#">
-                      <div class="single-product-cell-top">
-                        <div class="product-tags">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text new">Novinka</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text top">Nejprodávanější</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text recommended">Náš tip</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text free-shipping">Doprava zdarma</div>
-                          </div>
-                        </div>
-                        <div class="product-tags--right">
-                          <div class="product-tags__single">
-                            <div class="product-tags__text sale circle">-30%</div>
-                          </div>
-                          <div class="product-tags__single">
-                            <div class="product-tags__text vinyl circle bottom">Vinyl</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-top-img">
-                          <div class="single-product-cell-top-img-wrap"><img class="swiper-lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-medium.jpg"></div>
-                        </div>
-                        <h4>MAYORAL chlapčenská obuv 42764-028 red</h4>
-                      </div>
-                      <div class="single-product-cell-bottom">
-                        <div class="single-product-cell-price-wrap">
-                          <div class="single-product-cell-price">
-                            <div class="single-product-cell-price-old">1 099 Kč </div>
-                            <div class="single-product-cell-price-main">899 Kč</div>
-                          </div>
-                        </div>
-                        <div class="single-product-cell-delivery-info">
-                          <div class="single-product-cell-delivery">
-                            <p><span>Skladem více jak</span> 5 kusů</p>
-                          </div>
-                        </div>
-                      </div></a></div>
-                </div>
-              </div>
-              <div class="swiper-button-prev swiper-button-prev--5"></div>
-              <div class="swiper-button-next swiper-button-next--5"></div>
-            </div>
-          </div>
           <div class="product-description" id="anchor-product-detail-description">
             <ul class="nav nav-tabs product-description__nav" role="tablist">
               <li class="nav-item product-description__tab"><a class="nav-link product-description__tab-link active" data-toggle="tab" href="#product-description-1" role="tab">Popis produktu</a></li>
-              <li class="nav-item product-description__tab"><a class="nav-link product-description__tab-link" data-toggle="tab" href="#product-description-2" role="tab">Technické parametry</a></li>
-              <li class="nav-item product-description__tab"><a class="nav-link product-description__tab-link" data-toggle="tab" href="#product-description-3" role="tab">Přílohy produktu</a></li>
             </ul>
             <div class="tab-content product-description__wrap">
               <div class="tab-pane product-description__tab-content active" id="product-description-1" role="tabpanel" aria-expanded="true"><a class="product-description__collapse" data-toggle="collapse" href="#product-description-c-1" aria-controls="product-description-c-1" aria-expanded="true">Popis produktu</a>
                 <div class="panel-collapse collapse show product-description__collapse-wrap" id="product-description-c-1">
                   <div class="product-description__content">
                     <div class="product-description__text">
-                      <p>Špičkový japonský výrobce elektroniky Onkyo, se více než půl století zabývá produkcí precizních audio komponentů. Během posledního desetiletí si Onkyo získalo zvučné jméno také mezi výrobci systémů domácího kina. Jak naznačují dvě japonská slova (ON - zvuk a KYO - harmonie), ze kterých je název společnosti složen, je to hlavně prvotřídní zvuk, který všechny produkty Onkyo charakterizuje. Šíře sortimentu a design produktů osloví téměř každého. Nabídka obsahuje kromě tradičně velmi úspěšných AV receiverů také mikrosystémy, Blu-Ray přehrávače, sluchátka, systémy pro ozvučení TV a v neposlední řadě vysoce kvalitní Hi-Fi komponenty.</p>
-                      <p>Zaměřte se na muzikálnost s Onkyo TX-8270, krásným síťovým stereo receiverem, který je připraven přehrát všechno, co na něj hodíte. Společně s linkovými a phono vstupy, je zde k dispozici koaxiální a optický digitální, čtyři vstupy HDMI, USB a dual-band Wi-Fi, pro podporu bezdrátových audio technologií. Mezi ně patří DTS Play-Fi, vestavěný Chromecast, AirPlay, Spotify, audio připojené k síti a streamovací služby. Vychutnejte si všestrannost se snadným vylepšením každodenní televizní zábavy, rádiem DAB+ a FM/RDS a dalšími.</p><strong>Řízení velkých reproduktorů s vitalitou a dynamikou. </strong>
-                      <p>Tento zesilovač generuje vysoký proud s masivním transformátorem a zvukovými kondenzátory. Obvod je vybaven diskrétními výstupními tranzistory pro nízké zkreslení a snadnou hnací sílu. Vysoký proud zajišťuje přesné ovládání, obnovuje energii a vitalitu vaší hudby.</p><strong>Stereo receiver, který připojí vše.</strong>
-                      <p>Krásný stereofonní receiver vytvořený pro milovníky hi-fi, TX-8270 je také exkluzivně vybaven připojením, které mu umožní sloužit jako moderní zesilovač pro televizní zábavu. Spojením analogových, digitálních, phono a USB vstupů jsou HDMI terminály (připojte Apple TV nebo podobně) společně s platformou Next Generation Network Audio.</p><strong>Prémiové digitál/analog zpracování.</strong>
-                      <p>Digitální/analogový převodník AK4438 384 kHz/32 bit z AKM nabízí unikátní technologie s nízkým zkreslením, ideální pro DSD 5,6 MHz a PCM signály až do 192 kHz/24 bitů. Společně s jedinečným VLSC obvodem, který eliminuje vysokofrekvenční pulsní šum, je přehrávání křišťálově čisté.</p><strong>Snadná hudba s vestavěným Chromecast. </strong>
-                      <p>Streamujte hudbu jednoduše z vašeho smartphonu, notebooku nebo počítače do vašich reproduktorů. Ovládejte přehrávání pomocí Chromecast podporujících aplikací, které znáte a milujete z vašeho iPhonu, iPadu, Android telefonu nebo tabletu, Mac nebo Windows laptopu nebo Chromebooku.</p><strong>Streamujte vše s DTS Play-Fi.</strong>
-                      <p>DTS Play-Fi je bezdrátový protokol, který pracuje s jakoukoli aplikací a inteligentním zařízením. Přesuňte vše, co přehráváte, do receiveru, dokonce různé zdroje do různých komponentů najednou.</p><strong>Dual-band Wi-Fi, AirPlay, Spotify.</strong>
-                      <p>Volitelný kanál Wi-Fi o frekvenci 5 GHz zajišťuje stabilní konektivitu v oblastech s provozním přetížením v pásmu 2,4 GHz. Vychutnejte si plynulé přehrávání přes AirPlay, aplikaci Spotify Connect a další síťové audio služby.</p><strong>Internetové rádio, streaming služby, FM/RDS a DAB/DAB+.</strong>
-                      <p>TIDAL, Deezer a TuneIn jsou vypáleny do grafického uživatelského rozhraní, což usnadňuje výběr z masivního spektra hudebních a rozhlasových programů. Rádiové tunery jsou také součástí se 40 předvolenými stanicemi. Získejte okamžitý přístup ke čtyřem vašim oblíbeným stanicím pomocí přednastavených tlačítek na předním panelu.</p><strong>Onkyo Controller podporuje síťové audio příští generace.</strong>
-                      <p>Aplikace Onkyo Controller shromažďuje streaming služby a audio připojené k síti do intuitivního rozhraní. Ovládejte hudbu a distribujte ji po celém domě z jedné snadno použitelné aplikace.</p><strong>Bezdrátové multi-pokojové audio FireConnect.</strong>
-                      <p>FireConnect zrcadlí síťový zvuk a externí analogové zdroje připojené k hlavnímu komponentu - od streamingových služeb až po vinylové záznamy - na FireConnect kompatibilní reproduktory v jiných místnostech. Výběr hudby, seskupování reproduktorů a správa přehrávání v domácím prostředí jsou zabudovány do aplikace Onkyo Controller pro iOS a Android.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane product-description__tab-content" id="product-description-2" role="tabpanel" aria-expanded="false"><a class="product-description__collapse collapsed" data-toggle="collapse" href="#product-description-c-2" aria-controls="product-description-c-2" aria-expanded="false">Technické parametry</a>
-                <div class="panel-collapse collapse product-description__collapse-wrap" id="product-description-c-2">
-                  <div class="product-description__content">
-                    <div class="product-description__parameters">
-                      <table class="table">
-                        <thead>
-                          <th>Parametr</th>
-                          <th>Hodnota</th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Výstupní výkon</td>
-                            <td>160 W/k (6 Ω, 1 kHz, 1%, 1 kanál řízený, IEC); 170 W/k (6 Ω, 1 kHz, 10%, 1 kanál řízený, JEITA)</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane product-description__tab-content" id="product-description-3" role="tabpanel" aria-expanded="false"><a class="product-description__collapse collapsed" data-toggle="collapse" href="#product-description-c-3" aria-controls="product-description-c-3" aria-expanded="false">Přílohy produktu</a>
-                <div class="panel-collapse collapse product-description__collapse-wrap" id="product-description-c-3">
-                  <div class="product-description__content">
-                    <p>FireConnect zrcadlí síťový zvuk</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="product-similar">
             <h2 class="product-accessories__heading">Obdobné produkty</h2>
             <div class="product-grid">
               <div class="single-product-cell-wrap"><a class="single-product-cell" href="#">
@@ -958,21 +585,24 @@
                     <div class="single-product-cell-top-img">
                       <div class="product-tags">
                         <div class="product-tags__single">
-                          <div class="product-tags__text new">Novinka</div>
+                          <div class="product-tags__text sale"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text top">Nejprodávanější</div>
+                          <div class="product-tags__text new"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text recommended">Náš tip</div>
+                          <div class="product-tags__text top"> </div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text free-shipping">Doprava zdarma</div>
+                          <div class="product-tags__text recommended"></div>
                         </div>
                       </div>
                       <div class="product-tags--right">
                         <div class="product-tags__single">
-                          <div class="product-tags__text sale circle">-30%</div>
+                          <div class="product-tags__text gender circle"><img src="images/girl-icon.svg"></div>
+                        </div>
+                        <div class="product-tags__single">
+                          <div class="product-tags__text gender circle"><img src="images/boy-icon.svg"></div>
                         </div>
                       </div>
                       <div class="product-tags--right-bottom">
@@ -1014,21 +644,24 @@
                     <div class="single-product-cell-top-img">
                       <div class="product-tags">
                         <div class="product-tags__single">
-                          <div class="product-tags__text new">Novinka</div>
+                          <div class="product-tags__text sale"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text top">Nejprodávanější</div>
+                          <div class="product-tags__text new"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text recommended">Náš tip</div>
+                          <div class="product-tags__text top"> </div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text free-shipping">Doprava zdarma</div>
+                          <div class="product-tags__text recommended"></div>
                         </div>
                       </div>
                       <div class="product-tags--right">
                         <div class="product-tags__single">
-                          <div class="product-tags__text sale circle">-30%</div>
+                          <div class="product-tags__text gender circle"><img src="images/girl-icon.svg"></div>
+                        </div>
+                        <div class="product-tags__single">
+                          <div class="product-tags__text gender circle"><img src="images/boy-icon.svg"></div>
                         </div>
                       </div>
                       <div class="product-tags--right-bottom">
@@ -1070,21 +703,24 @@
                     <div class="single-product-cell-top-img">
                       <div class="product-tags">
                         <div class="product-tags__single">
-                          <div class="product-tags__text new">Novinka</div>
+                          <div class="product-tags__text sale"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text top">Nejprodávanější</div>
+                          <div class="product-tags__text new"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text recommended">Náš tip</div>
+                          <div class="product-tags__text top"> </div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text free-shipping">Doprava zdarma</div>
+                          <div class="product-tags__text recommended"></div>
                         </div>
                       </div>
                       <div class="product-tags--right">
                         <div class="product-tags__single">
-                          <div class="product-tags__text sale circle">-30%</div>
+                          <div class="product-tags__text gender circle"><img src="images/girl-icon.svg"></div>
+                        </div>
+                        <div class="product-tags__single">
+                          <div class="product-tags__text gender circle"><img src="images/boy-icon.svg"></div>
                         </div>
                       </div>
                       <div class="product-tags--right-bottom">
@@ -1126,21 +762,24 @@
                     <div class="single-product-cell-top-img">
                       <div class="product-tags">
                         <div class="product-tags__single">
-                          <div class="product-tags__text new">Novinka</div>
+                          <div class="product-tags__text sale"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text top">Nejprodávanější</div>
+                          <div class="product-tags__text new"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text recommended">Náš tip</div>
+                          <div class="product-tags__text top"> </div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text free-shipping">Doprava zdarma</div>
+                          <div class="product-tags__text recommended"></div>
                         </div>
                       </div>
                       <div class="product-tags--right">
                         <div class="product-tags__single">
-                          <div class="product-tags__text sale circle">-30%</div>
+                          <div class="product-tags__text gender circle"><img src="images/girl-icon.svg"></div>
+                        </div>
+                        <div class="product-tags__single">
+                          <div class="product-tags__text gender circle"><img src="images/boy-icon.svg"></div>
                         </div>
                       </div>
                       <div class="product-tags--right-bottom">
@@ -1182,21 +821,24 @@
                     <div class="single-product-cell-top-img">
                       <div class="product-tags">
                         <div class="product-tags__single">
-                          <div class="product-tags__text new">Novinka</div>
+                          <div class="product-tags__text sale"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text top">Nejprodávanější</div>
+                          <div class="product-tags__text new"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text recommended">Náš tip</div>
+                          <div class="product-tags__text top"> </div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text free-shipping">Doprava zdarma</div>
+                          <div class="product-tags__text recommended"></div>
                         </div>
                       </div>
                       <div class="product-tags--right">
                         <div class="product-tags__single">
-                          <div class="product-tags__text sale circle">-30%</div>
+                          <div class="product-tags__text gender circle"><img src="images/girl-icon.svg"></div>
+                        </div>
+                        <div class="product-tags__single">
+                          <div class="product-tags__text gender circle"><img src="images/boy-icon.svg"></div>
                         </div>
                       </div>
                       <div class="product-tags--right-bottom">
@@ -1238,21 +880,24 @@
                     <div class="single-product-cell-top-img">
                       <div class="product-tags">
                         <div class="product-tags__single">
-                          <div class="product-tags__text new">Novinka</div>
+                          <div class="product-tags__text sale"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text top">Nejprodávanější</div>
+                          <div class="product-tags__text new"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text recommended">Náš tip</div>
+                          <div class="product-tags__text top"> </div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text free-shipping">Doprava zdarma</div>
+                          <div class="product-tags__text recommended"></div>
                         </div>
                       </div>
                       <div class="product-tags--right">
                         <div class="product-tags__single">
-                          <div class="product-tags__text sale circle">-30%</div>
+                          <div class="product-tags__text gender circle"><img src="images/girl-icon.svg"></div>
+                        </div>
+                        <div class="product-tags__single">
+                          <div class="product-tags__text gender circle"><img src="images/boy-icon.svg"></div>
                         </div>
                       </div>
                       <div class="product-tags--right-bottom">
@@ -1294,21 +939,24 @@
                     <div class="single-product-cell-top-img">
                       <div class="product-tags">
                         <div class="product-tags__single">
-                          <div class="product-tags__text new">Novinka</div>
+                          <div class="product-tags__text sale"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text top">Nejprodávanější</div>
+                          <div class="product-tags__text new"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text recommended">Náš tip</div>
+                          <div class="product-tags__text top"> </div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text free-shipping">Doprava zdarma</div>
+                          <div class="product-tags__text recommended"></div>
                         </div>
                       </div>
                       <div class="product-tags--right">
                         <div class="product-tags__single">
-                          <div class="product-tags__text sale circle">-30%</div>
+                          <div class="product-tags__text gender circle"><img src="images/girl-icon.svg"></div>
+                        </div>
+                        <div class="product-tags__single">
+                          <div class="product-tags__text gender circle"><img src="images/boy-icon.svg"></div>
                         </div>
                       </div>
                       <div class="product-tags--right-bottom">
@@ -1350,77 +998,24 @@
                     <div class="single-product-cell-top-img">
                       <div class="product-tags">
                         <div class="product-tags__single">
-                          <div class="product-tags__text new">Novinka</div>
+                          <div class="product-tags__text sale"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text top">Nejprodávanější</div>
+                          <div class="product-tags__text new"></div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text recommended">Náš tip</div>
+                          <div class="product-tags__text top"> </div>
                         </div>
                         <div class="product-tags__single">
-                          <div class="product-tags__text free-shipping">Doprava zdarma</div>
-                        </div>
-                      </div>
-                      <div class="product-tags--right">
-                        <div class="product-tags__single">
-                          <div class="product-tags__text sale circle">-30%</div>
-                        </div>
-                      </div>
-                      <div class="product-tags--right-bottom">
-                        <div class="product-tags__single">
-                          <div class="product-tags__text sale circle">-20%</div>
-                        </div>
-                      </div>
-                      <div class="single-product-cell-top-img-wrap"><img class="lazy swiper-lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-medium.jpg"></div>
-                    </div>
-                    <h4>MAYORAL chlapčenská obuv 42764-028 red</h4>
-                  </div>
-                  <div class="single-product-cell-bottom">
-                    <div class="single-product-cell-size-wrap">
-                      <p>20, 21, 23, 24</p>
-                    </div>
-                    <div class="single-product-cell-price-wrap">
-                      <div class="single-product-cell-price">
-                        <div class="single-product-cell-price-old">39.90 €</div>
-                        <div class="single-product-cell-price-main">23.94 €</div>
-                      </div>
-                      <div class="single-product-cell-buy">
-                        <form method="POST">
-                          <button class="btn" type="submit" name="buy-button"><span class="cart-icon"></span> Do košíku</button>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="single-product-cell-delivery-info">
-                      <div class="single-product-cell-delivery">
-                        <p><span>Dostupnosť:</span> skladom</p>
-                      </div>
-                    </div>
-                    <div class="single-product-cell-product-info-hide">
-                      <p>Výrobca: <span>Capiki</span></p>
-                      <p>Kód: <span>CAPIKI tenisky biele</span></p>
-                    </div>
-                  </div></a></div>
-              <div class="single-product-cell-wrap"><a class="single-product-cell" href="#">
-                  <div class="single-product-cell-top">
-                    <div class="single-product-cell-top-img">
-                      <div class="product-tags">
-                        <div class="product-tags__single">
-                          <div class="product-tags__text new">Novinka</div>
-                        </div>
-                        <div class="product-tags__single">
-                          <div class="product-tags__text top">Nejprodávanější</div>
-                        </div>
-                        <div class="product-tags__single">
-                          <div class="product-tags__text recommended">Náš tip</div>
-                        </div>
-                        <div class="product-tags__single">
-                          <div class="product-tags__text free-shipping">Doprava zdarma</div>
+                          <div class="product-tags__text recommended"></div>
                         </div>
                       </div>
                       <div class="product-tags--right">
                         <div class="product-tags__single">
-                          <div class="product-tags__text sale circle">-30%</div>
+                          <div class="product-tags__text gender circle"><img src="images/girl-icon.svg"></div>
+                        </div>
+                        <div class="product-tags__single">
+                          <div class="product-tags__text gender circle"><img src="images/boy-icon.svg"></div>
                         </div>
                       </div>
                       <div class="product-tags--right-bottom">
@@ -1508,10 +1103,10 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">O nákupu</h5><a class="footer-main__link" href="#">Obchodní podmínky</a><a class="footer-main__link" href="#">Reklamační řád</a><a class="footer-main__link" href="#">Jak nakupovat</a><a class="footer-main__link" href="#">Doprava zdarma</a><a class="footer-main__link" href="#">Ochrana osobních údajů</a><a class="footer-main__link" href="#">Časté dotazy</a><a class="footer-main__link" href="#">Nákup na splátky ESSOX</a>
+              <h5 class="footer-main__h5">O nákupu</h5><a class="footer-main__link" href="#">Obchodní podmínky</a><a class="footer-main__link" href="#">O nás</a><a class="footer-main__link" href="#">Ako nakupovať</a><a class="footer-main__link" href="#">Poštovné</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">O společnosti</h5><a class="footer-main__link" href="#">Proč nakupovat u nás</a><a class="footer-main__link" href="#">O audio technice</a><a class="footer-main__link" href="#">Kamenná prodejna</a><a class="footer-main__link" href="#">Poslechová místnost</a><a class="footer-main__link" href="#">Kontakty</a><a class="footer-main__link" href="#">Aktuality</a>
+              <h5 class="footer-main__h5">O společnosti</h5><a class="footer-main__link" href="#">Výhody nákupu u nás</a><a class="footer-main__link" href="#">Kamenná prodejna</a><a class="footer-main__link" href="#">Kontakty</a><a class="footer-main__link" href="#">Aktuality</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
               <h5 class="footer-main__h5">Uživatel</h5><a class="footer-main__link" href="#">Přihlášení</a><a class="footer-main__link" href="#">Registrace</a><a class="footer-main__link" href="#">Zapomenuté údaje</a>

@@ -4,6 +4,7 @@
 
 .page-heading--cart{
 	padding: 0;
+	padding-top: 6rem;
 
 	&::after{
 		content: none;
@@ -16,7 +17,7 @@
 .page-heading--cart__single{
 	text-align: center;
 	width: 25%;
-	border-bottom: 2px solid $dark-grey;
+	border-bottom: 2px solid $brand-secondary;
 	opacity: 0.5;
 	@include transition(0.2s ease opacity);
 
@@ -29,17 +30,17 @@
 	}
 	&.active{
 		opacity: 1;
-		border-bottom: 2px solid $orange-main;
+		border-bottom: 2px solid $brand-primary;
 
 		& .page-heading--cart__title{
-			color: $orange-main;
+			color: $brand-primary;
 		}
 	}
 }
 .page-heading--cart__title{
-	font-weight: 500;
-	font-size: 1.6rem;
-	color: $dark-grey;
+	font-weight: 700;
+	font-size: 1.8rem;
+	color: $brand-secondary;
 	margin: 0;
 	padding: 3rem 0;
 }
@@ -100,7 +101,7 @@
 		font-weight: 500;
 		@include flex-grow(1);
 		margin: 0;
-		color: $dark-grey;
+		color: $brand-secondary;
 	}
 	.page-heading--cart-responsive-push{
 		height: 50px;
@@ -220,14 +221,14 @@
 .cart-item-single__name{
     margin-bottom: 1rem;
     line-height: 1.2;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 	font-weight: 500;
 	color: $text-primary;
 }
 .cart-item-single__stock{
 	color: $green-main;
 	margin: 0;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	font-weight: 500;
 }	
 .cart-item-single__inner{
@@ -253,6 +254,7 @@
 }
 .cart-item-single__qty-text{
 	margin: 0;
+	font-weight: 500;
 }
 /*
 .cart-item-single__price-wrap{
@@ -263,12 +265,13 @@
     text-decoration: line-through;
     opacity: 0.8;
     font-size: 13px;
-    line-height: 1;
+	line-height: 1;
+	font-weight: 500;
 }
 .cart-item-single__price{
 	font-size: 1.8rem;
     line-height: 1;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0;
 }
 /*
@@ -280,7 +283,7 @@
 	color: $text-red;
     font-size: 2rem;
     line-height: 1;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0;
 }
 .cart-item-single__delete-wrap{
@@ -479,11 +482,13 @@
 }
 
 .cart-sidebar{
-	background: $light-grey;
+	background: $bg-white;
 	padding: 15px;
 	top: 15px;
 	margin-bottom: 2rem;
 	z-index: 5;
+	border: 1px solid $border-primary;
+	border-radius: $border-radius-primary;
 
 	& h3{
 		margin-bottom: 10px;
@@ -615,6 +620,7 @@
 .cart-shipping-payment-overview__name{
 	margin: 0;
 	padding-right: 10px;
+	font-weight: 500;
 }
 .cart-shipping-payment-overview__price{
 	font-weight: 500;
@@ -635,9 +641,10 @@
 .cart-user-info-overview__title{
 	margin-bottom: 2rem;
 	font-size: 2rem;
+	font-weight: 700;
 }
 .cart-user-info-overview__title-number{
-	color: $orange-main;
+	color: $brand-primary;
 }
 .cart-user-info-overview__single{
 	@include flex-grow(1);
@@ -651,15 +658,17 @@
 }
 .cart-user-info-overview__text{
 	font-size: 1.5rem;
+	font-weight: 500;
 }
 .cart-user-info-overview__strong{
-	font-weight: 500;
+	font-weight: 700;
 }
 
 
 
 .cart-user-note{
 	margin-top: 4rem;
+	font-weight: 500;
 }
 .cart-user-note__title{
 	margin-bottom: 2rem;
@@ -701,6 +710,7 @@
 	margin-bottom: 2rem;
 	font-size: 3rem;
 	text-align: center;
+	font-weight: 700;
 }
 .cart-empty__strong{
 	font-size: 1.6rem;
@@ -732,5 +742,6 @@
     text-align: center;
     margin: 0;
     padding-left: 15px;
-    font-weight: 500;
+	font-weight: 500;
+	font-size: 1.6rem;
 }

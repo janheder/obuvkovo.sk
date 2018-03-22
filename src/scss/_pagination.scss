@@ -8,20 +8,26 @@
 }
 .page-item{
     padding: 5px;
+
 }
 .page-item.active .page-link{
-    background: $orange-main;
+    background: $brand-primary;
     color: $white;
 }
 .page-link{
     padding: 10px 15px;
-    color: $dark-grey;
+    color: $brand-secondary;
     border: 0;
+    height: 42px;
+    width: 42px;
     background: $light-grey;
     border-radius: $border-radius-round;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
 
     &:hover, &:active, &:focus{
-        background: $dark-grey;
+        background: $brand-secondary;
         color: $white;
     }
 }

@@ -2,13 +2,13 @@ header
 	nav.navbar.navbar-top(id="anchor-navbar-top")
 		.container
 			.navbar-top__left
-				p.navbar-top__text #[span.navbar-top__icon #[span.fas.fa-phone]] +420 777 888 042
-				p.navbar-top__text #[span.navbar-top__icon #[span.far.fa-clock]] Po-Pá: 8:00 - 16:00
+				p.navbar-top__text #[span.navbar-top__icon #[span.fas.fa-phone-square]] 0918 669 804
+				p.navbar-top__text #[span.navbar-top__icon #[span.fas.fa-envelope-square]] info@obuvkovo.sk
+				p.navbar-top__text #[span.navbar-top__icon #[span.fab.fa-facebook-square]] facebook.com
 			.navbar-top__right
 				a.navbar-top__link(href="#") O nás
-				a.navbar-top__link(href="#") Poslechová místnost
-				a.navbar-top__link(href="#") Kamenná prodejna
-				a.navbar-top__link(href="#") Obchodní podmínky
+				a.navbar-top__link(href="#") Obchodnie podmienky
+				a.navbar-top__link(href="#") Doprava
 				a.navbar-top__link(href="#") Kontakty
 
 	nav.navbar.navbar-expand-lg.navbar-main
@@ -19,7 +19,7 @@ header
 				p Menu
 
 			a.navbar-brand(href="#")
-				img.navbar-brand__img(src="images/logo.svg" title="#" alt="#")
+				img.navbar-brand__img(src="images/logo.png" title="#" alt="#")
 
 			.navbar-search-responsive-toggler(id="search-toggler-responsive")
 				span.search-icon
@@ -70,7 +70,7 @@ header
 						span.user-icon.navbar-user__icon
 						.navbar-user__text-wrap
 							p.navbar-user__text Petroslav Novakovič
-						span.caret-icon.white.navbar-user__caret
+						span.caret-icon.navbar-user__caret
 					.dropdown-menu.dropdown-menu-left.navbar-user__dropdown-menu(aria-labelledby="userDropdown")
 						a.dropdown-item.navbar-user__item(href="#") Detail účtu
 						a.dropdown-item.navbar-user__item(href="#") Historie objednávek
@@ -79,7 +79,7 @@ header
 			// Přihlášený uživatel
 				.navbar-user
 					a.navbar-user__link(href="#")
-						span.user-icon.white.navbar-user__icon
+						span.user-icon.navbar-user__icon
 						.navbar-user__text-wrap
 							p.navbar-user__text Můj účet
 
@@ -251,20 +251,25 @@ header
 										.col-12.col-sm-12.col-md-12.col-lg-3.col-xl-3.dropdown-column
 											a.dropdown-item.dropdown-column__link(href="#")
 												h5.dropdown-column__title #[span.arrow-icon.white.dropdown-column__icon] Vítr ve studiu
+	.sub-cat
+		.container.sub-cat__container
+			.sub-cat__single-wrap
+				a.sub-cat__single
+					p Podľa výrobcu
+				a.sub-cat__single
+					p Podľa veľkosti
+				a.sub-cat__single
+					p Podľa pohlavia
 
-	// nav.navbar.navbar-expand-lg.navbar-responsive-bottom
-		a.active(href="#")
-			span.fa.fa-home
-			p Domů
-		a(href="#")
-			span.user-icon.white
-			p Můj účet
-		a(href="#")
-			span.fa.fa-heart-o
-			p Oblíbené
-		a(href="#")
-			span.fa.fa-balance-scale
-			p Porovnání
+			.sub-cat__single-wrap
+				a.sub-cat__single
+					p Podľa výrobcu
+				a.sub-cat__single
+					p Podľa veľkosti
+
+			.sub-cat__single-wrap
+				a.sub-cat__single
+					p Podľa výrobcu
 
 	span(id="dark-overlay" aria-label="Toggle navigation" data-target="#navbarNav" data-toggle="collapse")
 	span(id="dark-overlay-cart")

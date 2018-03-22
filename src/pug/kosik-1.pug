@@ -31,18 +31,18 @@ html(lang=lang)
             .container.page-heading--cart__container
                 .page-heading--cart__wrap
                     a.page-heading--cart__single.active(href="#")
-                        p.page-heading--cart__title 1. Nákupní košík
+                        p.page-heading--cart__title 1. Nákupný košík
                     a.page-heading--cart__single(href="#")
-                        p.page-heading--cart__title 2. Osobní údaje
+                        p.page-heading--cart__title 2. Osobné údaje
                     a.page-heading--cart__single(href="#")
-                        p.page-heading--cart__title 3. Souhrn objednávky
+                        p.page-heading--cart__title 3. Súhrn objednávky
                     a.page-heading--cart__single(href="#")
-                        p.page-heading--cart__title 4. Dokončení objednávky
+                        p.page-heading--cart__title 4. Dokončenie objednávky
 
         section.page-heading.page-heading--cart-responsive
             a.page-heading--cart__control(href="#")
                 span.caret-icon.left.disabled
-            p.page-heading--cart__title 1/4 Nákupní košík
+            p.page-heading--cart__title 1/4 Nákupný košík
             a.page-heading--cart__control(href="#")
                 span.caret-icon.right
         .page-heading--cart-responsive-push
@@ -58,11 +58,11 @@ html(lang=lang)
                             .cart-item-top__name
                             .cart-item-top__inner
                                 .cart-item-top__qty
-                                    p.cart-item-top__heading Počet kusů
+                                    p.cart-item-top__heading Počet kusov
                                 .cart-item-top__price
                                     p.cart-item-top__heading Cena za kus
                                 .cart-item-top__sum
-                                    p.cart-item-top__heading Cena celkem
+                                    p.cart-item-top__heading Cena celkOm
                                 .cart-item-top__delete
 
 
@@ -76,7 +76,7 @@ html(lang=lang)
                         .cart-item-single__col-2   
                             .cart-item-single__name-wrap
                                 a.cart-item-single__name(href="#") #{ProductName}
-                                p.cart-item-single__stock Dostupné skladem   
+                                p.cart-item-single__stock Dostupné skladOm   
 
                             .cart-item-single__inner    
                                 .cart-item-single__qty-wrap 
@@ -89,10 +89,10 @@ html(lang=lang)
                                                 span.number-stepper__icon-down
 
                                 .cart-item-single__price-wrap
-                                    span.cart-item-single__price-old 14 290 Kč
-                                    p.cart-item-single__price 8 489 Kč
+                                    span.cart-item-single__price-old 45.00 €
+                                    p.cart-item-single__price 29.00 €
                                 .cart-item-single__sum-wrap
-                                    p.cart-item-single__sum #[span 8 489] Kč
+                                    p.cart-item-single__sum #[span 29] €
                                 .cart-item-single__delete-wrap
                                     a.cart-item-single__delete(href="#")
                                         span.cross-icon.cart-item-single__delete-icon
@@ -107,7 +107,7 @@ html(lang=lang)
                         .cart-item-single__col-2   
                             .cart-item-single__name-wrap
                                 a.cart-item-single__name(href="#") #{ProductName}
-                                p.cart-item-single__stock Dostupné skladem   
+                                p.cart-item-single__stock Dostupné skladOm   
 
                             .cart-item-single__inner    
                                 .cart-item-single__qty-wrap 
@@ -120,10 +120,10 @@ html(lang=lang)
                                                 span.number-stepper__icon-down
 
                                 .cart-item-single__price-wrap
-                                    span.cart-item-single__price-old 14 290 Kč
-                                    p.cart-item-single__price 8 489 Kč
+                                    span.cart-item-single__price-old 45.00 €
+                                    p.cart-item-single__price 29.00 €
                                 .cart-item-single__sum-wrap
-                                    p.cart-item-single__sum #[span 8 489] Kč
+                                    p.cart-item-single__sum #[span 29] €
                                 .cart-item-single__delete-wrap
                                     a.cart-item-single__delete(href="#")
                                         span.cross-icon.cart-item-single__delete-icon
@@ -135,92 +135,60 @@ html(lang=lang)
                     .cart-free-shipping
                         .cart-free-shipping__img
                             span.delivery-icon
-                        p.cart-free-shipping__text Při nákupu nad 5 000 Kč doprava zdarma
+                        p.cart-free-shipping__text Pri nákupe nad 100 € doprava zadarmo
 
                     .form-group.cart-shipping-option
-                        h3 Zvolte způsob dopravy
+                        h3 Výber dopravy a platby
                         .form-check
                             label.form-check__label
                                 input.form-check__input(type="radio" name="cart_form_shipping" id="osobni" required)
-                                | Česká pošta Balík do ruky
-                                span.form-check__description Doručuje následující pracovní den od odeslání. Max. hmotnost zásilky 30 kg.
-                                span.form-check__price 115 Kč
+                                |  platba vopred na účet do hodnoty 10 eur Slov. poštou
+                                span.form-check__description 
+                                span.form-check__price 2.00 €
                                 span.form-check__box.radio
 
                         .form-check
                             label.form-check__label
                                 input.form-check__input(type="radio" name="cart_form_shipping" id="cp" required)
-                                | Česká pošta Balík na poštu
-                                span.form-check__description Zde je nutné uvést do poznámky v objednávce (bod č. 3) PSČ pošty, na kterou si zásilku přejete zaslat. Doručuje následující pracovní den od odeslání. Max. hmotnost zásilky 30 kg.
-                                span.form-check__price 99 Kč
+                                | platba vopred na účet kuriér GLS
+                                span.form-check__description
+                                span.form-check__price 3.00 €
                                 span.form-check__box.radio
 
                         .form-check
                             label.form-check__label
                                 input.form-check__input(type="radio" name="cart_form_shipping" id="ppl" required)
-                                | PPL do 5 kg na soukromou nebo firemní adresu.
-                                span.form-check__description Nabídne se pouze u drobného zboží jako jsou hudební nosiče a podobně. Doručení do druhého pracovního dne ode dne odeslání.
-                                span.form-check__price 89 Kč
+                                | platba vopred na účet do hodnoty nad 10 eur Slov. poštou
+                                span.form-check__description 
+                                span.form-check__price 3.30 €
                                 span.form-check__box.radio
 
                         .form-check
                             label.form-check__label
                                 input.form-check__input(type="radio" name="cart_form_shipping" id="ppl2" required)
-                                | PPL Soukromá nebo firemní adresa do 50 kg 
-                                span.form-check__description Doručuje zásilky do druhého pracovního dne ode dne odeslání.
-                                span.form-check__price 115 Kč
+                                | dobierka GLS kurier
+                                span.form-check__description 
+                                span.form-check__price 4.00 €
                                 span.form-check__box.radio
 
                         .form-check
                             label.form-check__label
                                 input.form-check__input(type="radio" name="cart_form_shipping" id="ppl3" required)
-                                | PPL partner
-                                span.form-check__description Při výběru tohoto typu dopravy budete přesměrováni na pplbalik.cz, kde vyberte konkretní odběrné místo, následně budete navráceni do našeho nákupního košíku.
-                                span.form-check__price 99 Kč
+                                | doručenie do Českej republiky službou GLS - platba vopred na účet
+                                span.form-check__description
+                                span.form-check__price 4.00 €
                                 span.form-check__box.radio
 
                         .form-check
                             label.form-check__label
                                 input.form-check__input(type="radio" name="cart_form_shipping" id="ppl4" required)
-                                | PPL SOBOTNÍ DORUČENÍ ve větších městech
-                                span.form-check__description Zásilka Vám bude doručena v nejbližší sobotu.
-                                span.form-check__price 129 Kč
+                                | Osobný odber - ZDARMA
+                                span.form-check__description
+                                span.form-check__price 0 €
                                 span.form-check__box.radio
 
-                        .form-check
-                            label.form-check__label
-                                input.form-check__input(type="radio" name="cart_form_shipping" id="ppl" required)
-                                | Osobní odběr v naší prodejně
-                                span.form-check__description (Podpuklí 288, Frýdek-Místek), platba kartou nebo hotově.
-                                span.form-check__price 0 Kč
-                                span.form-check__box.radio
 
-                    .form-group.cart-payment-option
-                        h3 Zvolte způsob platby
 
-                        .form-check
-                            label.form-check__label
-                                input.form-check__input(type="radio" name="cart_form_payment" id="hotove" required)
-                                | Převodem předem na náš účet
-                                span.form-check__description 115-820780217/0100 vedený u Komerční banky. Var. symbol je ČÍSLO OBJEDNÁVKY.
-                                span.form-check__price 0 Kč
-                                span.form-check__box.radio
-                            
-                        .form-check
-                            label.form-check__label
-                                input.form-check__input(type="radio" name="cart_form_payment" id="bankovni" required)
-                                | Dobírka
-                                span.form-check__description Celkovou částku za zboží a přepravu uhradíte dovozci nebo na odběrném místě
-                                span.form-check__price 20 Kč
-                                span.form-check__box.radio
-
-                        .form-check
-                            label.form-check__label
-                                input.form-check__input(type="radio" name="cart_form_payment" id="dobirka" required)
-                                | ESSOX
-                                span.form-check__description Splátkování přes společnost ESSOX
-                                span.form-check__price 0 Kč
-                                span.form-check__box.radio
 
                     .cart-user-note
                         h3.cart-user-note__title Poznámka k objednávce
@@ -229,13 +197,13 @@ html(lang=lang)
                                 .form-group
                                     textarea.form-control(name="cart-form-note" rows="5")
                             .col-12.col-xs-12.col-sm-6.col-md-6.col-lg-6
-                                p Chcete nám sdělit ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře.
-                                p Napsat do něj můžete také upřesňující informace o místě, kam máme Vaše zboží doručit (nejbližší orientační bod apod.)
+                                p Chcete nám povedať ešte nejakú dôležitú správu k vašej objednávke? Využite prosím, tohto formulára.
+                                p Napísať do neho môžete tiež upresňujúce informácie o mieste, kam máme Váš tovar doručiť (najbližší orientačný bod a pod.)
 
                     .cart-bottom-btns
-                        a.btn.btn-dark(href="#") #[span.btn__icon.arrow-icon.left.white] Zpět do obchodu
-                        a.btn.btn-ghost(href="#") #[span.btn__icon.cross-icon] Vyprázdnit košík
-                        button.btn(type="submit" id="delivery-form-submit") Osobní údaje #[span.btn__icon.arrow-icon.white]      
+                        a.btn.btn-dark(href="#") #[span.btn__icon.arrow-icon.left.white] Späť do obchodu
+                        a.btn.btn-ghost(href="#") #[span.btn__icon.cross-icon] Vyprázdniť košík
+                        button.btn(type="submit" id="delivery-form-submit") Osobné údaje #[span.btn__icon.arrow-icon.white]      
                                
 
             .cart-price-overview-responsive
@@ -243,7 +211,7 @@ html(lang=lang)
                     p.cart-price-overview-responsive__text Celková cena s DPH
                     h3.cart-price-overview-responsive__price #[span 16 989] Kč
                 .cart-price-overview-responsive__btn-wrap
-                    button.btn.cart-price-overview-responsive__btn(onclick="$('#delivery-form-submit').trigger('click');") Osobní údaje #[span.btn__icon.arrow-icon.white]  
+                    button.btn.cart-price-overview-responsive__btn(onclick="$('#delivery-form-submit').trigger('click');") Osobné údaje #[span.btn__icon.arrow-icon.white]  
 
 
         include _footer.pug

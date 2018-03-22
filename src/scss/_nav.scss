@@ -3,16 +3,22 @@
 /* ========================================================================== */
 
 .navbar-top{
-    background: $brand-secondary;
+    background: $bg-light;
+    background-image: url("../images/bg-navbar-top.png");
     color: $text-white;
-    height: 34px;
+    height: 47px;
     @include flexbox();
     @include flex-direction(row);
+    @include align-items(flex-start);
+    padding-top: 8px;
 }
 .navbar-top__left, .navbar-top__right{
     @include flexbox();
     @include flex-direction(row);
     @include flex-grow(1); 
+}
+.navbar-top__left{
+    padding-left: 285px;
 }
 .navbar-top__right{
     @include justify-content(flex-end);
@@ -27,10 +33,11 @@
     }
 }
 .navbar-top__icon{
-    color: $brand-primary;
+    color: $text-white;
+    margin-right: 5px;
 }
 .navbar-top__link{
-    color: $text-grey;
+    color: $text-white;
     font-size: 1.3rem;
     font-weight: 400;
     padding: 0 1rem;
@@ -71,10 +78,13 @@
     @include flex-direction(row);
     @include justify-content(flex-start);
     @include align-items(center);  
+    width: 240px;
 }
 .navbar-brand__img{
-    height: 5.6rem;
-    max-height: 100%;   
+    width: 285px;
+    /*max-height: 100%;  */
+    position: absolute;
+    top: -47px; 
 } 
 
 /* ========================================================================== */
@@ -144,6 +154,8 @@
                 height:100%;
                 min-height: 36px;
                 padding:5px 20px;
+                font-weight: 500;
+                font-size: 14px;
             }
         }
     }
@@ -156,7 +168,7 @@
     border-style: solid;
     border-width: 0px;
     box-shadow:none;
-    color: $dark-grey;
+    color: $brand-secondary;
     float: none;
     height: 100%;
     padding: 0 2rem 0 2rem;
@@ -178,10 +190,11 @@
     @include justify-content(center);
     @include align-items(center);
     @include flex-shrink(0);
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     color: $dark-grey;
     opacity: 0.5;
+    display: none;
 
     & .microphone-icon{
         height: 14px;
@@ -198,6 +211,13 @@
     padding: 0 2.5rem;
     font-weight: 400;
     background: transparent;
+
+    &::before{
+        content: none;
+    }
+    &:hover, &:active, &:focus{
+        background: $bg-light;
+    }
 }
 .navbar-search__button-icon{
     display: block;
@@ -249,8 +269,8 @@
     }
 }
 .navbar-user__icon{
-    height: 18px;
-    width: 18px;
+    height: 30px;
+    width: 30px;
     margin-right: 10px;
 }
 .navbar-user__text-wrap{
@@ -276,7 +296,7 @@
 .navbar-user__caret{
     height: 6px;
     width: 6px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 .navbar-user__dropdown{
     height: 100%;
@@ -293,6 +313,7 @@
     color: $dark-grey;
     @include justify-content(flex-start);
     padding: 1rem 2rem;
+    font-weight: 500;
 
     &:hover, &:active, &:focus{
         background: $bg-light;
@@ -862,7 +883,7 @@
     padding: 0;
     background: transparent;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 
     &::before{
         content: "";
@@ -876,7 +897,7 @@
     }
 }
 .navbar-menu__collapse{
-    background: $dark-grey;
+    background: $brand-secondary;
     background-image:url("../img/texture-leather.jpeg");
     @include box-shadow(0px,3px,20px,$black-transparent-25);
     z-index: 2;
@@ -946,6 +967,46 @@
     height: 100%;
 }
 
+.sub-cat{
+    padding: 0;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    height: 32px;
+}
+.sub-cat__container{
+    @include flexbox();
+    @include flex-direction(row);
+}
+.sub-cat__single-wrap{
+    background: $bg-yellow;
+    @include flex-grow(1);
+    @include flex-basis(0);
+    @include flexbox();
+    @include flex-direction(row);
+    border-right: 1px dashed $brand-secondary;
+
+    &:first-child{
+        border-bottom-left-radius: $border-radius-primary;
+    }
+    &:last-child{
+        border: 0;
+        border-bottom-right-radius: $border-radius-primary;
+    }
+}
+.sub-cat__single{
+    @include flex-grow(1);
+    @include flex-basis(0);
+    text-align: center;
+    padding: 5px 10px;
+
+    p{
+        margin: 0;
+        font-size: 14px;
+    }
+}
+
 /* ========================================================================== */
 /* NAVIGATION MENU RESPONSIVE */
 /* ========================================================================== */
@@ -956,6 +1017,7 @@
     } 
     .navbar-menu__nav-item{
         @include flex-grow(1);
+        @include flex-basis(0);
     }
     .nav-item__dropdown{
         z-index: 8;

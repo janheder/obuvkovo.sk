@@ -145,11 +145,11 @@ if (styletotest in document.body.style)
   });
 
   $('#show_password_toggler').click(function() {
-      if($("#register_form_password").prop("type") == "text"){
-        $("#register_form_password").prop("type","password");
+      if($("#register_form_password, #register_form_register_password").prop("type") == "text"){
+        $("#register_form_password, #register_form_register_password").prop("type","password");
       }
       else {
-        $("#register_form_password").prop("type","text");
+        $("#register_form_password, #register_form_register_password").prop("type","text");
       }
       
   });
@@ -280,7 +280,7 @@ var carousel_4_products = new Swiper('.swiper-container-4-products', {
 //SWIPER 5 PRODUCTS 
 var carousel_5_products = new Swiper('.swiper-container-5-products', {
   lazy: true,
-  spaceBetween: 0,
+  spaceBetween: 20,
   slidesPerView: 5,
   grabCursor: true,
   zoom: false,

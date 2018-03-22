@@ -1,3 +1,4 @@
+/*
 .filter-sort{
     margin-bottom: 4rem;
 
@@ -35,6 +36,10 @@
         }
     }
 }
+*/
+.filter-sort .nav-link{
+    cursor: pointer;
+}
 @media screen and (max-width: 768px){
     .filter{
         padding-top: 20px;
@@ -42,8 +47,8 @@
 }
 
 .filter-main{
-	background: $light-grey;
-    border: 1px solid $border-grey;
+	background: transparent;
+    border: 0px solid $border-grey;
     margin-bottom: 4rem;
     border-radius: $border-radius-primary;
 }
@@ -73,12 +78,26 @@
     margin-right: -5px;
 }
 .filter-main__single{
-    padding: 5px;
+    padding: 0px;
     margin: 0;
+    margin-bottom: 20px;
+    @include flex-grow(1);
+}
+.filter-main__single-content{
+    padding: 15px;
+    background: $bg-white;
+    border: 1px solid $border-primary;
+    border-top: 0;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    border-bottom-right-radius: $border-radius-primary;
+    border-bottom-left-radius: $border-radius-primary;
+}
+.filter-main__nav-item{
     @include flex-grow(1);
 }
 .filter-main__label{
-    margin: 0;
+    margin: 5px;
 }
 .filter-main__toggle{
     padding: 5px;
@@ -98,7 +117,7 @@
     margin-top: 0px;
 }
 .filter-main__form{
-    padding: 2rem;
+    padding: 0rem;
 }
 .filter-main__collapse-toggle{
     background: $white;
@@ -173,8 +192,7 @@
     margin-bottom: 3rem;
 }
 .filter-badges__single{
-    background: $bg-dark;
-    border-radius: $border-primary;
+    background: $brand-secondary;
     border-radius: $border-radius-primary;
     @include flexbox();
     @include flex-direction(row);

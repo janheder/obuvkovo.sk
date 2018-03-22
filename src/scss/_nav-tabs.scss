@@ -10,13 +10,16 @@
             @include align-items(center);
             @include flex-direction(row);
             padding: 10px 2rem;
-            color: $dark-grey;
+            color: $brand-secondary;
             background: $light-grey;
             border: 1px solid $border-grey;
             border-right: 0;
             border-radius: 0;
+            font-size: 1.6rem;
+            font-weight: 700;
+
             &.active{
-                background: transparent;
+                background: $bg-white;
                 border-bottom-color: $white;
             }
         }
@@ -29,6 +32,7 @@
 
         &:last-child .nav-link.active{
             border-left-color: $border-grey;
+            border-right-color: $border-grey;
         }
         &:not(:first-child):not(:last-child) .nav-link.active{
             border-left-color: $border-grey;

@@ -65,17 +65,18 @@
       <nav class="navbar navbar-top" id="anchor-navbar-top">
         <div class="container">
           <div class="navbar-top__left">
-            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fas fa-phone"></span></span> +420 777 888 042</p>
-            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="far fa-clock"></span></span> Po-Pá: 8:00 - 16:00</p>
+            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fas fa-phone-square"></span></span> 0918 669 804</p>
+            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fas fa-envelope-square"></span></span> info@obuvkovo.sk</p>
+            <p class="navbar-top__text"><span class="navbar-top__icon"><span class="fab fa-facebook-square"></span></span> facebook.com</p>
           </div>
-          <div class="navbar-top__right"><a class="navbar-top__link" href="#">O nás</a><a class="navbar-top__link" href="#">Poslechová místnost</a><a class="navbar-top__link" href="#">Kamenná prodejna</a><a class="navbar-top__link" href="#">Obchodní podmínky</a><a class="navbar-top__link" href="#">Kontakty</a></div>
+          <div class="navbar-top__right"><a class="navbar-top__link" href="#">O nás</a><a class="navbar-top__link" href="#">Obchodnie podmienky</a><a class="navbar-top__link" href="#">Doprava</a><a class="navbar-top__link" href="#">Kontakty</a></div>
         </div>
       </nav>
       <nav class="navbar navbar-expand-lg navbar-main">
         <div class="container navbar-main__container">
           <div class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-toggle="collapse" data-target="#navbarNav" role="button"><span class="hamburger-icon"></span>
             <p>Menu</p>
-          </div><a class="navbar-brand" href="#"><img class="navbar-brand__img" src="images/logo.svg" title="#" alt="#"></a>
+          </div><a class="navbar-brand" href="#"><img class="navbar-brand__img" src="images/logo.png" title="#" alt="#"></a>
           <div class="navbar-search-responsive-toggler" id="search-toggler-responsive"><span class="search-icon"></span></div>
           <div class="navbar-search">
             <form class="navbar-search__form" method="POST" id="search-form">
@@ -108,7 +109,7 @@
               <div class="dropdown-toggle navbar-user__dropdown-toggle" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-icon navbar-user__icon"></span>
                 <div class="navbar-user__text-wrap">
                   <p class="navbar-user__text">Petroslav Novakovič</p>
-                </div><span class="caret-icon white navbar-user__caret"></span>
+                </div><span class="caret-icon navbar-user__caret"></span>
               </div>
               <div class="dropdown-menu dropdown-menu-left navbar-user__dropdown-menu" aria-labelledby="userDropdown"><a class="dropdown-item navbar-user__item" href="#">Detail účtu</a><a class="dropdown-item navbar-user__item" href="#">Historie objednávek</a><a class="dropdown-item navbar-user__item" href="#">Odhlásit</a></div>
             </div>
@@ -116,7 +117,7 @@
           <!-- Přihlášený uživatel
           .navbar-user
           	a.navbar-user__link(href="#")
-          		span.user-icon.white.navbar-user__icon
+          		span.user-icon.navbar-user__icon
           		.navbar-user__text-wrap
           			p.navbar-user__text Můj účet
           
@@ -273,33 +274,31 @@
           </div>
         </div>
       </nav>
-      <!-- nav.navbar.navbar-expand-lg.navbar-responsive-bottom
-      a.active(href="#")
-      	span.fa.fa-home
-      	p Domů
-      a(href="#")
-      	span.user-icon.white
-      	p Můj účet
-      a(href="#")
-      	span.fa.fa-heart-o
-      	p Oblíbené
-      a(href="#")
-      	span.fa.fa-balance-scale
-      	p Porovnání
-      
-      --><span id="dark-overlay" aria-label="Toggle navigation" data-target="#navbarNav" data-toggle="collapse"></span><span id="dark-overlay-cart"></span>
+      <div class="sub-cat">
+        <div class="container sub-cat__container">
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
+              <p>Podľa výrobcu</p></a><a class="sub-cat__single">
+              <p>Podľa veľkosti</p></a><a class="sub-cat__single">
+              <p>Podľa pohlavia</p></a></div>
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
+              <p>Podľa výrobcu</p></a><a class="sub-cat__single">
+              <p>Podľa veľkosti</p></a></div>
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
+              <p>Podľa výrobcu</p></a></div>
+        </div>
+      </div><span id="dark-overlay" aria-label="Toggle navigation" data-target="#navbarNav" data-toggle="collapse"></span><span id="dark-overlay-cart"></span>
     </header>
     <section class="page-heading page-heading--cart">
       <div class="container page-heading--cart__container">
         <div class="page-heading--cart__wrap"><a class="page-heading--cart__single pass" href="#">
-            <p class="page-heading--cart__title">1. Nákupní košík</p></a><a class="page-heading--cart__single pass" href="#">
-            <p class="page-heading--cart__title">2. Osobní údaje</p></a><a class="page-heading--cart__single active" href="#">
-            <p class="page-heading--cart__title">3. Souhrn objednávky</p></a><a class="page-heading--cart__single" href="#">
-            <p class="page-heading--cart__title">4. Dokončení objednávky</p></a></div>
+            <p class="page-heading--cart__title">1. Nákupný košík</p></a><a class="page-heading--cart__single pass" href="#">
+            <p class="page-heading--cart__title">2. Osobné údaje</p></a><a class="page-heading--cart__single active" href="#">
+            <p class="page-heading--cart__title">3. Súhrn objednávky</p></a><a class="page-heading--cart__single" href="#">
+            <p class="page-heading--cart__title">4. Dokončenie objednávky</p></a></div>
       </div>
     </section>
     <section class="page-heading page-heading--cart-responsive"><a class="page-heading--cart__control" href="#"><span class="caret-icon left"></span></a>
-      <p class="page-heading--cart__title">3/4 Souhrn objednávky</p><a class="page-heading--cart__control" href="#"><span class="caret-icon right"></span></a>
+      <p class="page-heading--cart__title">3/4 Súhrn objednávky</p><a class="page-heading--cart__control" href="#"><span class="caret-icon right"></span></a>
     </section>
     <div class="page-heading--cart-responsive-push"></div>
     <main>
@@ -341,11 +340,11 @@
                 <div class="cart-item-single__qty-wrap"> 
                   <p class="cart-item-single__qty-text">1 kus/ů</p>
                 </div>
-                <div class="cart-item-single__price-wrap"><span class="cart-item-single__price-old">14 290 Kč</span>
-                  <p class="cart-item-single__price">8 489 Kč</p>
+                <div class="cart-item-single__price-wrap"><span class="cart-item-single__price-old">45.00 €</span>
+                  <p class="cart-item-single__price">29.00 €</p>
                 </div>
                 <div class="cart-item-single__sum-wrap text-right">
-                  <p class="cart-item-single__sum"><span>8 489</span> Kč</p>
+                  <p class="cart-item-single__sum"><span>29.00</span> €</p>
                 </div>
               </div>
             </div>
@@ -365,79 +364,77 @@
                 <div class="cart-item-single__qty-wrap"> 
                   <p class="cart-item-single__qty-text">1 kus/ů</p>
                 </div>
-                <div class="cart-item-single__price-wrap"><span class="cart-item-single__price-old">14 290 Kč</span>
-                  <p class="cart-item-single__price">8 489 Kč</p>
+                <div class="cart-item-single__price-wrap"><span class="cart-item-single__price-old">45.00 €</span>
+                  <p class="cart-item-single__price">29.00 €</p>
                 </div>
                 <div class="cart-item-single__sum-wrap text-right">
-                  <p class="cart-item-single__sum"><span>8 489</span> Kč</p>
+                  <p class="cart-item-single__sum"><span>29.00</span> €</p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="cart-shipping-payment-overview">
+            <h4 class="cart-shipping-payment-overview__title">Způsob dopravy</h4>
+            <div class="cart-shipping-payment-overview__single">
+              <p class="cart-shipping-payment-overview__name">Platba vopred na účet do hodnoty 10 eur Slov. poštou</p><span class="cart-shipping-payment-overview__price">29.00 €</span>
+            </div>
+          </div>
+          <div class="cart-price-overview">
+            <p class="cart-price-overview__text">Celková cena s DPH</p>
+            <h3 class="cart-price-overview__price"><span class="cart-price-overview__number">29.00</span> €</h3>
+          </div>
+          <div class="cart-user-info-overview">
+            <div class="row">
+              <div class="cart-user-info-overview__single">
+                <h3 class="cart-user-info-overview__title"><span class="cart-user-info-overview__title-number">1.</span> Osobní údaje</h3>
+                <div class="cart-user-info-overview__single-content">
+                  <p class="cart-user-info-overview__text">Jméno a příjmení: <span class="cart-user-info-overview__strong">Petr Novák</span></p>
+                  <p class="cart-user-info-overview__text">Emailová adresa: <span class="cart-user-info-overview__strong">petr@novak.cz</span></p>
+                  <p class="cart-user-info-overview__text">Telefonní číslo: <span class="cart-user-info-overview__strong">605 598 989</span></p>
+                  <p class="cart-user-info-overview__text">Ulice: <span class="cart-user-info-overview__strong">Petra Bezruče</span></p>
+                  <p class="cart-user-info-overview__text">Číslo ulice: <span class="cart-user-info-overview__strong">18</span></p>
+                  <p class="cart-user-info-overview__text">Město: <span class="cart-user-info-overview__strong">Praha</span></p>
+                  <p class="cart-user-info-overview__text">Kraj: <span class="cart-user-info-overview__strong">Praha</span></p>
+                  <p class="cart-user-info-overview__text">PSČ: <span class="cart-user-info-overview__strong">898 89</span></p>
+                  <p class="cart-user-info-overview__text">Stát: <span class="cart-user-info-overview__strong">Česko</span></p>
+                </div>
+              </div>
+              <div class="cart-user-info-overview__single">
+                <h3 class="cart-user-info-overview__title"><span class="cart-user-info-overview__title-number">2.</span> Fakturační adresa</h3>
+                <div class="cart-user-info-overview__single-content">
+                  <p class="cart-user-info-overview__text">Stejná jako u osobních ůdajů</p>
+                </div>
+              </div>
+              <div class="cart-user-info-overview__single">
+                <h3 class="cart-user-info-overview__title"><span class="cart-user-info-overview__title-number">3.</span> Dodací adresa</h3>
+                <div class="cart-user-info-overview__single-content">
+                  <p class="cart-user-info-overview__text">Stejná jako u osobních ůdajů</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-terms-checkbox">
+            <div class="form-group">
+              <div class="form-check">
+                <label class="form-check__label">
+                  <input class="form-check__input" type="checkbox" name="cart-form-terms" required><span class="form-check__box checkbox"></span><span class="form-check__inline">Souhlasím s <a class="form-check__link" href="#">obchodními podmínkami</a></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="cart-bottom-btns"><a class="btn btn-dark" href="#"><span class="btn__icon arrow-icon left white"></span>  Krok zpět</a>
+            <button class="btn" type="submit">Dokončit objednávku <span class="btn__icon arrow-icon white"></span></button>
+          </div>
         </form>
-        <div class="cart-shipping-payment-overview">
-          <h4 class="cart-shipping-payment-overview__title">Způsob dopravy</h4>
-          <div class="cart-shipping-payment-overview__single">
-            <p class="cart-shipping-payment-overview__name">Česká pošta Balík do ruky:</p><span class="cart-shipping-payment-overview__price">115Kč</span>
-          </div>
-        </div>
-        <div class="cart-shipping-payment-overview">
-          <h4 class="cart-shipping-payment-overview__title">Způsob platby</h4>
-          <div class="cart-shipping-payment-overview__single">
-            <p class="cart-shipping-payment-overview__name">Dobírka:</p><span class="cart-shipping-payment-overview__price">20Kč</span>
-          </div>
-        </div>
-        <div class="cart-price-overview">
-          <p class="cart-price-overview__text">Celková cena s DPH</p>
-          <h3 class="cart-price-overview__price"><span class="cart-price-overview__number">17 000</span> Kč</h3>
-        </div>
-        <div class="cart-user-info-overview">
-          <div class="row">
-            <div class="cart-user-info-overview__single">
-              <h3 class="cart-user-info-overview__title"><span class="cart-user-info-overview__title-number">1.</span> Osobní údaje</h3>
-              <div class="cart-user-info-overview__single-content">
-                <p class="cart-user-info-overview__text">Jméno a příjmení: <span class="cart-user-info-overview__strong">Petr Novák</span></p>
-                <p class="cart-user-info-overview__text">Emailová adresa: <span class="cart-user-info-overview__strong">petr@novak.cz</span></p>
-                <p class="cart-user-info-overview__text">Telefonní číslo: <span class="cart-user-info-overview__strong">605 598 989</span></p>
-                <p class="cart-user-info-overview__text">Ulice: <span class="cart-user-info-overview__strong">Petra Bezruče</span></p>
-                <p class="cart-user-info-overview__text">Číslo ulice: <span class="cart-user-info-overview__strong">18</span></p>
-                <p class="cart-user-info-overview__text">Město: <span class="cart-user-info-overview__strong">Praha</span></p>
-                <p class="cart-user-info-overview__text">Kraj: <span class="cart-user-info-overview__strong">Praha</span></p>
-                <p class="cart-user-info-overview__text">PSČ: <span class="cart-user-info-overview__strong">898 89</span></p>
-                <p class="cart-user-info-overview__text">Stát: <span class="cart-user-info-overview__strong">Česko</span></p>
-              </div>
-            </div>
-            <div class="cart-user-info-overview__single">
-              <h3 class="cart-user-info-overview__title"><span class="cart-user-info-overview__title-number">2.</span> Fakturační adresa</h3>
-              <div class="cart-user-info-overview__single-content">
-                <p class="cart-user-info-overview__text">Stejná jako u osobních ůdajů</p>
-              </div>
-            </div>
-            <div class="cart-user-info-overview__single">
-              <h3 class="cart-user-info-overview__title"><span class="cart-user-info-overview__title-number">3.</span> Dodací adresa</h3>
-              <div class="cart-user-info-overview__single-content">
-                <p class="cart-user-info-overview__text">Stejná jako u osobních ůdajů</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cart-terms-checkbox">
-          <div class="form-group">
-            <div class="form-check">
-              <label class="form-check__label">
-                <input class="form-check__input" type="checkbox" name="cart-form-terms" required><span class="form-check__box checkbox"></span><span class="form-check__inline">Souhlasím s <a class="form-check__link" href="#">obchodními podmínkami</a></span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="cart-bottom-btns"><a class="btn btn-dark" href="#"><span class="btn__icon arrow-icon left white"></span>  Krok zpět</a><a class="btn" href="#">Dokončit objednávku <span class="btn__icon arrow-icon white"></span></a></div>
       </div>
       <div class="cart-price-overview-responsive">
         <div class="cart-price-overview-responsive__price-wrap">
           <p class="cart-price-overview-responsive__text">Celková cena s DPH</p>
-          <h3 class="cart-price-overview-responsive__price"><span>16 989</span> Kč</h3>
+          <h3 class="cart-price-overview-responsive__price"><span>29.00</span> €</h3>
         </div>
-        <div class="cart-price-overview-responsive__btn-wrap"><a class="btn cart-price-overview-responsive__btn" href="#">Dokončit objednávku <span class="btn__icon arrow-icon white"></span></a></div>
+        <div class="cart-price-overview-responsive__btn-wrap">
+          <button class="btn cart-price-overview-responsive__btn" type="submit">Dokončit objednávku <span class="btn__icon arrow-icon white"></span></button>
+        </div>
       </div>
     </main><a class="scroll-to-top" href="#anchor-navbar-top"><span class="caret-icon top"></span></a>
     <footer>
@@ -456,10 +453,10 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">O nákupu</h5><a class="footer-main__link" href="#">Obchodní podmínky</a><a class="footer-main__link" href="#">Reklamační řád</a><a class="footer-main__link" href="#">Jak nakupovat</a><a class="footer-main__link" href="#">Doprava zdarma</a><a class="footer-main__link" href="#">Ochrana osobních údajů</a><a class="footer-main__link" href="#">Časté dotazy</a><a class="footer-main__link" href="#">Nákup na splátky ESSOX</a>
+              <h5 class="footer-main__h5">O nákupu</h5><a class="footer-main__link" href="#">Obchodní podmínky</a><a class="footer-main__link" href="#">O nás</a><a class="footer-main__link" href="#">Ako nakupovať</a><a class="footer-main__link" href="#">Poštovné</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">O společnosti</h5><a class="footer-main__link" href="#">Proč nakupovat u nás</a><a class="footer-main__link" href="#">O audio technice</a><a class="footer-main__link" href="#">Kamenná prodejna</a><a class="footer-main__link" href="#">Poslechová místnost</a><a class="footer-main__link" href="#">Kontakty</a><a class="footer-main__link" href="#">Aktuality</a>
+              <h5 class="footer-main__h5">O společnosti</h5><a class="footer-main__link" href="#">Výhody nákupu u nás</a><a class="footer-main__link" href="#">Kamenná prodejna</a><a class="footer-main__link" href="#">Kontakty</a><a class="footer-main__link" href="#">Aktuality</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
               <h5 class="footer-main__h5">Uživatel</h5><a class="footer-main__link" href="#">Přihlášení</a><a class="footer-main__link" href="#">Registrace</a><a class="footer-main__link" href="#">Zapomenuté údaje</a>

@@ -42,7 +42,7 @@ html {
 
 body {
     font-size: 1.5rem;
-    color: $dark-grey;
+    color: $brand-secondary;
     background: $white;
     font-family: $font-family-main, $font-family-system;
     overflow-x: hidden;
@@ -64,22 +64,22 @@ body {
 /* selection */
 ::-moz-selection { /* Code for Firefox */
     color: $white;
-    background: $orange-main;
+    background: $brand-primary;
 }
 
 ::selection {
     color: $white;
-    background: $orange-main;
+    background: $brand-primary;
 }
 
 /* links */
 a {
-    color: $orange-main;
+    color: $brand-primary;
     font-weight: 500;
     font-size: 1.5rem;
 
     &:hover, &:focus, &:active{
-        color: $dark-grey;
+        color: $brand-secondary;
         outline: none;
     }
 }

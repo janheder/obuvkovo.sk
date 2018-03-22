@@ -39,18 +39,6 @@ html(lang=lang)
 
         main
             .container
-                .subcategories-grid
-                    .row
-                        .col-12.col-sm-6.col-md-4.col-lg-3.col-xl-3
-                            a.subcategories-grid__single(href="#") #[span.arrow-icon.subcategories-grid__icon] Předzesilovače
-                        .col-12.col-sm-6.col-md-4.col-lg-3.col-xl-3
-                            a.subcategories-grid__single(href="#") #[span.arrow-icon.subcategories-grid__icon] Integrované
-                        .col-12.col-sm-6.col-md-4.col-lg-3.col-xl-3
-                            a.subcategories-grid__single(href="#") #[span.arrow-icon.subcategories-grid__icon] Koncové
-                        .col-12.col-sm-6.col-md-4.col-lg-3.col-xl-3
-                            a.subcategories-grid__single(href="#") #[span.arrow-icon.subcategories-grid__icon] Sluchátkové
-                        .col-12.col-sm-6.col-md-4.col-lg-3.col-xl-3
-                            a.subcategories-grid__single(href="#") #[span.arrow-icon.subcategories-grid__icon] Profesional
 
                 .top-products
                     .top-products__title-wrap
@@ -81,72 +69,109 @@ html(lang=lang)
                     a.filter-main__collapse(data-toggle="collapse" href="#product-filter" aria-expanded="false" aria-controls="product-filter") Filtr produktů
                     .panel-collapse.collapse.filter-main__collapse-wrap(id="product-filter")   
                         form.filter-main__form(method="post" action="")
-                            .filter-main__tag
-                                h2.filter-main__heading.filter-main__heading--tag Filtrovat podle štítku
-                                .form-group.filter-main__single
-                                    label.form-check__label.filter-main__label
-                                        input.form-check__input(type="checkbox" name="filter-novinka") 
-                                        | Novinka
-                                        span.form-check__box.checkbox
-                                .form-group.filter-main__single
-                                    label.form-check__label.filter-main__label
-                                        input.form-check__input(type="checkbox" name="filter-akce") 
-                                        | Akční zboží
-                                        span.form-check__box.checkbox
-                                .form-group.filter-main__single
-                                    label.form-check__label.filter-main__label
-                                        input.form-check__input(type="checkbox" name="filter-doporucene") 
-                                        | Doporučujeme
-                                        span.form-check__box.checkbox
 
-                                h2.form-group.filter-main__single.filter-main__collapse-toggle(data-toggle="collapse" href="#filter-main-brand" aria-expanded="false" aria-controls="filter-main-brand") Filtrovat podle výrobce
-                                    span.plus-icon.filter-main__icon 
+                            .filter-main__single
+
+                                ul.nav.nav-tabs.filter-main__nav-tabs(role="tablist")
+                                    li.nav-item.filter-main__nav-item
+                                        a.nav-link.filter-main__nav-link.active.show(id="stitek-tab" data-toggle="tab" href="#stitek" role="tab" aria-controls="stitek" aria-selected="true") Štítek
+                                    li.nav-item.filter-main__nav-item
+                                        a.nav-link.filter-main__nav-link(id="pohlavie-tab" data-toggle="tab" href="#pohlavie" role="tab" aria-controls="pohlavie" aria-selected="true") Pohlavie
+                                    li.nav-item.filter-main__nav-item
+                                        a.nav-link.filter-main__nav-link(id="veľkosti-tab" data-toggle="tab" href="#veľkosti" role="tab" aria-controls="veľkosti" aria-selected="true") Veľkosti
+                                    li.nav-item.filter-main__nav-item
+                                        a.nav-link.filter-main__nav-link(id="vyrobcovia-tab" data-toggle="tab" href="#vyrobcovia" role="tab" aria-controls="vyrobcovia" aria-selected="true") Výrobcovia
+                                    li.nav-item.filter-main__nav-item
+                                        a.nav-link.filter-main__nav-link(id="druh_oblecenia-tab" data-toggle="tab" href="#druh_oblecenia" role="tab" aria-controls="druh_oblecenia" aria-selected="true") Druh oblečenia
 
 
-                            .filter-main__brand
-                                .collapse.filter-main__brand-collapse(id="filter-main-brand")
-                                    .filter-main__brand-collapse-wrap
-                                        .form-group.filter-main__single
+                                .tab-content
+                                    
+                                    .tab-pane.fade.show.active(id="stitek" role="tabpanel" aria-labelledby="stitek-tab")
+                                        .filter-main__single-content
                                             label.form-check__label.filter-main__label
-                                                input.form-check__input(type="checkbox" name="#") 
-                                                | Advance Acoustic
-                                                span.form-check__box.checkbox                         
-                                        .form-group.filter-main__single
+                                                input.form-check__input(type="checkbox" name="filter-novinka") 
+                                                | Novinka
+                                                span.form-check__box.checkbox
                                             label.form-check__label.filter-main__label
-                                                input.form-check__input(type="checkbox" name="#") 
-                                                | Advance Acoustic
-                                                span.form-check__box.checkbox 
-                                        .form-group.filter-main__single
+                                                input.form-check__input(type="checkbox" name="filter-akce") 
+                                                | Akční zboží
+                                                span.form-check__box.checkbox
                                             label.form-check__label.filter-main__label
-                                                input.form-check__input(type="checkbox" name="#") 
-                                                | Advance Acoustic
-                                                span.form-check__box.checkbox                         
-                                        .form-group.filter-main__single
-                                            label.form-check__label.filter-main__label
-                                                input.form-check__input(type="checkbox" name="#") 
-                                                | Advance Acoustic
-                                                span.form-check__box.checkbox 
-                                        .form-group.filter-main__single
-                                            label.form-check__label.filter-main__label
-                                                input.form-check__input(type="checkbox" name="#") 
-                                                | Advance Acoustic
-                                                span.form-check__box.checkbox 
-                                        .form-group.filter-main__single
-                                            label.form-check__label.filter-main__label
-                                                input.form-check__input(type="checkbox" name="#") 
-                                                | Advance Acoustic
-                                                span.form-check__box.checkbox                         
-                                        .form-group.filter-main__single
-                                            label.form-check__label.filter-main__label
-                                                input.form-check__input(type="checkbox" name="#") 
-                                                | Advance Acoustic
-                                                span.form-check__box.checkbox 
+                                                input.form-check__input(type="checkbox" name="filter-doporucene") 
+                                                | Doporučujeme
+                                                span.form-check__box.checkbox
 
-                            .filter-main__author
-                                h2.filter-main__heading Vyhledávat podle autora
+                                    .tab-pane.fade(id="pohlavie" role="tabpanel" aria-labelledby="pohlavie-tab")
+                                        .filter-main__single-content
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-chlapci") 
+                                                | Chlapci
+                                                span.form-check__box.checkbox
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-divky") 
+                                                | Divky
+                                                span.form-check__box.checkbox
 
-                                .form-group.filter-main__searchbox
-                                    input.form-control(type="text" name="search" id="search" placeholder="Zadejte jméno autora")
+                                    .tab-pane.fade(id="veľkosti" role="tabpanel" aria-labelledby="veľkosti-tab")
+                                        .filter-main__single-content
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-velikost-1") 
+                                                | 1
+                                                span.form-check__box.checkbox
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-velikost-2") 
+                                                | 2
+                                                span.form-check__box.checkbox
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-velikost-3") 
+                                                | 3
+                                                span.form-check__box.checkbox
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-velikost-4") 
+                                                | 4
+                                                span.form-check__box.checkbox     
+
+                                    .tab-pane.fade(id="vyrobcovia" role="tabpanel" aria-labelledby="vyrobcovia-tab")
+                                        .filter-main__single-content
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-vyrobce-1") 
+                                                | D.D. Step
+                                                span.form-check__box.checkbox
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-vyrobce-2") 
+                                                | Pathick 
+                                                span.form-check__box.checkbox
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-vyrobce-3") 
+                                                | Tap Tapi 
+                                                span.form-check__box.checkbox
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-vyrobce-4") 
+                                                | Capiki
+                                                span.form-check__box.checkbox   
+
+                                    .tab-pane.fade(id="druh_oblecenia" role="tabpanel" aria-labelledby="druh_oblecenia-tab")
+                                        .filter-main__single-content
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-druh-1") 
+                                                | Tričká
+                                                span.form-check__box.checkbox
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-druh-2") 
+                                                | Spodné prádlo 
+                                                span.form-check__box.checkbox
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-druh-3") 
+                                                | Nohavice
+                                                span.form-check__box.checkbox
+                                            label.form-check__label.filter-main__label
+                                                input.form-check__input(type="checkbox" name="filter-druh-4") 
+                                                | Legíny
+                                                span.form-check__box.checkbox   
+                            .filter-main__type
+                                
+
 
 
                             button.btn.filter-main__button(type="submit") Filtrovat produkty
@@ -156,6 +181,8 @@ html(lang=lang)
                         p.filter-badges__title Advance Acoustic 
                         .filter-badges__remove-wrap
                             span.cross-icon.white.filter-badges__remove 
+
+                include _pagination.pug
 
                 .filter-sort
                     ul.nav.nav-tabs
@@ -168,7 +195,6 @@ html(lang=lang)
                         li.nav-item
                             a.nav-link(onclick="#") Jméno A-Z
 
-                include _pagination.pug
 
                 .product-grid
                     include _single-product-cell.pug

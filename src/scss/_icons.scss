@@ -192,8 +192,8 @@
     display: block;
     position: relative;
     @include transition(0.3s all ease);
-    border-top: 2px solid $dark-grey;
-    border-right: 2px solid $dark-grey;
+    border-top: 2px solid $brand-secondary;
+    border-right: 2px solid $brand-secondary;
     @include transform(translate(0,-35%) rotate(135deg));
 
     &.left{

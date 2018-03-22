@@ -31,18 +31,18 @@ html(lang=lang)
             .container.page-heading--cart__container
                 .page-heading--cart__wrap
                     a.page-heading--cart__single.pass(href="#")
-                        p.page-heading--cart__title 1. Nákupní košík
+                        p.page-heading--cart__title 1. Nákupný košík
                     a.page-heading--cart__single.pass(href="#")
-                        p.page-heading--cart__title 2. Osobní údaje
+                        p.page-heading--cart__title 2. Osobné údaje
                     a.page-heading--cart__single.active(href="#")
-                        p.page-heading--cart__title 3. Souhrn objednávky
+                        p.page-heading--cart__title 3. Súhrn objednávky
                     a.page-heading--cart__single(href="#")
-                        p.page-heading--cart__title 4. Dokončení objednávky
+                        p.page-heading--cart__title 4. Dokončenie objednávky
 
         section.page-heading.page-heading--cart-responsive
             a.page-heading--cart__control(href="#")
                 span.caret-icon.left
-            p.page-heading--cart__title 3/4 Souhrn objednávky
+            p.page-heading--cart__title 3/4 Súhrn objednávky
             a.page-heading--cart__control(href="#")
                 span.caret-icon.right
         .page-heading--cart-responsive-push
@@ -80,10 +80,10 @@ html(lang=lang)
                                 .cart-item-single__qty-wrap 
                                     p.cart-item-single__qty-text 1 kus/ů
                                 .cart-item-single__price-wrap
-                                    span.cart-item-single__price-old 14 290 Kč
-                                    p.cart-item-single__price 8 489 Kč
+                                    span.cart-item-single__price-old 45.00 €
+                                    p.cart-item-single__price 29.00 €
                                 .cart-item-single__sum-wrap.text-right
-                                    p.cart-item-single__sum #[span 8 489] Kč
+                                    p.cart-item-single__sum #[span 29.00] €
 
 
 
@@ -102,69 +102,65 @@ html(lang=lang)
                                 .cart-item-single__qty-wrap 
                                     p.cart-item-single__qty-text 1 kus/ů
                                 .cart-item-single__price-wrap
-                                    span.cart-item-single__price-old 14 290 Kč
-                                    p.cart-item-single__price 8 489 Kč
+                                    span.cart-item-single__price-old 45.00 €
+                                    p.cart-item-single__price 29.00 €
                                 .cart-item-single__sum-wrap.text-right
-                                    p.cart-item-single__sum #[span 8 489] Kč
+                                    p.cart-item-single__sum #[span 29.00] €
 
 
 
-                .cart-shipping-payment-overview
-                    h4.cart-shipping-payment-overview__title Způsob dopravy
-                    .cart-shipping-payment-overview__single
-                        p.cart-shipping-payment-overview__name Česká pošta Balík do ruky:
-                        span.cart-shipping-payment-overview__price 115Kč
-                .cart-shipping-payment-overview
-                    h4.cart-shipping-payment-overview__title Způsob platby
-                    .cart-shipping-payment-overview__single
-                        p.cart-shipping-payment-overview__name Dobírka:
-                        span.cart-shipping-payment-overview__price 20Kč
-                .cart-price-overview
-                    p.cart-price-overview__text Celková cena s DPH
-                    h3.cart-price-overview__price #[span.cart-price-overview__number 17 000] Kč
-                .cart-user-info-overview
-                    .row
-                        .cart-user-info-overview__single
-                            h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 1.] Osobní údaje
-                            .cart-user-info-overview__single-content
-                                p.cart-user-info-overview__text Jméno a příjmení: #[span.cart-user-info-overview__strong Petr Novák]
-                                p.cart-user-info-overview__text Emailová adresa: #[span.cart-user-info-overview__strong petr@novak.cz]
-                                p.cart-user-info-overview__text Telefonní číslo: #[span.cart-user-info-overview__strong 605 598 989]
-                                p.cart-user-info-overview__text Ulice: #[span.cart-user-info-overview__strong Petra Bezruče]
-                                p.cart-user-info-overview__text Číslo ulice: #[span.cart-user-info-overview__strong 18]
-                                p.cart-user-info-overview__text Město: #[span.cart-user-info-overview__strong Praha]
-                                p.cart-user-info-overview__text Kraj: #[span.cart-user-info-overview__strong Praha]
-                                p.cart-user-info-overview__text PSČ: #[span.cart-user-info-overview__strong 898 89]
-                                p.cart-user-info-overview__text Stát: #[span.cart-user-info-overview__strong Česko]
+                    .cart-shipping-payment-overview
+                        h4.cart-shipping-payment-overview__title Způsob dopravy
+                        .cart-shipping-payment-overview__single
+                            p.cart-shipping-payment-overview__name Platba vopred na účet do hodnoty 10 eur Slov. poštou
+                            span.cart-shipping-payment-overview__price 29.00 €
 
-                        .cart-user-info-overview__single
-                            h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 2.] Fakturační adresa
-                            .cart-user-info-overview__single-content
-                                p.cart-user-info-overview__text Stejná jako u osobních ůdajů
+                    .cart-price-overview
+                        p.cart-price-overview__text Celková cena s DPH
+                        h3.cart-price-overview__price #[span.cart-price-overview__number 29.00] €
+                    .cart-user-info-overview
+                        .row
+                            .cart-user-info-overview__single
+                                h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 1.] Osobní údaje
+                                .cart-user-info-overview__single-content
+                                    p.cart-user-info-overview__text Jméno a příjmení: #[span.cart-user-info-overview__strong Petr Novák]
+                                    p.cart-user-info-overview__text Emailová adresa: #[span.cart-user-info-overview__strong petr@novak.cz]
+                                    p.cart-user-info-overview__text Telefonní číslo: #[span.cart-user-info-overview__strong 605 598 989]
+                                    p.cart-user-info-overview__text Ulice: #[span.cart-user-info-overview__strong Petra Bezruče]
+                                    p.cart-user-info-overview__text Číslo ulice: #[span.cart-user-info-overview__strong 18]
+                                    p.cart-user-info-overview__text Město: #[span.cart-user-info-overview__strong Praha]
+                                    p.cart-user-info-overview__text Kraj: #[span.cart-user-info-overview__strong Praha]
+                                    p.cart-user-info-overview__text PSČ: #[span.cart-user-info-overview__strong 898 89]
+                                    p.cart-user-info-overview__text Stát: #[span.cart-user-info-overview__strong Česko]
 
-                        .cart-user-info-overview__single
-                            h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 3.] Dodací adresa
-                            .cart-user-info-overview__single-content
-                                p.cart-user-info-overview__text Stejná jako u osobních ůdajů
+                            .cart-user-info-overview__single
+                                h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 2.] Fakturační adresa
+                                .cart-user-info-overview__single-content
+                                    p.cart-user-info-overview__text Stejná jako u osobních ůdajů
 
-                .cart-terms-checkbox
-                    .form-group
-                        .form-check
-                            label.form-check__label
-                                input.form-check__input(type="checkbox" name="cart-form-terms" required) 
-                                span.form-check__box.checkbox
-                                span.form-check__inline Souhlasím s #[a.form-check__link(href="#") obchodními podmínkami]
+                            .cart-user-info-overview__single
+                                h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 3.] Dodací adresa
+                                .cart-user-info-overview__single-content
+                                    p.cart-user-info-overview__text Stejná jako u osobních ůdajů
 
-                .cart-bottom-btns
-                    a.btn.btn-dark(href="#") #[span.btn__icon.arrow-icon.left.white]  Krok zpět
-                    a.btn(href="#") Dokončit objednávku #[span.btn__icon.arrow-icon.white]
+                    .cart-terms-checkbox
+                        .form-group
+                            .form-check
+                                label.form-check__label
+                                    input.form-check__input(type="checkbox" name="cart-form-terms" required) 
+                                    span.form-check__box.checkbox
+                                    span.form-check__inline Souhlasím s #[a.form-check__link(href="#") obchodními podmínkami]
+
+                    .cart-bottom-btns
+                        a.btn.btn-dark(href="#") #[span.btn__icon.arrow-icon.left.white]  Krok zpět
+                        button.btn(type="submit") Dokončit objednávku #[span.btn__icon.arrow-icon.white]
 
             .cart-price-overview-responsive
                 .cart-price-overview-responsive__price-wrap
                     p.cart-price-overview-responsive__text Celková cena s DPH
-                    h3.cart-price-overview-responsive__price #[span 16 989] Kč
+                    h3.cart-price-overview-responsive__price #[span 29.00] €
                 .cart-price-overview-responsive__btn-wrap
-                    a.btn.cart-price-overview-responsive__btn(href="#") Dokončit objednávku #[span.btn__icon.arrow-icon.white]
+                    button.btn.cart-price-overview-responsive__btn(type="submit") Dokončit objednávku #[span.btn__icon.arrow-icon.white]
 
 
         include _footer.pug

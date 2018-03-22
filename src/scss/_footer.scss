@@ -51,7 +51,7 @@ footer{
 }
 .footer-bar__h3{
     color: $white; 
-    font-size: 2.4rem;
+    font-size: 3rem;
     margin: 0;
     margin-right: 5rem;
 }
@@ -84,7 +84,7 @@ footer{
     width: auto;
     min-height: 0;
     line-height: 1;
-    padding: 0.5rem 2.5rem;
+    padding: 0.5rem 2rem;
 }
 
 /***** FOOTER CONTACTS *****/
@@ -246,7 +246,7 @@ footer{
 }
 
 .scroll-to-top{
-    display: block;
+    display: none;
     position: fixed;
     right: 3vw;
     bottom: 3vw;

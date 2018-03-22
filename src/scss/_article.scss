@@ -20,7 +20,7 @@ article{
         line-height: 3rem;
         font-size: 1.6rem;
         display: inline-block;
-        font-weight: 400;
+        font-weight: 500;
     }
     & > p, & > b, & > i, & > u, & > strong{
         margin-bottom: 3rem;
@@ -34,6 +34,9 @@ article{
     & p:last-child{
         margin-bottom: 0rem;
     }
+    li{
+        font-weight: 500;
+    }
 }
 
 /*------------------------------------*\
@@ -45,7 +48,7 @@ article.post{
         font-family: $font-family-main;
         line-height: 3.4rem;
         font-size: 1.8rem;
-        font-weight: 400;
+        font-weight: 500;
     }
     & b, & strong{
         font-weight: 700;
@@ -114,7 +117,7 @@ article{
 		&::after{
 			content: "";
 			position: absolute;
-			background: $orange-main;
+			background: $brand-primary;
 			width: 50px;
 			height: 2px;
 			bottom: 0;
@@ -127,7 +130,7 @@ article{
 	}
 }
 .page-contact__map{
-	margin: 2rem 0;
+	margin: 2rem 0 0 0;
 }
 .page-contact__img{
 	display: block;

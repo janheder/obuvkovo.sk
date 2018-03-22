@@ -22,6 +22,7 @@ $red: #E30016;
 $green-main: #769D00;
 $yellow-main: #FAD485;
 $brown-main: #643C2B;
+$brown-dark: #4F3022;
 
 $black-transparent: rgba(0,0,0,0.1);
 $black-transparent-25: rgba(0,0,0,0.25);
@@ -50,6 +51,7 @@ $brand-primary: $red-main;
 $brand-primary--dark: $red-main-dark;
 $brand-primary--light: $red-main-light;
 $brand-secondary: $brown-main;
+$brand-secondary--dark: $brown-dark;
 
 // Text colors
 $text-primary: $brown-main;
@@ -67,6 +69,7 @@ $bg-dark: $dark-grey;
 $bg-darker: $darkest-grey;
 $bg-black: $black;
 $bg-red: $red-main;
+$bg-yellow: $yellow-main;
 
 // Font family
 $font-family-main: "Quicksand", sans-serif;

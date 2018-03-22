@@ -43,25 +43,10 @@
         bottom: 2px;
         left: 2px;
     }
-    &::after{
-        content: "";
-        background: $brand-primary--dark;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 0;
-        z-index: -1;
-        @include transition(0.3s ease all);
-
-    }
     &:hover, &:active, &:focus{
         color: $text-white;
         box-shadow: none;
-
-        &::after{  
-            height: 100%;
-        }
+        background: $brand-primary--dark;
     }
 }
 
@@ -86,12 +71,15 @@
 }
 
 .btn-dark{
-    background: $bg-dark;
+    background: $brand-secondary;
     color: $text-white;
     
     &:hover, &:active, &:focus{
         color: $text-white;
-        background: $bg-darker; 
+        background: $brand-secondary--dark;
+    }
+    &::before{
+        border: 1px dashed rgba(255,255,255,0.2);
     }
 }
 
@@ -103,12 +91,16 @@
         background: $brand-secondary;
     }
     &:hover, &:active, &:focus{
-        background: transparent;
+        background: $brand-secondary;
         color: $text-white;
 
         .btn__icon::before, .btn__icon::after{
             color: $text-white;
             background: $bg-white;
+        }
+        .arrow-icon.btn__icon::before{
+            background: transparent;
+            border-color: $bg-white;
         }
     }
     &::before{
