@@ -5,7 +5,7 @@
 .news-single{
     background: transparent;
     color: $white;
-    border-radius: $border-radius-primary;
+    
     position: relative;   
     overflow: hidden;
     margin: 10px 0;
@@ -14,11 +14,13 @@
 
     &:hover, &:active, &:focus{
         color: $white;
-        
+        text-decoration: none;
     }
 }
 .news-single__thumbnail{
     z-index: 0;
+    border-radius: $border-radius-primary;
+    overflow: hidden;
 }
 
 .news-single__top{
