@@ -150,15 +150,18 @@ html(lang=lang)
                     .swiper-button-prev.swiper-button-prev--5
                     .swiper-button-next.swiper-button-next--5
 
-
-        section.index-cta
-            .container
-                .row
-
-
-
         include _news-section.pug
-        
+
+        section.index-about
+            .container.index-about__container
+                .index-about__col
+                    figure.index-about__figure
+                        img.lazy(src="http://via.placeholder.com/200x200" data-src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
+                        figcaption.index-about__figcaption Foto: Naše kamenná predajňa
+                .index-about__col
+                    h3.index-about__title O nás
+                    p.index-about__text Od roku 2000 predávame zväčša celokoženú taliansku obuv, či už extravagantnú alebo klasickú. V dnešnej dobe je dopyt aj po lacnejšej módnej obuvi zo syntetiky, takže aj takúto u nás nájdete. Internetovému predaju sa venujeme cca od r. 2005, behom ktorých sme získali veľa cenných skúseností dôležitých pri predaji či už obuvi detskej alebo dámskej. Více o nás...
+       
         include _footer.pug
 
         include _js-include.pug

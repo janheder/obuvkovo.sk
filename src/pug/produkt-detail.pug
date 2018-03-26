@@ -29,6 +29,7 @@ html(lang=lang)
     body
         include _nav.pug
         include _modal-add-to-cart.pug
+        include _modal-recommend.pug
         include _breadcrumb.pug
         main
             .product-detail
@@ -207,7 +208,7 @@ html(lang=lang)
                                         p.product-detail-main__price-dph-text 22.04 € bez DPH   
 
                                 .product-detail-main__stock
-                                    p.product-detail-main__stock-text #[span.fas.fa-check-circle] 10 kusů skladem
+                                    p.product-detail-main__stock-text #[span.fas.fa-check-circle] Dostupné skladem
 
                                 form(method="post" name="product_detail_form")
                                     .product-detail-main__size
@@ -249,29 +250,60 @@ html(lang=lang)
                                         .product-detail-main__free-delivery-text-wrap
                                             p.product-detail-main__free-delivery-text Pri nákupe nad 100 € doprava zadarmo
 
+                                .product-detail-main__recommend(data-toggle="modal" data-target="#modal-recommend")
+                                    p.product-detail-main__recommend-text Odporučiť známemu
                                 
 
 
 
                     .product-description(id="anchor-product-detail-description")
-                        ul.nav.nav-tabs.product-description__nav(role="tablist")
-                            li.nav-item.product-description__tab
-                                a.nav-link.product-description__tab-link.active(data-toggle="tab" href="#product-description-1" role="tab") Popis produktu
+                        .product-description__col
+                            ul.nav.nav-tabs.product-description__nav(role="tablist")
+                                li.nav-item.product-description__tab
+                                    a.nav-link.product-description__tab-link.active(data-toggle="tab" href="#product-description-1" role="tab") Popis produktu
 
+                            .tab-content.product-description__wrap
 
+                                .tab-pane.product-description__tab-content.active(id="product-description-1" role="tabpanel" aria-expanded="true")
+                                    a.product-description__collapse(data-toggle="collapse" href="#product-description-c-1" aria-controls="product-description-c-1" aria-expanded="true") Popis produktu
+                                    .panel-collapse.collapse.show.product-description__collapse-wrap(id="product-description-c-1")
+                                        .product-description__content
+                                            .product-description__text
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        
+                        
+                        .product-description__col
+                            ul.nav.nav-tabs.product-description__nav(role="tablist")
+                                li.nav-item.product-description__tab
+                                    a.nav-link.product-description__tab-link.active(data-toggle="tab" href="#product-description-2" role="tab") Parametry
 
-                        .tab-content.product-description__wrap
+                            .tab-content.product-description__wrap
 
-                            .tab-pane.product-description__tab-content.active(id="product-description-1" role="tabpanel" aria-expanded="true")
-                                a.product-description__collapse(data-toggle="collapse" href="#product-description-c-1" aria-controls="product-description-c-1" aria-expanded="true") Popis produktu
-                                .panel-collapse.collapse.show.product-description__collapse-wrap(id="product-description-c-1")
-                                    .product-description__content
-                                        .product-description__text
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        h2.product-accessories__heading Obdobné produkty
+                                .tab-pane.product-description__tab-content.active(id="product-description-2" role="tabpanel" aria-expanded="true")
+                                    a.product-description__collapse(data-toggle="collapse" href="#product-description-c-2" aria-controls="product-description-c-2" aria-expanded="true") Popis produktu
+                                    .panel-collapse.collapse.show.product-description__collapse-wrap(id="product-description-c-2")
+                                        .product-description__content
+                                            table(class="table")
+                                                tr
+                                                    th Parameter
+                                                    th Hodnota
+                                                tr
+                                                    td zvršok
+                                                    td textil
+                                                tr
+                                                    td vnútro
+                                                    td textil
+                                                tr
+                                                    td opätok
+                                                    td -
+                                                tr
+                                                    td platforma
+                                                    td -
+
+                    h2.product-accessories__heading Podobný tovar
                         .product-grid
                             include _single-product-cell.pug
                             include _single-product-cell.pug

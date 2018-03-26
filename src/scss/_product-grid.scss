@@ -55,10 +55,15 @@
             	max-width: 20%;
             } 
         }  
+        .product-grid--3{
+            .single-product-cell-wrap{
+                max-width: 33.333%;
+            }
+        }
     }
     @media screen and (max-width:991px){
         .product-grid{
-            margin: 0 -20px;
+            margin: 0 -10px;
         }
     }
     @media (min-width:601px) and (max-width:991px){
@@ -90,10 +95,16 @@
         }
     }
     @media screen and (max-width:600px){
+        @media screen and (max-width:991px){
+            .product-grid{
+                margin: 0 -5px;
+            }
+        }
         .product-grid{
             & .single-product-cell-wrap{
                 max-width: 50%;
                 width: 100%;
+                padding: 5px;
 
                 &::before{
                     border-top: 0;
@@ -134,8 +145,8 @@
     height:100%;
     position:relative;
     overflow: hidden;
-    border: 1px solid $border-grey;
-    background: $border-grey;
+    border: 0px solid $border-grey;
+    background: transparent;
 
     & .swiper-slide {
         text-align: center;

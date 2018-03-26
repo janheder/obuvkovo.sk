@@ -1000,10 +1000,16 @@
     @include flex-basis(0);
     text-align: center;
     padding: 5px 10px;
+    color: $text-primary;
 
-    p{
+    span{
         margin: 0;
         font-size: 14px;
+    }
+}
+@media screen and (max-width:991px){
+    .sub-cat{
+        display: none;
     }
 }
 

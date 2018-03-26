@@ -10,6 +10,7 @@
     font-weight: 500;
     border-radius: $border-radius-primary;
     border: 1px solid $border-grey;
+    color: $text-primary;
 
     &.btn{
         font-weight: 500;  
@@ -40,6 +41,7 @@ select.form-control:not([size]):not([multiple]) {
     width: 100%;
     cursor: pointer;
     border: 0;
+    color: $text-white;
     }
     span.error{
         color: $red-main;
@@ -116,6 +118,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 .form-check__link{
     margin: 0 5px;
+    font-size: inherit;
 }
 .form-check__input:checked ~ .form-check__box{
     opacity: 1;

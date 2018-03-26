@@ -283,15 +283,9 @@
       </nav>
       <div class="sub-cat">
         <div class="container sub-cat__container">
-          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
-              <p>Podľa výrobcu</p></a><a class="sub-cat__single">
-              <p>Podľa veľkosti</p></a><a class="sub-cat__single">
-              <p>Podľa pohlavia</p></a></div>
-          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
-              <p>Podľa výrobcu</p></a><a class="sub-cat__single">
-              <p>Podľa veľkosti</p></a></div>
-          <div class="sub-cat__single-wrap"><a class="sub-cat__single">
-              <p>Podľa výrobcu</p></a></div>
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single" href="#"><span>Podľa výrobcu</span></a><a class="sub-cat__single" href="#"><span>Podľa veľkosti</span></a><a class="sub-cat__single" href="#"><span>Podľa pohlavia</span></a></div>
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single" href="#"><span>Podľa výrobcu</span></a><a class="sub-cat__single" href="#"><span>Podľa veľkosti</span></a></div>
+          <div class="sub-cat__single-wrap"><a class="sub-cat__single" href="#"><span>Podľa výrobcu</span></a></div>
         </div>
       </div><span id="dark-overlay" aria-label="Toggle navigation" data-target="#navbarNav" data-toggle="collapse"></span><span id="dark-overlay-cart"></span>
     </header>
@@ -331,6 +325,36 @@
           <div class="modal-footer">
             <button class="btn btn-dark" type="button" data-dismiss="modal"><span class="btn__icon arrow-icon left white"></span> Zpět do obchodu</button><a class="btn" href="#">Pokračovat do košíku <span class="btn__icon arrow-icon white"></span></a>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-recommend" tabindex="-1" role="dialog" aria-labelledby="modal-recommend-heading" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-recommend-heading">Odporučiť známemu</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="cross-icon"></span></button>
+          </div>
+          <form method="POST" action="#">
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="recommend_form_name">Vaše meno</label>
+                <input class="form-control" type="text" name="recommend_form_name" id="recommend_form_name" autocomplete="name" required>
+              </div>
+              <div class="form-group">
+                <label for="recommend_form_email">E-mail príjemca</label>
+                <input class="form-control" type="email" name="recommend_form_email" id="recommend_form_email" autocomplete="email" required>
+              </div>
+              <div class="form-group">
+                <label for="recommend_form_message">Zpráva</label>
+                <textarea class="form-control" rows="3" required>Doporučuji ti navštívit stránku http://www.obuvkovo.sk/produkty/damska-obuv/coqui-damske-zabky-kaja-cierne/9539.html s produktem COQUI dámske žabky KAJA čierne.</textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-dark" type="button" data-dismiss="modal">Zatvoriť</button>
+              <button class="btn" type="submit">Odoslať <span class="btn__icon arrow-icon white"></span></button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -510,7 +534,7 @@
                   </div>
                 </div>
                 <div class="product-detail-main__stock">
-                  <p class="product-detail-main__stock-text"><span class="fas fa-check-circle"></span> 10 kusů skladem</p>
+                  <p class="product-detail-main__stock-text"><span class="fas fa-check-circle"></span> Dostupné skladem</p>
                 </div>
                 <form method="post" name="product_detail_form">
                   <div class="product-detail-main__size">
@@ -557,28 +581,69 @@
                     </div>
                   </div>
                 </div>
+                <div class="product-detail-main__recommend" data-toggle="modal" data-target="#modal-recommend">
+                  <p class="product-detail-main__recommend-text">Odporučiť známemu</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="product-description" id="anchor-product-detail-description">
-            <ul class="nav nav-tabs product-description__nav" role="tablist">
-              <li class="nav-item product-description__tab"><a class="nav-link product-description__tab-link active" data-toggle="tab" href="#product-description-1" role="tab">Popis produktu</a></li>
-            </ul>
-            <div class="tab-content product-description__wrap">
-              <div class="tab-pane product-description__tab-content active" id="product-description-1" role="tabpanel" aria-expanded="true"><a class="product-description__collapse" data-toggle="collapse" href="#product-description-c-1" aria-controls="product-description-c-1" aria-expanded="true">Popis produktu</a>
-                <div class="panel-collapse collapse show product-description__collapse-wrap" id="product-description-c-1">
-                  <div class="product-description__content">
-                    <div class="product-description__text">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class="product-description__col">
+              <ul class="nav nav-tabs product-description__nav" role="tablist">
+                <li class="nav-item product-description__tab"><a class="nav-link product-description__tab-link active" data-toggle="tab" href="#product-description-1" role="tab">Popis produktu</a></li>
+              </ul>
+              <div class="tab-content product-description__wrap">
+                <div class="tab-pane product-description__tab-content active" id="product-description-1" role="tabpanel" aria-expanded="true"><a class="product-description__collapse" data-toggle="collapse" href="#product-description-c-1" aria-controls="product-description-c-1" aria-expanded="true">Popis produktu</a>
+                  <div class="panel-collapse collapse show product-description__collapse-wrap" id="product-description-c-1">
+                    <div class="product-description__content">
+                      <div class="product-description__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <h2 class="product-accessories__heading">Obdobné produkty</h2>
+            <div class="product-description__col">
+              <ul class="nav nav-tabs product-description__nav" role="tablist">
+                <li class="nav-item product-description__tab"><a class="nav-link product-description__tab-link active" data-toggle="tab" href="#product-description-2" role="tab">Parametry</a></li>
+              </ul>
+              <div class="tab-content product-description__wrap">
+                <div class="tab-pane product-description__tab-content active" id="product-description-2" role="tabpanel" aria-expanded="true"><a class="product-description__collapse" data-toggle="collapse" href="#product-description-c-2" aria-controls="product-description-c-2" aria-expanded="true">Popis produktu</a>
+                  <div class="panel-collapse collapse show product-description__collapse-wrap" id="product-description-c-2">
+                    <div class="product-description__content">
+                      <table class="table">
+                        <tr>
+                          <th>Parameter</th>
+                          <th>Hodnota</th>
+                        </tr>
+                        <tr>
+                          <td>zvršok</td>
+                          <td>textil</td>
+                        </tr>
+                        <tr>
+                          <td>vnútro</td>
+                          <td>textil</td>
+                        </tr>
+                        <tr>
+                          <td>opätok</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>platforma</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="product-accessories__heading">Podobný tovar
             <div class="product-grid">
               <div class="single-product-cell-wrap"><a class="single-product-cell" href="#">
                   <div class="single-product-cell-top">
@@ -1053,7 +1118,7 @@
                     </div>
                   </div></a></div>
             </div>
-          </div>
+          </h2>
         </div>
         <div class="product-detail-responsive">
           <div class="product-detail-responsive__name">
@@ -1133,7 +1198,6 @@
       </div>
     </section>
     <!-- Popper for Bootstrap support-->
-    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -1143,7 +1207,6 @@
       
     </script>
     <!-- FontAwesome 5-->
-    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/fontawesome-all.min.js"></script>
     <!-- Custom js libraries-->
     <!-- Custom js plugins and scripts-->

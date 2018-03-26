@@ -429,52 +429,32 @@
 }
 
 /* ========================================================================== */
-/* INDEX CTA */
+/* INDEX ABOUT */
 /* ========================================================================== */
-.index-cta{
-    background: $bg-white;
-    padding: 8rem 0;
+
+.index-about{
+    background: $bg-light;
+    padding: 6rem 0;
+    border-top: 1px dashed $brand-secondary;
 }
-.index-cta__column{
-    padding-bottom: 20px;
-}
-.index-cta__single{
-    padding: 4rem 0;
-    height: 100%;
+.index-about__container{
     @include flexbox();
     @include flex-direction(row);
     @include align-items(center);
+    @include justify-content(center);
 }
-.index-cta__textfield{
-    background: $black-transparent-50;
-    padding: 3rem;
-    width: 460px;
-    max-width: 100%;
-    border-top-right-radius: $border-radius-primary;
-    border-bottom-right-radius: $border-radius-primary;
+.index-about__col{
+    @include flex-grow(1);
 }
-.index-cta__subtitle, .index-cta__title{
-    font-family: $font-family-secondary;
-    color: $text-white;
-    font-size: 2.4rem;
+.index-about__figcaption{
+    font-weight: 500;
 }
-.index-cta__title{
+.index-about__title{
+    font-size: 3rem;
     font-weight: 700;
-    margin: 2rem 0;
 }
-.index-cta__text-wrap{
-    margin-bottom: 2rem;
-}
-.index-cta__text{
-    font-size: 1.6rem;
-    color: $text-white;
-    line-height: 3rem;
-    margin: 0;
-}
-.index-cta__single--small{
-    .index-cta__textfield{
-        width: 260px;
-    }
+.index-about__text{
+    font-weight: 500;
 }
 
 /* ========================================================================== */
@@ -522,7 +502,7 @@
 }
 
 .page-heading--category{ 
-    padding: 4rem 0;
+    padding: 4rem 0 0 0;
     margin: 0;
     background: $bg-white;
 

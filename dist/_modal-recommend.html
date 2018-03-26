@@ -1,0 +1,31 @@
+
+<div class="modal fade" id="modal-recommend" tabindex="-1" role="dialog" aria-labelledby="modal-recommend-heading" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-recommend-heading">Odporučiť známemu</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="cross-icon"></span></button>
+      </div>
+      <form method="POST" action="#">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="recommend_form_name">Vaše meno</label>
+            <input class="form-control" type="text" name="recommend_form_name" id="recommend_form_name" autocomplete="name" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="recommend_form_email">E-mail príjemca</label>
+            <input class="form-control" type="email" name="recommend_form_email" id="recommend_form_email" autocomplete="email" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="recommend_form_message">Zpráva</label>
+            <textarea class="form-control" rows="3" required="required">Doporučuji ti navštívit stránku http://www.obuvkovo.sk/produkty/damska-obuv/coqui-damske-zabky-kaja-cierne/9539.html s produktem COQUI dámske žabky KAJA čierne.</textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-dark" type="button" data-dismiss="modal">Zatvoriť</button>
+          <button class="btn" type="submit">Odoslať <span class="btn__icon arrow-icon white"></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

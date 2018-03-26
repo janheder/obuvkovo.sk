@@ -245,7 +245,7 @@ $("#searchbox").easyAutocomplete(options);
 //SWIPER 4 PRODUCTS
 var carousel_4_products = new Swiper('.swiper-container-4-products', {
   lazy: true,
-  spaceBetween: 1,
+  spaceBetween: 20,
   slidesPerView: 4,
   grabCursor: true,
   zoom: false,
