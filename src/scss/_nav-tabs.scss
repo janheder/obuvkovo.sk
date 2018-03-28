@@ -22,6 +22,10 @@
                 background: $bg-white;
                 border-bottom-color: $white;
             }
+            &.important{
+                background: $brand-secondary;
+                color: $text-white;
+            }
         }
         &:last-child .nav-link{
             border-right: 1px solid $border-grey;

@@ -161,7 +161,17 @@
     margin-top: 10px;
 }
 
+.filter-main__type{
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width:991px){
+    .filter-main{
+        margin: 0;
+    }
+    .filter-main__form{
+        margin-bottom: 15px;
+    }
     .filter-main__collapse{
         display: block;
         background: $brand-primary;
@@ -169,8 +179,8 @@
         font-size: 1.6rem;
         font-weight: 700;
         color: $text-white;
-        border-top-left-radius: $border-radius-primary;
-        border-top-right-radius: $border-radius-primary;
+        border-radius: $border-radius-primary;
+        margin-bottom: 20px ;
 
         &:hover, &:active, &:focus{
             color: $text-white;

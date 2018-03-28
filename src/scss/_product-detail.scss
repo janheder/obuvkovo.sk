@@ -473,12 +473,16 @@
 .product-accessories{
     margin-top: 9rem;
 }
-.product-accessories__heading{
+.product-accessories__heading, .product-similar__heading{
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     font-family: $font-family-alt;
     font-weight: 600;
+}
+.product-similar__heading{
+    margin-bottom: 2rem;
+    margin-top: 5rem;
 }
 @media screen and (max-width: 991px){
     .product-accessories{
@@ -491,7 +495,7 @@
 /* ========================================================================== */
 
 .product-description{
-    margin: 6rem -10px;
+    margin: 6rem -10px 3rem 0;
     @include flexbox();
     @include flex-direction(row);
     @include flex-wrap(wrap);
@@ -499,8 +503,8 @@
 .product-description__col{
     @include flex-grow(1);
     padding: 0 10px;
-    min-width: 30%;
-    max-width: 50%;
+    min-width: 100%;
+    max-width:100%;
 }
 .product-description__wrap{
     border: 1px solid $border-grey;
@@ -573,13 +577,7 @@
 .product-similar{
     margin-top: 6rem;
 }
-.product-similar__heading{
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    font-family: $font-family-alt;
-    font-weight: 600;
-}
+
 @media screen and (max-width: 768px){
     .product-similar{
         margin: 4rem 0;

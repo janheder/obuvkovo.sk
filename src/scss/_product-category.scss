@@ -75,7 +75,7 @@ margin-bottom: 4rem;
 .product-category__content{
     @include flexbox();
     @include flex-direction(column);
-    width: calc(100% - 260px);
+    width: calc(100% - 310px);
 }
 
 .navbar-side{
@@ -127,6 +127,26 @@ margin-bottom: 4rem;
         border: 0;
         color: $text-white;
         text-decoration: none;
+    }
+}
+.navbar-side__nav-tabs{
+    @include flex-wrap(nowrap);
+}
+.navbar-side__nav-item{
+    @include flex-grow(1);
+}
+.navbar-side__nav-link{
+    font-size: 13px !important;
+    padding: 0 10px !important;
+    @include justify-content(center);
+    background: $bg-white !important;
+
+    &.active{
+        background: $bg-light !important;
+        border-bottom-color: $bg-light !important;
+    }
+    img{
+        width: 20px;
     }
 }
 

@@ -213,7 +213,7 @@ html(lang=lang)
                                 form(method="post" name="product_detail_form")
                                     .product-detail-main__size
                                         h4.product-detail-main__size-title Vyberte veľkosť
-                                        .product-detail-main__size-wrap
+                                        .product-detail-main__size-wrap 
                                             .product-detail-main__size-single
                                                 label
                                                     input(type="radio" name="velikost" value="1" required)
@@ -273,7 +273,23 @@ html(lang=lang)
                                                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                                                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                                                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        
+                                                br
+                                                table(class="table")
+                                                    tr
+                                                        th Parameter
+                                                        th Hodnota
+                                                    tr
+                                                        td zvršok
+                                                        td textil
+                                                    tr
+                                                        td vnútro
+                                                        td textil
+                                                    tr
+                                                        td opätok
+                                                        td -
+                                                    tr
+                                                        td platforma
+                                                        td -
                         
                         .product-description__col
                             ul.nav.nav-tabs.product-description__nav(role="tablist")
@@ -303,17 +319,44 @@ html(lang=lang)
                                                     td platforma
                                                     td -
 
-                    h2.product-accessories__heading Podobný tovar
-                        .product-grid
-                            include _single-product-cell.pug
-                            include _single-product-cell.pug
-                            include _single-product-cell.pug
-                            include _single-product-cell.pug
 
-                            include _single-product-cell.pug
-                            include _single-product-cell.pug
-                            include _single-product-cell.pug
-                            include _single-product-cell.pug
+                    h2.product-accessories__heading Související zboží
+                    .swiper-container-5-products-wrap     
+                        .swiper-container-5-products
+                            .swiper-wrapper
+                                .swiper-slide
+                                    include _single-product-cell-small.pug
+                                .swiper-slide
+                                    include _single-product-cell-small.pug
+                                .swiper-slide
+                                    include _single-product-cell-small.pug
+                                .swiper-slide
+                                    include _single-product-cell-small.pug         
+                                .swiper-slide
+                                    include _single-product-cell-small.pug
+                                .swiper-slide
+                                    include _single-product-cell-small.pug
+                                .swiper-slide
+                                    include _single-product-cell-small.pug
+                                .swiper-slide
+                                    include _single-product-cell-small.pug
+
+                        .swiper-pagination.swiper-pagination-white
+                        .swiper-button-prev.swiper-button-prev--5
+                        .swiper-button-next.swiper-button-next--5
+
+
+                    h2.product-similar__heading Podobný tovar
+                    .product-grid
+                        include _single-product-cell.pug
+                        include _single-product-cell.pug
+                        include _single-product-cell.pug
+                        include _single-product-cell.pug
+
+                        include _single-product-cell.pug
+                        include _single-product-cell.pug
+                        include _single-product-cell.pug
+                        include _single-product-cell.pug
 
 
 

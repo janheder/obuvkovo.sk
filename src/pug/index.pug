@@ -33,55 +33,8 @@ html(lang=lang)
                     .hero__swiper-wrap
                         .swiper-wrapper.hero__swiper-wrapper
                             .swiper-slide.hero__swiper-slide
-                                .hero__content
-                                    .hero__title 1 CA Aeromax 6 + Yamaha A-S301
-                                    .hero__text Aeromax6+Yas301
-                                    .hero__price-old 44 980 Kč
-                                    .hero__price 31 780 Kč
-                                    .hero__btn
-                                        a.btn(href="#") Zobrazit nabídku #[span.btn__icon.arrow-icon.right.white]
-                                .hero__image
-                                    .hero__sale-tag -30%
-                                    img.swiper-lazy.hero__img(src=URLbase+"img/product-thumb-medium.jpg")
-                                    .swiper-lazy-preloader.swiper-lazy-preloader-white
-
-                            .swiper-slide.hero__swiper-slide
-                                .hero__content
-                                    .hero__title 2 CA Aeromax 6 + Yamaha A-S301
-                                    .hero__text Aeromax6+Yas301
-                                    .hero__price-old 44 980 Kč
-                                    .hero__price 31 780 Kč
-                                    .hero__btn
-                                        a.btn(href="#") Zobrazit nabídku #[span.btn__icon.arrow-icon.right.white]
-                                .hero__image
-                                    .hero__sale-tag -30%
-                                    img.swiper-lazy.hero__img(src=URLbase+"http://via.placeholder.com/360x360")
-                                    .swiper-lazy-preloader.swiper-lazy-preloader-white
-
-                            .swiper-slide.hero__swiper-slide
-                                .hero__content
-                                    .hero__title 3 CA Aeromax 6 + Yamaha A-S301
-                                    .hero__text Aeromax6+Yas301
-                                    .hero__price-old 44 980 Kč
-                                    .hero__price 31 780 Kč
-                                    .hero__btn
-                                        a.btn(href="#") Zobrazit nabídku #[span.btn__icon.arrow-icon.right.white]
-                                .hero__image
-                                    .hero__sale-tag -30%
-                                    img.swiper-lazy.hero__img(src=URLbase+"http://via.placeholder.com/360x360")
-                                    .swiper-lazy-preloader.swiper-lazy-preloader-white
-
-                            .swiper-slide.hero__swiper-slide
-                                .hero__content
-                                    .hero__title 4 CA Aeromax 6 + Yamaha A-S301
-                                    .hero__text Aeromax6+Yas301
-                                    .hero__price-old 44 980 Kč
-                                    .hero__price 31 780 Kč
-                                    .hero__btn
-                                        a.btn(href="#") Zobrazit nabídku #[span.btn__icon.arrow-icon.right.white]
-                                .hero__image
-                                    .hero__sale-tag -30%
-                                    img.swiper-lazy.hero__img(src=URLbase+"http://via.placeholder.com/360x360")
+                                .hero__content.post__image-container
+                                    img.swiper-lazy.hero__imgpost__featured-image(src=URLbase+"img/hero-1.jpg")
                                     .swiper-lazy-preloader.swiper-lazy-preloader-white
 
                         .swiper-pagination.swiper-pagination-white.swiper-pagination--hero
@@ -116,27 +69,14 @@ html(lang=lang)
 
         section.index-products
             .container  
-                .filter-sort
-                    ul.nav.nav-tabs
-                        li.nav-item
-                            a.nav-link.active(onclick="#") Akční nabídka
-                        li.nav-item
-                            a.nav-link(onclick="#") Doporučené
-                        li.nav-item
-                            a.nav-link(onclick="#") Novinky
-                        li.nav-item
-                            a.nav-link(onclick="#") Nejprodávanější
-                .swiper-container-5-products-wrap     
-                    .swiper-container-5-products
+                h2.index-products__title Novinky detská obuv 
+                .swiper-container-4-products-wrap     
+                    .swiper-container-4-products
                         .swiper-wrapper
                             .swiper-slide
                                 include _single-product-cell-small.pug
                             .swiper-slide
                                 include _single-product-cell-small.pug
-                            .swiper-slide
-                                include _single-product-cell-small.pug
-                            .swiper-slide
-                                include _single-product-cell-small.pug         
                             .swiper-slide
                                 include _single-product-cell-small.pug
                             .swiper-slide
@@ -147,21 +87,89 @@ html(lang=lang)
                                 include _single-product-cell-small.pug
 
                     .swiper-pagination.swiper-pagination-white
-                    .swiper-button-prev.swiper-button-prev--5
-                    .swiper-button-next.swiper-button-next--5
+                    .swiper-button-prev.swiper-button-prev--4
+                    .swiper-button-next.swiper-button-next--4
+
+
+        section.index-products
+            .container  
+                h2.index-products__title Novinky dámska obuv 
+                .swiper-container-4-products-wrap     
+                    .swiper-container-4-products
+                        .swiper-wrapper
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+
+                    .swiper-pagination.swiper-pagination-white
+                    .swiper-button-prev.swiper-button-prev--4
+                    .swiper-button-next.swiper-button-next--4
+
+
+        section.index-products
+            .container  
+                h2.index-products__title Novinky Mayoral
+                .swiper-container-4-products-wrap     
+                    .swiper-container-4-products
+                        .swiper-wrapper
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+                            .swiper-slide
+                                include _single-product-cell-small.pug
+
+                    .swiper-pagination.swiper-pagination-white
+                    .swiper-button-prev.swiper-button-prev--4
+                    .swiper-button-next.swiper-button-next--4
 
         include _news-section.pug
+
+        #fb-root        
+        script.
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.12';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
 
         section.index-about
             .container.index-about__container
                 .index-about__col
                     figure.index-about__figure
-                        img.lazy(src="http://via.placeholder.com/200x200" data-src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
+                        img.lazy(src=URLbase+"img/about-img.jpg" data-src=URLbase+"img/about-img.jpg" alt="#" title="#")
                         figcaption.index-about__figcaption Foto: Naše kamenná predajňa
                 .index-about__col
                     h3.index-about__title O nás
-                    p.index-about__text Od roku 2000 predávame zväčša celokoženú taliansku obuv, či už extravagantnú alebo klasickú. V dnešnej dobe je dopyt aj po lacnejšej módnej obuvi zo syntetiky, takže aj takúto u nás nájdete. Internetovému predaju sa venujeme cca od r. 2005, behom ktorých sme získali veľa cenných skúseností dôležitých pri predaji či už obuvi detskej alebo dámskej. Více o nás...
-       
+                    p.index-about__text Od roku 2000 predávame zväčša celokoženú taliansku obuv, či už extravagantnú alebo klasickú. V dnešnej dobe je dopyt aj po lacnejšej módnej obuvi zo syntetiky, takže aj takúto u nás nájdete. 
+                    p.index-about__text Internetovému predaju sa venujeme cca od r. 2005, behom ktorých sme získali veľa cenných skúseností dôležitých pri predaji či už obuvi detskej alebo dámskej.
+                    a.index-about__link(href="#") Více o nás...
+                .index-about__col  
+                    .fb-page(data-href="https://www.facebook.com/obuvkovo/" data-tabs="timeline" data-small-header="true" data-width="300" data-height="300" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true")
+                            blockquote.fb-xfbml-parse-ignore(cite="https://www.facebook.com/obuvkovo/")
+                                a(href="https://www.facebook.com/obuvkovo/") obuvkovo.sk - mayoral
+
+
+
+
         include _footer.pug
 
         include _js-include.pug

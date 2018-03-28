@@ -29,13 +29,10 @@
 }
 .hero__content{
     background: $bg-white;
-    @include flexbox();
-    @include flex-grow(1);
-    @include flex-basis(0);
-    @include flex-direction(column);
-    @include justify-content(center);
-    padding: 5rem;
+    padding: 0;
     padding-right: 0;
+    border-radius: $border-radius-primary;
+    overflow: hidden;
 }
 .hero__title{
     font-weight: 700;
@@ -97,7 +94,7 @@
     position: relative;
 }
 .swiper-pagination--hero{
-    display: none;
+    display: block;
 }
 .hero__swiper-tabs{
     background: $bg-white;
@@ -132,7 +129,7 @@
     color: $brand-primary;
 }
 .swiper-button-next--hero, .swiper-button-prev--hero{
-    display: none;
+    display: block;
 }
 @media screen and (max-width:991px){
     .hero {
@@ -374,6 +371,15 @@
 .index-products{
     padding-bottom: 6rem; 
 }
+.index-products__title{
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 3rem;
+    color: $text-primary;
+    font-weight: 700;
+    margin-bottom: 0rem;
+}
 @media screen and (max-width:991px){
     .index-products{
         padding-bottom: 0; 
@@ -445,6 +451,13 @@
 }
 .index-about__col{
     @include flex-grow(1);
+    min-width: 300px;
+    &:first-child{
+        @include flex-shrink(0);  
+    }
+    &:nth-child(2){
+        padding: 0 3rem;
+    }
 }
 .index-about__figcaption{
     font-weight: 500;
@@ -455,6 +468,7 @@
 }
 .index-about__text{
     font-weight: 500;
+    font-size: 1.6rem;
 }
 
 /* ========================================================================== */

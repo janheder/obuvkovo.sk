@@ -47,70 +47,230 @@ html(lang=lang)
                             .navbar-side__heading
                                 h4.navbar-side__title Detská obuv
                             .navbar-side__content            
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Demar                 
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Vin - tex                     
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Asso   
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item D.D. Step 
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Kornecki 
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Coqui  
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Iný 
-                                a.navbar-side__link(href="#") 
-                                    .navbar-side__item Super gear
-                                a.navbar-side__link(href="#") 
-                                    .navbar-side__item C - TEXI
+                                ul.nav.nav-tabs.navbar-side__nav-tabs(role="tablist")
+                                    li.nav-item.navbar-side__nav-item
+                                        a.nav-link.navbar-side__nav-link.active.show(id="1-kategorie-tab" data-toggle="tab" href="#1-kategorie" role="tab" aria-controls="1-kategorie" aria-selected="true")
+                                            img(src=URLbase+"images/shoe-icon.svg" alt="Kategorie" title="Kategorie")
+                                    li.nav-item.navbar-side__nav-item
+                                        a.nav-link.navbar-side__nav-link(id="1-vyrobcovia-tab" data-toggle="tab" href="#1-vyrobcovia" role="tab" aria-controls="1-vyrobcovia" aria-selected="false") Výrobcovia
+                                    li.nav-item.navbar-side__nav-item
+                                        a.nav-link.navbar-side__nav-link(id="1-velkosti-tab" data-toggle="tab" href="#1-velkosti" role="tab" aria-controls="1-velkosti" aria-selected="false") Velkosti
+                                    li.nav-item.navbar-side__nav-item
+                                        a.nav-link.navbar-side__nav-link(id="1-pohlavie-tab" data-toggle="tab" href="#1-pohlavie" role="tab" aria-controls="1-pohlavie" aria-selected="false") Pohlavie
+                                                                                 
+                                .tab-content
+                                    .tab-pane.fade.show.active(id="1-kategorie" role="tabpanel" aria-labelledby="1-kategorie")
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Demar                 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Vin - tex                     
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Asso   
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item D.D. Step 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Kornecki 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Coqui  
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Iný 
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item Super gear
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item C - TEXI
+
+                                    .tab-pane.fade(id="1-vyrobcovia" role="tabpanel" aria-labelledby="1-vyrobcovia-tab")
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Demar                 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Vin - tex                     
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Asso   
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item D.D. Step 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Kornecki 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Coqui  
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Iný 
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item Super gear
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item C - TEXI
+
+                                    .tab-pane.fade(id="1-velkosti" role="tabpanel" aria-labelledby="1-velkosti-tab")
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Demar                 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Vin - tex                     
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Asso   
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item D.D. Step 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Kornecki 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Coqui  
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Iný 
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item Super gear
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item C - TEXI
+
+                                    .tab-pane.fade(id="1-pohlavie" role="tabpanel" aria-labelledby="1-pohlavie-tab")
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Demar                 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Vin - tex                     
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Asso   
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item D.D. Step 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Kornecki 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Coqui  
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Iný 
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item Super gear
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item C - TEXI
 
                         .navbar-side__single 
                             .navbar-side__heading
                                 h4.navbar-side__title Dámska obuv
                             .navbar-side__content            
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Demar                 
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Vin - tex                     
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Asso   
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item D.D. Step 
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Kornecki 
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Coqui  
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Iný 
-                                a.navbar-side__link(href="#") 
-                                    .navbar-side__item Super gear
-                                a.navbar-side__link(href="#") 
-                                    .navbar-side__item C - TEXI
+                                ul.nav.nav-tabs.navbar-side__nav-tabs(role="tablist")
+                                    li.nav-item.navbar-side__nav-item
+                                        a.nav-link.navbar-side__nav-link.active.show(id="2-kategorie-tab" data-toggle="tab" href="#2-kategorie" role="tab" aria-controls="2-kategorie" aria-selected="true")
+                                            img(src=URLbase+"images/shoe-icon.svg" alt="Kategorie" title="Kategorie")
+                                    li.nav-item.navbar-side__nav-item
+                                        a.nav-link.navbar-side__nav-link(id="2-vyrobcovia-tab" data-toggle="tab" href="#2-vyrobcovia" role="tab" aria-controls="2-vyrobcovia" aria-selected="false") Výrobcovia
+                                    li.nav-item.navbar-side__nav-item
+                                        a.nav-link.navbar-side__nav-link(id="2-velkosti-tab" data-toggle="tab" href="#2-velkosti" role="tab" aria-controls="2-velkosti" aria-selected="false") Velkosti
+                                .tab-content
+                                    .tab-pane.fade.show.active(id="2-kategorie" role="tabpanel" aria-labelledby="2-kategorie-tab")
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Demar                 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Vin - tex                     
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Asso   
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item D.D. Step 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Kornecki 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Coqui  
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Iný 
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item Super gear
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item C - TEXI
+
+                                    .tab-pane.fade(id="2-vyrobcovia" role="tabpanel" aria-labelledby="2-vyrobcovia-tab")
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Demar                 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Vin - tex                     
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Asso   
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item D.D. Step 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Kornecki 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Coqui  
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Iný 
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item Super gear
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item C - TEXI
+
+                                    .tab-pane.fade(id="2-velkosti" role="tabpanel" aria-labelledby="2-velkosti-tab")
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Demar                 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Vin - tex                     
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Asso   
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item D.D. Step 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Kornecki 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Coqui  
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Iný 
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item Super gear
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item C - TEXI
+
+   
 
                         .navbar-side__single 
                             .navbar-side__heading
                                 h4.navbar-side__title Mayoral
                             .navbar-side__content            
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Demar                 
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Vin - tex                     
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Asso   
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item D.D. Step 
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Kornecki 
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Coqui  
-                                a.navbar-side__link(href="#")
-                                    .navbar-side__item Iný 
-                                a.navbar-side__link(href="#") 
-                                    .navbar-side__item Super gear
-                                a.navbar-side__link(href="#") 
-                                    .navbar-side__item C - TEXI
+                                ul.nav.nav-tabs.navbar-side__nav-tabs(role="tablist")
+                                    li.nav-item.navbar-side__nav-item
+                                        a.nav-link.navbar-side__nav-link.active.show(id="3-kategorie-tab" data-toggle="tab" href="#3-kategorie" role="tab" aria-controls="3-kategorie" aria-selected="true")
+                                            img(src=URLbase+"images/shoe-icon.svg" alt="Kategorie" title="Kategorie")
+                                    li.nav-item.navbar-side__nav-item
+                                        a.nav-link.navbar-side__nav-link(id="3-vyrobcovia-tab" data-toggle="tab" href="#3-vyrobcovia" role="tab" aria-controls="3-vyrobcovia" aria-selected="false") Výrobcovia
+                               
+                                .tab-content
+                                    .tab-pane.fade.show.active(id="3-kategorie" role="tabpanel" aria-labelledby="3-kategorie-tab")
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Demar                 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Vin - tex                     
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Asso   
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item D.D. Step 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Kornecki 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Coqui  
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Iný 
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item Super gear
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item C - TEXI
+
+                                    .tab-pane.fade(id="3-vyrobcovia" role="tabpanel" aria-labelledby="3-vyrobcovia-tab")
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Demar                 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Vin - tex                     
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Asso   
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item D.D. Step 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Kornecki 
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Coqui  
+                                        a.navbar-side__link(href="#")
+                                            .navbar-side__item Iný 
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item Super gear
+                                        a.navbar-side__link(href="#") 
+                                            .navbar-side__item C - TEXI
+
+
+
+   
+
+
 
                     .product-category__content
                         .top-products
@@ -147,17 +307,14 @@ html(lang=lang)
 
                                         ul.nav.nav-tabs.filter-main__nav-tabs(role="tablist")
                                             li.nav-item.filter-main__nav-item
-                                                a.nav-link.filter-main__nav-link.active.show(id="stitek-tab" data-toggle="tab" href="#stitek" role="tab" aria-controls="stitek" aria-selected="true") Štítek
+                                                a.nav-link.filter-main__nav-link.active.show(id="stitek-tab" data-toggle="tab" href="#stitek" role="tab" aria-controls="stitek" aria-selected="false") Štítek
                                             li.nav-item.filter-main__nav-item
-                                                a.nav-link.filter-main__nav-link(id="pohlavie-tab" data-toggle="tab" href="#pohlavie" role="tab" aria-controls="pohlavie" aria-selected="true") Pohlavie
+                                                a.nav-link.filter-main__nav-link(id="pohlavie-tab" data-toggle="tab" href="#pohlavie" role="tab" aria-controls="pohlavie" aria-selected="false") Pohlavie
                                             li.nav-item.filter-main__nav-item
-                                                a.nav-link.filter-main__nav-link(id="veľkosti-tab" data-toggle="tab" href="#veľkosti" role="tab" aria-controls="veľkosti" aria-selected="true") Veľkosti
+                                                a.nav-link.filter-main__nav-link(id="veľkosti-tab" data-toggle="tab" href="#veľkosti" role="tab" aria-controls="veľkosti" aria-selected="false") Veľkosti
                                             li.nav-item.filter-main__nav-item
-                                                a.nav-link.filter-main__nav-link(id="vyrobcovia-tab" data-toggle="tab" href="#vyrobcovia" role="tab" aria-controls="vyrobcovia" aria-selected="true") Výrobcovia
-                                            li.nav-item.filter-main__nav-item
-                                                a.nav-link.filter-main__nav-link(id="druh_oblecenia-tab" data-toggle="tab" href="#druh_oblecenia" role="tab" aria-controls="druh_oblecenia" aria-selected="true") Druh oblečenia
-
-
+                                                a.nav-link.filter-main__nav-link(id="vyrobcovia-tab" data-toggle="tab" href="#vyrobcovia" role="tab" aria-controls="vyrobcovia" aria-selected="false") Výrobcovia
+                                
                                         .tab-content
                                             
                                             .tab-pane.fade.show.active(id="stitek" role="tabpanel" aria-labelledby="stitek-tab")
@@ -224,7 +381,13 @@ html(lang=lang)
                                                         | Capiki
                                                         span.form-check__box.checkbox   
 
-                                            .tab-pane.fade(id="druh_oblecenia" role="tabpanel" aria-labelledby="druh_oblecenia-tab")
+                                        
+                                    .filter-main__type
+                                        ul.nav.nav-tabs.filter-main__nav-tabs(role="tablist")
+                                            li.nav-item.filter-main__nav-item
+                                                a.nav-link.filter-main__nav-link.active.show(id="druh_oblecenia-tab" data-toggle="tab" href="#druh_oblecenia" role="tab" aria-controls="stitek" aria-selected="false") Druh oblečenia
+                                        .tab-content
+                                            .tab-pane.fade.show.active(id="druh_oblecenia" role="tabpanel" aria-labelledby="druh_oblecenia-tab")
                                                 .filter-main__single-content
                                                     label.form-check__label.filter-main__label
                                                         input.form-check__input(type="checkbox" name="filter-druh-1") 
@@ -242,9 +405,6 @@ html(lang=lang)
                                                         input.form-check__input(type="checkbox" name="filter-druh-4") 
                                                         | Legíny
                                                         span.form-check__box.checkbox   
-                                    .filter-main__type
-                                        
-
 
 
                                     button.btn.filter-main__button(type="submit") Filtrovat produkty

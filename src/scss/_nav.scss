@@ -25,7 +25,7 @@
 }
 .navbar-top__text{
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding: 0 1rem;
 
     &:first-child{
@@ -645,6 +645,10 @@
         height: 100%;
         background: transparent;
         order: 5;
+
+        &::after{
+            content: none;
+        }
     }
     .navbar-cart__link{
         padding: 0rem;
@@ -1248,7 +1252,7 @@
         overflow: hidden;
         height: 100%;
         width: 100%;
-        margin-left: 240px;
+        margin-left: 0px;
     }
     body.active-right {
         overflow: hidden;
@@ -1263,10 +1267,11 @@
         position: fixed;
         left: 0px;
         top: 0px;
+        padding-top: 56px;
         display: block;
-        @include translate(-100%,0%);
+        @include translate(0%,-100%);
         height: 100% !important;
-        width: 240px;
+        width: 100%;
         @include transition(0.3s transform ease);
         overflow-y: auto;
         overflow-x: hidden;
@@ -1282,7 +1287,7 @@
         position: fixed;
         height: 100%;
         width:100%;
-        z-index: 9;
+        z-index: 2;
         cursor: pointer;
         background: rgba(0,0,0,0.75);
     }
