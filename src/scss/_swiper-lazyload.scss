@@ -69,3 +69,17 @@ width: 100%;
         @include box-shadow(0px,0px,0px,$black-transparent-25);
     }  
 }
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0px;
+
+}
+.swiper-pagination--index1, .swiper-pagination--index2, .swiper-pagination--index3{
+    position: relative;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+}
+.swiper-pagination-bullet-active{
+    background: $brand-secondary;
+}

@@ -309,6 +309,106 @@ var carousel_5_products = new Swiper('.swiper-container-5-products', {
 });
 
 
+var carousel_index1 = new Swiper('.swiper-container-index1', {
+    lazy: true,
+    spaceBetween: 20,
+    slidesPerView: 4,
+    grabCursor: true,
+    zoom: false,
+    pagination: {
+      el: '.swiper-pagination--index1',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next--index1',
+      prevEl: '.swiper-button-prev--index1',
+    },
+    breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    }
+}
+});
+var carousel_index2 = new Swiper('.swiper-container-index2', {
+    lazy: true,
+    spaceBetween: 20,
+    slidesPerView: 4,
+    grabCursor: true,
+    zoom: false,
+    pagination: {
+      el: '.swiper-pagination--index2',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next--index2',
+      prevEl: '.swiper-button-prev--index2',
+    },
+    breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    }
+}
+});
+var carousel_index3 = new Swiper('.swiper-container-index3', {
+    lazy: true,
+    spaceBetween: 20,
+    slidesPerView: 4,
+    grabCursor: true,
+    zoom: false,
+    pagination: {
+      el: '.swiper-pagination--index3',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next--index3',
+      prevEl: '.swiper-button-prev--index3',
+    },
+    breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    }
+}
+});
+
 $(window).on('load',function(){
     $('#modal-add-to-cart').modal('show');
 });

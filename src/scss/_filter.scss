@@ -92,12 +92,30 @@
     @include flex-wrap(wrap);
     border-bottom-right-radius: $border-radius-primary;
     border-bottom-left-radius: $border-radius-primary;
+
+    &.type{
+        border: 1px solid $brand-secondary;
+        border-top: 0;
+    }
+}
+.filter-main__nav-tabs.type .nav-item:last-child .filter-main__nav-link.active{
+    border-color: $brand-secondary;
 }
 .filter-main__nav-item{
     @include flex-grow(1);
 }
 .filter-main__label{
     margin: 5px;
+    @include flex-grow(1);
+}
+.filter-main__type-collapse{
+    width: 100%;
+    background: $bg-light;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: $border-radius-primary;
 }
 .filter-main__toggle{
     padding: 5px;
@@ -163,7 +181,13 @@
 
 .filter-main__type{
     margin-bottom: 20px;
+
+    .filter-main__nav-link.active{
+        background: $brand-secondary;
+        color: $text-white;
+    } 
 }
+
 
 @media screen and (max-width:991px){
     .filter-main{

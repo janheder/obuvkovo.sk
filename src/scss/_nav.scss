@@ -944,6 +944,7 @@
     @include align-items(center);
     @include justify-content(center);
     cursor: pointer;
+    background: transparent;
 
     &::before{
         content: "";

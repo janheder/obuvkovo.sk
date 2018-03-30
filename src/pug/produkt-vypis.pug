@@ -383,12 +383,12 @@ html(lang=lang)
 
                                         
                                     .filter-main__type
-                                        ul.nav.nav-tabs.filter-main__nav-tabs(role="tablist")
+                                        ul.nav.nav-tabs.filter-main__nav-tabs.type(role="tablist")
                                             li.nav-item.filter-main__nav-item
                                                 a.nav-link.filter-main__nav-link.active.show(id="druh_oblecenia-tab" data-toggle="tab" href="#druh_oblecenia" role="tab" aria-controls="stitek" aria-selected="false") Druh oblečenia
                                         .tab-content
                                             .tab-pane.fade.show.active(id="druh_oblecenia" role="tabpanel" aria-labelledby="druh_oblecenia-tab")
-                                                .filter-main__single-content
+                                                .filter-main__single-content.type
                                                     label.form-check__label.filter-main__label
                                                         input.form-check__input(type="checkbox" name="filter-druh-1") 
                                                         | Tričká
@@ -405,7 +405,29 @@ html(lang=lang)
                                                         input.form-check__input(type="checkbox" name="filter-druh-4") 
                                                         | Legíny
                                                         span.form-check__box.checkbox   
+                                                    label.form-check__label.filter-main__label
+                                                        input.form-check__input(type="checkbox" name="filter-druh-1") 
+                                                        | Spodné prádlo 
+                                                        span.form-check__box.checkbox
+                                                    label.form-check__label.filter-main__label
+                                                        input.form-check__input(type="checkbox" name="filter-druh-2") 
+                                                        | Legíny
+                                                        span.form-check__box.checkbox
+                                                    label.form-check__label.filter-main__label
+                                                        input.form-check__input(type="checkbox" name="filter-druh-3") 
+                                                        | Nohavice
+                                                        span.form-check__box.checkbox
+                                                    label.form-check__label.filter-main__label
+                                                        input.form-check__input(type="checkbox" name="filter-druh-4") 
+                                                        | Legíny
+                                                        span.form-check__box.checkbox   
 
+                                                    a.filter-main__type-collapse(data-toggle="collapse" href="#product-filter-type" aria-expanded="false" aria-controls="product-filter-type") Zobraziť všetky možnosti
+                                                    .panel-collapse.collapse.filter-main__type-collapse-wrap(id="product-filter-type") 
+                                                        label.form-check__label.filter-main__label
+                                                            input.form-check__input(type="checkbox" name="filter-druh-4") 
+                                                            | Legíny
+                                                            span.form-check__box.checkbox  
 
                                     button.btn.filter-main__button(type="submit") Filtrovat produkty
 

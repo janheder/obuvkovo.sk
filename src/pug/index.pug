@@ -32,6 +32,15 @@ html(lang=lang)
                 .hero__swiper
                     .hero__swiper-wrap
                         .swiper-wrapper.hero__swiper-wrapper
+                        
+                            .swiper-slide.hero__swiper-slide
+                                .hero__content.post__image-container
+                                    img.swiper-lazy.hero__imgpost__featured-image(src=URLbase+"img/hero-1.jpg")
+                                    .swiper-lazy-preloader.swiper-lazy-preloader-white
+                            .swiper-slide.hero__swiper-slide
+                                .hero__content.post__image-container
+                                    img.swiper-lazy.hero__imgpost__featured-image(src=URLbase+"img/hero-1.jpg")
+                                    .swiper-lazy-preloader.swiper-lazy-preloader-white
                             .swiper-slide.hero__swiper-slide
                                 .hero__content.post__image-container
                                     img.swiper-lazy.hero__imgpost__featured-image(src=URLbase+"img/hero-1.jpg")
@@ -70,8 +79,8 @@ html(lang=lang)
         section.index-products
             .container  
                 h2.index-products__title Novinky detská obuv 
-                .swiper-container-4-products-wrap     
-                    .swiper-container-4-products
+                .swiper-container-4-products-wrap   
+                    .swiper-container-index1.swiper-container-index 
                         .swiper-wrapper
                             .swiper-slide
                                 include _single-product-cell-small.pug
@@ -86,16 +95,16 @@ html(lang=lang)
                             .swiper-slide
                                 include _single-product-cell-small.pug
 
-                    .swiper-pagination.swiper-pagination-white
-                    .swiper-button-prev.swiper-button-prev--4
-                    .swiper-button-next.swiper-button-next--4
+                        .swiper-pagination.swiper-pagination--index1
+                    .swiper-button-prev.swiper-button-prev--index1
+                    .swiper-button-next.swiper-button-next--index1
 
 
         section.index-products
             .container  
                 h2.index-products__title Novinky dámska obuv 
                 .swiper-container-4-products-wrap     
-                    .swiper-container-4-products
+                    .swiper-container-index2.swiper-container-index 
                         .swiper-wrapper
                             .swiper-slide
                                 include _single-product-cell-small.pug
@@ -110,16 +119,16 @@ html(lang=lang)
                             .swiper-slide
                                 include _single-product-cell-small.pug
 
-                    .swiper-pagination.swiper-pagination-white
-                    .swiper-button-prev.swiper-button-prev--4
-                    .swiper-button-next.swiper-button-next--4
+                        .swiper-pagination.swiper-pagination--index2
+                    .swiper-button-prev.swiper-button-prev--index2
+                    .swiper-button-next.swiper-button-next--index2
 
 
         section.index-products
             .container  
                 h2.index-products__title Novinky Mayoral
                 .swiper-container-4-products-wrap     
-                    .swiper-container-4-products
+                    .swiper-container-index3.swiper-container-index 
                         .swiper-wrapper
                             .swiper-slide
                                 include _single-product-cell-small.pug
@@ -134,9 +143,9 @@ html(lang=lang)
                             .swiper-slide
                                 include _single-product-cell-small.pug
 
-                    .swiper-pagination.swiper-pagination-white
-                    .swiper-button-prev.swiper-button-prev--4
-                    .swiper-button-next.swiper-button-next--4
+                        .swiper-pagination.swiper-pagination--index3
+                    .swiper-button-prev.swiper-button-prev--index3
+                    .swiper-button-next.swiper-button-next--index3
 
         include _news-section.pug
 
