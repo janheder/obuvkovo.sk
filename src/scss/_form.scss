@@ -117,11 +117,10 @@ select.form-control:not([size]):not([multiple]) {
     opacity: 0.5;
 }
 .form-check__inline{
-    @include flexbox();
-    @include flex-direction(row);  
+    display: inline-block; 
 }
 .form-check__link{
-    margin: 0 5px;
+    margin: 0px;
     font-size: inherit;
 }
 .form-check__input:checked ~ .form-check__box{

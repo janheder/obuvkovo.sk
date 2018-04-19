@@ -438,6 +438,7 @@
 		@include flexbox();
 		@include flex-grow(1);
 		@include justify-content(flex-end);
+		color: $text-white;
 	}
 	.cart-price-overview-responsive__btn{
 		width: 100%;

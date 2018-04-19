@@ -151,8 +151,8 @@
         right: 0;
         position: absolute;
         background: transparent;
-        width: 60%;
-        height: 60%;
+        width: 7px;
+        height: 7px;
         border-top: 2px solid $brand-secondary;
         border-right: 2px solid $brand-secondary;
         @include transform(translate(0,-50%) rotate(45deg));

@@ -616,7 +616,7 @@
         width: 100%;
         padding: 0rem;
         height: 56px;
-        background: $bg-dark;
+        background: $brand-secondary;
         @include box-shadow(0px,0,10px,$black-transparent-25);
     }
     .navbar-main > .navbar-main__container {
