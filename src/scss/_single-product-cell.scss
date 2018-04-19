@@ -243,27 +243,16 @@
 
                 & .single-product-cell-price{
                     width: 100%;
-                    margin: 0;
 
                     & .single-product-cell-price-old, & .single-product-cell-price-main{
                         display: inline-block;
                     }
                 }
-                & .single-product-cell-buy{
-
-                    /*& .btn{
-                        font-size: 0;
-                        display: none;
-                        & .cart-icon{
-                            margin: 0;
-                        }
-                    }*/
-                }
+    
             } 
             & .single-product-cell-delivery-info{
                 display: block;
-                padding-top: 10px;
-                padding-bottom: 0;
+                padding-top: 0px;
 
                 & .single-product-cell-delivery p{
                     text-align: center;

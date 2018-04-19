@@ -293,6 +293,7 @@
 @media screen and (max-width:500px){
     .benefits{
         padding: 10px 0;
+        display: none;
     }
     .benefits__single{
         @include flex-direction(column);
