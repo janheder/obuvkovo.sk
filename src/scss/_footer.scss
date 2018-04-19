@@ -42,6 +42,7 @@ footer{
     @include justify-content(center);
     @include align-items(center);
     padding-left: 20px;
+    @include flex-wrap(wrap);
 }
 .footer-bar__h4{
     color: $white;
@@ -202,7 +203,7 @@ footer{
 
 @media screen and (max-width:768px){
     .footer-bar{
-        background: $darkest-grey;
+        background: $bg-dark;
         padding: 5rem 0;
     }
     .footer-bar__listen, .footer-bar__email{
@@ -300,7 +301,7 @@ footer{
     font-weight: 500;
 
     &:hover, &:active, &:focus{
-        color: $white;
+        color: $text-primary;
     }
 }
 .copyright__pull{

@@ -36,6 +36,33 @@ $(function() {
 });
 
 
+//PRINT
+if ($(".print-area").length) {
+    $("<style>")
+    .prop("type", "text/css")
+    .html("\
+    @media print {\
+        body {\
+            position: relative;\
+        }\
+        body * {\
+            visibility: hidden;\
+            position: absolute;\
+            left: 0px;\
+            right: 0px;\
+            top: 0px;\
+            width: 100%;\
+        }\
+        .print-area, .print-area *{\
+            visibility: visible;\
+            position: relative;\
+            width: 100%;\
+        }\
+        @page {size: 100%;  margin: 0mm;}\
+    }")
+    .appendTo("body");
+}
+
 //EU COOKIE POLICY
 
 $(document).ready(function(){
@@ -116,10 +143,10 @@ if (styletotest in document.body.style)
 
   $('.billing-address-toggler input').click(function() {
     $('.register-form-billing__wrap').slideToggle("slow");
-    $('.register-form-billing__wrap input:not(#register_form_billing_name, #register_form_billing_company, #register_form_billing_dic)').each(function(){
+    $('.register-form-billing__wrap input:not(#register_form_billing_name, #register_form_billing_dic), .register-form-billing__wrap select').each(function(){
       if(!$(this).prop('required')){
           $(this).prop('required',true);
-      }
+      } 
       else {
         $(this).prop('required',false);
       }
@@ -128,7 +155,7 @@ if (styletotest in document.body.style)
 
   $('.shipping-address-toggler input').click(function() {
     $('.register-form-shipping__wrap').slideToggle("slow");
-    $('.register-form-shipping__wrap input:not(#register_form_shipping_name , #register_form_shipping_company)').each(function(){
+    $('.register-form-shipping__wrap input:not(#register_form_shipping_company), .register-form-shipping__wrap select').each(function(){
       if(!$(this).prop('required')){
           $(this).prop('required',true);
       }
@@ -262,15 +289,19 @@ var carousel_4_products = new Swiper('.swiper-container-4-products', {
     slidesPerView: 4,
     spaceBetween: 20,
   },
-  991: {
+  1100: {
     slidesPerView: 3,
     spaceBetween: 20,
   },
-  500: {
+  991: {
     slidesPerView: 3,
     spaceBetween: 10,
   },
-  320: {
+  600: {
+    slidesPerView: 2,
+    spaceBetween: 10,
+  },
+  420: {
     slidesPerView: 1,
     spaceBetween: 10,
   }
@@ -330,7 +361,7 @@ var carousel_index1 = new Swiper('.swiper-container-index1', {
     },
     991: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 20, 
     },
     500: {
       slidesPerView: 3,

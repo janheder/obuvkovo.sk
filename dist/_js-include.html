@@ -1,6 +1,11 @@
 
 <!-- Popper for Bootstrap support-->
-<script src="undefinedjs/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script>
+  if(typeof(Popper) === 'undefined') {
+  document.write('<script src="js/popper.min.js">\x3C/script>')}
+  
+</script>
 <!-- Bootstrap core JavaScript-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script>
@@ -9,10 +14,23 @@
   
 </script>
 <!-- FontAwesome 5-->
-<script src="undefinedjs/fontawesome-all.min.js"></script>
-<!-- Custom js libraries-->
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" integrity="sha384-0AJY8UERsBUKdWcyF3o2kisLKeIo6G4Tbd8Y6fbyw6qYmn4WBuqcvxokp8m2UzSD" crossorigin="anonymous"></script>
+<script>
+  if(typeof(FontAwesome) === 'undefined') {
+  document.write('<script src="js/fontawesome-all.min.js">\x3C/script>')}
+  
+</script>
 <!-- Custom js plugins and scripts-->
 <script src="undefinedjs/all.min.js"></script>
+<!-- Custom js plugins and scripts-->
+<script>
+  var options = {
+  	data: ["blue", "green", "pink", "red", "yellow"]
+  };
+  $("#searchbox").easyAutocomplete(options);
+  
+  
+</script>
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="pswp__bg"></div>
   <div class="pswp__scroll-wrap">

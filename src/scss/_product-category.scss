@@ -85,6 +85,14 @@ margin-bottom: 4rem;
     width:290px;
     margin-right: 20px;
 }
+@media screen and (max-width:1200px){
+    .product-category__content{
+        width: calc(100% - 290px);
+    }
+    .navbar-side{
+        width:270px;
+    }
+}
 .navbar-side__single{
     margin-bottom: 20px;
     border-radius: $border-radius-primary;

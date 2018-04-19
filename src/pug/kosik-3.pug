@@ -4,13 +4,12 @@ html(lang=lang)
     head 
         meta(charset="utf-8")
         meta(content="IE=edge" http-equiv="X-UA-Compatible")
-        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
         title #{title}
         meta(content="index,follow,snippet,archive" name="robots")
         meta(content=metaDescription name="description")
         meta(content=metaKeywords lang="cs" name="keywords")
         meta(content=metaAuthor name="author")
-        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
 
         link(rel="canonical" href=metaURL)
         meta(property="og:locale" content="cs_CZ") 
@@ -40,10 +39,10 @@ html(lang=lang)
                         p.page-heading--cart__title 4. Dokončenie objednávky
 
         section.page-heading.page-heading--cart-responsive
-            a.page-heading--cart__control(href="#")
+            a.page-heading--cart__control(href="/kosik.html?krok=2")
                 span.caret-icon.left
             p.page-heading--cart__title 3/4 Súhrn objednávky
-            a.page-heading--cart__control(href="#")
+            a.page-heading--cart__control(onclick="$('#cart_3_submit').click();")
                 span.caret-icon.right
         .page-heading--cart-responsive-push
 
@@ -69,12 +68,12 @@ html(lang=lang)
                         .cart-item-single__col-1  
                             .cart-item-single__thumb-wrap
                                 .cart-item-single__thumb
-                                    img.cart-item-single__img.lazy(src="http://via.placeholder.com/200x200" data-src=URLbase+"img/product-thumb-small.jpg")
+                                    img.cart-item-single__img.lazy(src=URLbase+"img/placeholder-200x200.png" data-src=URLbase+"img/product-thumb-small.jpg")
 
                         .cart-item-single__col-2   
                             .cart-item-single__name-wrap
                                 p.cart-item-single__name #{ProductName}
-                                p.cart-item-single__stock Dostupné skladem   
+                                p.cart-item-single__stock Dostupné skladom   
 
                             .cart-item-single__inner    
                                 .cart-item-single__qty-wrap 
@@ -91,12 +90,12 @@ html(lang=lang)
                         .cart-item-single__col-1  
                             .cart-item-single__thumb-wrap
                                 .cart-item-single__thumb
-                                    img.cart-item-single__img.lazy(src="http://via.placeholder.com/200x200" data-src=URLbase+"img/product-thumb-small.jpg")
+                                    img.cart-item-single__img.lazy(src=URLbase+"img/placeholder-200x200.png" data-src=URLbase+"img/product-thumb-small.jpg")
 
                         .cart-item-single__col-2   
                             .cart-item-single__name-wrap
                                 p.cart-item-single__name #{ProductName}
-                                p.cart-item-single__stock Dostupné skladem   
+                                p.cart-item-single__stock Dostupné skladom   
 
                             .cart-item-single__inner    
                                 .cart-item-single__qty-wrap 
@@ -121,7 +120,7 @@ html(lang=lang)
                     .cart-user-info-overview
                         .row
                             .cart-user-info-overview__single
-                                h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 1.] Osobní údaje
+                                h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 1.] Osobné údaje
                                 .cart-user-info-overview__single-content
                                     p.cart-user-info-overview__text Jméno a příjmení: #[span.cart-user-info-overview__strong Petr Novák]
                                     p.cart-user-info-overview__text Emailová adresa: #[span.cart-user-info-overview__strong petr@novak.cz]
@@ -134,14 +133,14 @@ html(lang=lang)
                                     p.cart-user-info-overview__text Stát: #[span.cart-user-info-overview__strong Česko]
 
                             .cart-user-info-overview__single
-                                h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 2.] Fakturační adresa
+                                h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 2.] Fakturačná adresa
                                 .cart-user-info-overview__single-content
-                                    p.cart-user-info-overview__text Stejná jako u osobních ůdajů
+                                    p.cart-user-info-overview__text Rovnaká ako u osobných údajov
 
                             .cart-user-info-overview__single
-                                h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 3.] Dodací adresa
+                                h3.cart-user-info-overview__title #[span.cart-user-info-overview__title-number 3.] Dodacia adresa
                                 .cart-user-info-overview__single-content
-                                    p.cart-user-info-overview__text Stejná jako u osobních ůdajů
+                                    p.cart-user-info-overview__text Rovnaká ako u osobných údajov
 
                     .cart-terms-checkbox
                         .form-group
@@ -149,18 +148,18 @@ html(lang=lang)
                                 label.form-check__label
                                     input.form-check__input(type="checkbox" name="cart-form-terms" required) 
                                     span.form-check__box.checkbox
-                                    span.form-check__inline Souhlasím s #[a.form-check__link(href="#") obchodními podmínkami]
+                                    span.form-check__inline Súhlasím s #[a.form-check__link(href="#") obchodnými podmienkami]
 
                     .cart-bottom-btns
-                        a.btn.btn-dark(href="#") #[span.btn__icon.arrow-icon.left.white]  Krok zpět
-                        button.btn(type="submit") Dokončit objednávku #[span.btn__icon.arrow-icon.white]
+                        a.btn.btn-dark(href="#") #[span.btn__icon.arrow-icon.left.white] Krok zpět
+                        button.btn(type="submit" id="cart_3_submit") Dokončiť objednávku #[span.btn__icon.arrow-icon.white]
 
             .cart-price-overview-responsive
                 .cart-price-overview-responsive__price-wrap
                     p.cart-price-overview-responsive__text Celková cena s DPH
                     h3.cart-price-overview-responsive__price #[span 29.00] €
                 .cart-price-overview-responsive__btn-wrap
-                    button.btn.cart-price-overview-responsive__btn(type="submit") Dokončit objednávku #[span.btn__icon.arrow-icon.white]
+                    a.btn.cart-price-overview-responsive__btn(onclick="$('#cart_3_submit').click();") Dokončit objednávku #[span.btn__icon.arrow-icon.white]
 
 
         include _footer.pug

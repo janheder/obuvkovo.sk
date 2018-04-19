@@ -219,7 +219,7 @@
                 display: none;
             }
             & h4{
-                font-weight: 400;
+                font-weight: 600;
                 padding: 10px 0 5px 0;
             }
         }
@@ -243,6 +243,8 @@
 
                 & .single-product-cell-price{
                     width: 100%;
+                    margin: 0;
+
                     & .single-product-cell-price-old, & .single-product-cell-price-main{
                         display: inline-block;
                     }
@@ -261,9 +263,10 @@
             & .single-product-cell-delivery-info{
                 display: block;
                 padding-top: 10px;
+                padding-bottom: 0;
 
                 & .single-product-cell-delivery p{
-                    text-align: left;
+                    text-align: center;
                 }
             }
             & .single-product-cell-functions{
@@ -299,6 +302,7 @@
     }
     .single-product-cell-bottom .single-product-cell-delivery-info{
         border-top: 0;
+        padding-bottom: 5px;
     }
 }
 

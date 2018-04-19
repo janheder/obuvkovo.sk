@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
     <title>Obuvkovo.sk - najväčší eshop pre deti na Slovensku</title>
     <meta content="index,follow,snippet,archive" name="robots">
     <meta content="Mayoral detské oblečenie a detská ortopedická obuv" name="description">
     <meta content="mayoral, mayoralmoda, d.d.step, protetika, demar" lang="cs" name="keywords">
     <meta content="Eline.cz" name="author">
-    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
     <link rel="canonical" href="https://obuvkovo.sk">
     <meta property="og:locale" content="cs_CZ">
     <meta property="og:type" content="website">
@@ -21,7 +20,7 @@
     <meta name="twitter:site" content="@obuvkovo">
     <meta name="twitter:title" content="Obuvkovo.sk - najväčší eshop pre deti na Slovensku">
     <meta name="twitter:description" content="Mayoral detské oblečenie a detská ortopedická obuv">
-    <meta name="twitter:image" content="http://via.placeholder.com/500x500">
+    <meta name="twitter:image" content="img/placeholder-200x200.png">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
@@ -36,9 +35,9 @@
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <link rel="manifest" href="images/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#441D0E">
+    <meta name="msapplication-TileColor" content="#4F3022">
     <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#441D0E">
+    <meta name="theme-color" content="#4F3022">
     <!-- Bootstrap-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" onerror="loadBootstrap()" id="loadBootstrap">
     <script>
@@ -49,16 +48,12 @@
       
       
     </script>
-    <!-- Custom CSS-->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
     <!-- Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&amp;amp;subset=latin-ext" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')
-      
-      
-    </script>
-    <!-- Hotjar Tracking Code-->
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')</script>
   </head>
   <body>
     <header>
@@ -76,42 +71,42 @@
         <div class="container navbar-main__container">
           <div class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-toggle="collapse" data-target="#navbarNav" role="button"><span class="hamburger-icon"></span>
             <p>Menu</p>
-          </div><a class="navbar-brand" href="#"><img class="navbar-brand__img" src="images/logo.png" title="#" alt="#"></a>
+          </div><a class="navbar-brand" href="#"><img class="navbar-brand__img" src="images/logo.png" title="#" alt="#"><img class="navbar-brand__img-responsive" src="images/logo-responsive.svg" title="#" alt="#"></a>
           <div class="navbar-search-responsive-toggler" id="search-toggler-responsive"><span class="search-icon"></span></div>
           <div class="navbar-search">
             <form class="navbar-search__form" method="POST" id="search-form">
               <div class="form-group navbar-search__form-group">
                 <div class="navbar-search__responsive-close" id="search-toggler-responsive-close"><span class="cross-icon navbar-search__responsive-close-icon"></span></div>
-                <input class="form-control navbar-search__input" type="text" name="searchbox" id="searchbox" placeholder="Hledejte název produktu, značku nebo typ...">
+                <input class="form-control navbar-search__input" type="text" name="searchbox" id="searchbox" placeholder="Hľadajte názov výrobku, značku alebo typ...">
                 <div class="navbar-search__submit-wrap">
-                  <div class="navbar-search__submit-speech"><span class="fa fa-microphone microphone-icon" onclick="startDictation()" title="Vyhledávejte hlasem"></span></div>
-                  <button class="btn navbar-search__button form-control" type="submit" name="search-button" id="search-button">Hledat<span class="search-icon navbar-search__button-icon"></span></button>
+                  <div class="navbar-search__submit-speech"><span class="fa fa-microphone microphone-icon" onclick="startDictation()" title="Vyhľadávajte hlasom"></span></div>
+                  <button class="btn navbar-search__button form-control" type="submit" name="search-button" id="search-button">Hľadať<span class="search-icon navbar-search__button-icon"></span></button>
                 </div>
               </div>
             </form>
             <div class="navbar-search-responsive">
               <div class="navbar-search-responsive__section">
-                <h5 class="navbar-search-responsive__title">Zákazníci často vyhledávají:</h5>
+                <h5 class="navbar-search-responsive__title">Zákazníci často vyhľadávajú:</h5>
                 <div class="navbar-search-responsive__group"><a class="navbar-search-responsive__single" href="#">Lorem ipsum</a><a class="navbar-search-responsive__single" href="#">Dolor sit amet</a><a class="navbar-search-responsive__single" href="#">Consectetur adipiscing elit</a><a class="navbar-search-responsive__single" href="#">Do eiusmod</a></div>
               </div>
               <div class="navbar-search-responsive__section">
-                <h5 class="navbar-search-responsive__title">Akční nabídka:</h5>
+                <h5 class="navbar-search-responsive__title">Akčná ponuka:</h5>
                 <div class="navbar-search-responsive__group"><a class="navbar-search-responsive__single" href="#">Lorem ipsum</a><a class="navbar-search-responsive__single" href="#">Dolor sit amet</a><a class="navbar-search-responsive__single" href="#">Consectetur adipiscing elit</a><a class="navbar-search-responsive__single" href="#">Do eiusmod</a></div>
               </div>
               <div class="navbar-search-responsive__section">
-                <h5 class="navbar-search-responsive__title">Doporučené kategorie:</h5>
+                <h5 class="navbar-search-responsive__title">Odporúčané kategórie:</h5>
                 <div class="navbar-search-responsive__group"><a class="navbar-search-responsive__single" href="#">Lorem ipsum</a><a class="navbar-search-responsive__single" href="#">Dolor sit amet</a><a class="navbar-search-responsive__single" href="#">Consectetur adipiscing elit</a><a class="navbar-search-responsive__single" href="#">Do eiusmod</a></div>
               </div>
             </div>
           </div>
           <div class="navbar-user">
             <div class="dropdown navbar-user__dropdown">
-              <div class="dropdown-toggle navbar-user__dropdown-toggle" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-icon navbar-user__icon"></span>
+              <div class="dropdown-toggle navbar-user__dropdown-toggle" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-icon navbar-user__icon"></span><span class="user-icon white navbar-user__icon-responsive"></span>
                 <div class="navbar-user__text-wrap">
                   <p class="navbar-user__text">Petroslav Novakovič</p>
                 </div><span class="caret-icon navbar-user__caret"></span>
               </div>
-              <div class="dropdown-menu dropdown-menu-left navbar-user__dropdown-menu" aria-labelledby="userDropdown"><a class="dropdown-item navbar-user__item" href="#">Detail účtu</a><a class="dropdown-item navbar-user__item" href="#">Historie objednávek</a><a class="dropdown-item navbar-user__item" href="#">Odhlásit</a></div>
+              <div class="dropdown-menu dropdown-menu-left navbar-user__dropdown-menu" aria-labelledby="userDropdown"><a class="dropdown-item navbar-user__item" href="#">Detail účtu</a><a class="dropdown-item navbar-user__item" href="#">Odhlásiť</a></div>
             </div>
           </div>
           <!-- Přihlášený uživatel
@@ -119,12 +114,12 @@
           	a.navbar-user__link(href="#")
           		span.user-icon.navbar-user__icon
           		.navbar-user__text-wrap
-          			p.navbar-user__text Můj účet
+          			p.navbar-user__text Môj účet
           
           -->
           <div class="navbar-cart"><a class="navbar-cart__link" href="#"><span class="cart-icon navbar-cart__cart-icon"><span class="navbar-cart__icon-number">3</span></span>
               <div class="navbar-cart__text-wrap">
-                <p class="navbar-cart__text">5 899Kč</p>
+                <p class="navbar-cart__text">59 €</p>
               </div><span class="caret-icon white navbar-cart__caret-icon"></span></a>
             <div class="navbar-cart__dropdown">
               <div class="navbar-cart__dropdown-inner"><a class="navbar-cart__dropdown-item navbar-cart-item" href="#">
@@ -133,8 +128,8 @@
                     <h5 class="navbar-cart-item__title">MAYORAL chlapčenská obuv 42764-028 red</h5>
                     <p class="navbar-cart-item__text">3 kusy</p>
                     <div class="navbar-cart-item__price-wrap">
-                      <div class="navbar-cart-item__price-old">1099 Kč</div>
-                      <div class="navbar-cart-item__price-main">899 Kč</div>
+                      <div class="navbar-cart-item__price-old">59 €</div>
+                      <div class="navbar-cart-item__price-main">59 €</div>
                     </div>
                   </div></a><a class="navbar-cart__dropdown-item navbar-cart-item" href="#">
                   <div class="navbar-cart-item__img-wrap"><img class="navbar-cart-item__img" src="http://via.placeholder.com/60x60" data-src="http://via.placeholder.com/60x60" alt="#" title="#"></div>
@@ -142,8 +137,8 @@
                     <h5 class="navbar-cart-item__title">MAYORAL chlapčenská obuv 42764-028 red</h5>
                     <p class="navbar-cart-item__text">3 kusy</p>
                     <div class="navbar-cart-item__price-wrap">
-                      <div class="navbar-cart-item__price-old">1099 Kč</div>
-                      <div class="navbar-cart-item__price-main">899 Kč</div>
+                      <div class="navbar-cart-item__price-old">59 €</div>
+                      <div class="navbar-cart-item__price-main">59 €</div>
                     </div>
                   </div></a><a class="navbar-cart__dropdown-item navbar-cart-item" href="#">
                   <div class="navbar-cart-item__img-wrap"><img class="navbar-cart-item__img" src="http://via.placeholder.com/60x60" data-src="http://via.placeholder.com/60x60" alt="#" title="#"></div>
@@ -151,31 +146,31 @@
                     <h5 class="navbar-cart-item__title">MAYORAL chlapčenská obuv 42764-028 red</h5>
                     <p class="navbar-cart-item__text">3 kusy</p>
                     <div class="navbar-cart-item__price-wrap">
-                      <div class="navbar-cart-item__price-old">1099 Kč</div>
-                      <div class="navbar-cart-item__price-main">899 Kč</div>
+                      <div class="navbar-cart-item__price-old">59 €</div>
+                      <div class="navbar-cart-item__price-main">59 €</div>
                     </div>
                   </div></a>
                 <div class="navbar-cart__dropdown-price-summary navbar-cart-price">
                   <p class="navbar-cart-price__text">Celková cena<span class="navbar-cart-price__small">Včetně DPH</span></p>
-                  <h4 class="navbar-cart-price__title">2697 Kč</h4>
+                  <h4 class="navbar-cart-price__title">59 €</h4>
                 </div>
                 <div class="navbar-cart__dropdown-delivery navbar-cart-delivery"> 
                   <div class="navbar-cart-delivery__text-wrap">
-                    <p class="navbar-cart-delivery__text">Nakupte ještě za 303 Kč a máte Dopravu zdarma</p>
+                    <p class="navbar-cart-delivery__text">Nakúpte ešte za 59 € a máte Dopravu zadarmo</p>
                   </div>
                 </div>
-                <div class="navbar-cart__dropdown-checkout-btn navbar-cart-checkout-btn"><a class="btn btn-grey btn-ghost-grey navbar-cart-checkout-btn__button" href="#"><span class="cross-icon navbar-cart-checkout-btn__button-icon"></span> Vyprázdnit</a><a class="btn navbar-cart-checkout-btn__button" href="#">Objednat zboží <span class="arrow-icon white navbar-cart-checkout-btn__button-icon"></span></a></div>
+                <div class="navbar-cart__dropdown-checkout-btn navbar-cart-checkout-btn"><a class="btn btn-grey btn-ghost-grey navbar-cart-checkout-btn__button" href="#"><span class="cross-icon navbar-cart-checkout-btn__button-icon"></span> Vyprázdniť</a><a class="btn navbar-cart-checkout-btn__button" href="#">Objednať tovar <span class="arrow-icon white navbar-cart-checkout-btn__button-icon"></span></a></div>
               </div>
             </div>
             <!-- Prázdný košík
             .navbar-cart__dropdown
             	.navbar-cart__dropdown-inner
             		.navbar-cart__dropdown-empty
-            			h3.navbar-cart__dropdown-empty-title Váš košík je prázdný
-            			p.navbar-cart__dropdown-empty-text Před nákupem prosím do svého košíku vložte produkt
+            			h3.navbar-cart__dropdown-empty-title Váš košík je prázdny
+            			p.navbar-cart__dropdown-empty-text Pred nákupom prosím do svojho košíka vložte produkt
             		.navbar-cart__dropdown-checkout-btn.navbar-cart-checkout-btn
             			a.btn.btn-grey.btn-ghost-grey.navbar-cart-checkout-btn__button(href="#") Kontakty
-            			a.btn.navbar-cart-checkout-btn__button(href="#") Akční nabídka <span class="arrow-icon white navbar-cart-checkout-btn__button-icon"></span>											
+            			a.btn.navbar-cart-checkout-btn__button(href="#") Akčná ponuka <span class="arrow-icon white navbar-cart-checkout-btn__button-icon"></span>											
             
             
             -->
@@ -192,23 +187,23 @@
                     <div class="container nav-item__container">
                       <div class="row nav-item__row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-item__column dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                       </div>
                     </div>
                   </div>
@@ -220,23 +215,23 @@
                     <div class="container nav-item__container">
                       <div class="row nav-item__row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-item__column dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                       </div>
                     </div>
                   </div>
@@ -248,23 +243,23 @@
                     <div class="container nav-item__container">
                       <div class="row nav-item__row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-item__column dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                       </div>
                     </div>
                   </div>
@@ -299,27 +294,35 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-            <div class="form-responsive-error">Prosím zadejte své osobní údaje nebo se přihlaste.</div>
+            <div class="form-responsive-error">Prosím zadajte svoje osobné údaje alebo sa prihláste.</div>
             <div class="row">
               <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 register-form-col">
                 <form class="register-form" method="post" action="" name="register_form" id="register_form">
-                  <h3>Objednat bez registrace</h3><a class="register-form-toggler" data-toggle="collapse" href="#register-collapse" aria-expanded="true" aria-controls="register-collapse">Objednat bez registrace <span class="register-form-toggler__icon"></span></a>
+                  <h3>Objednať bez registrácie</h3><a class="register-form-toggler" data-toggle="collapse" href="#register-collapse" aria-expanded="true" aria-controls="register-collapse">Objednať bez registrácie <span class="register-form-toggler__icon"></span></a>
                   <div class="collapse register-form-collapse show" id="register-collapse">
                     <div class="form-group">
-                      <label for="register_form_name">Jméno a příjmení</label>
-                      <input class="form-control" type="text" name="register_form_name" id="register_form_name" autocomplete="name" required>
+                      <label for="register_form_name">Meno</label>
+                      <input class="form-control" type="text" name="register_form_name" id="register_form_name" autocomplete="given-name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="register_form_surname">Priezvisko</label>
+                      <input class="form-control" type="text" name="register_form_surname" id="register_form_surname" autocomplete="family-name" required>
                     </div>
                     <div class="form-group">
                       <label for="register_form_email">Emailová adresa</label>
                       <input class="form-control" type="email" name="register_form_email" id="register_form_email" autocomplete="email" required>
                     </div>
                     <div class="form-group">
-                      <label for="register_form_tel">Telefonní číslo <span class="label__muted">(nepovinné)</span></label>
-                      <input class="form-control" type="tel" name="register_form_tel" id="register_form_tel" autocomplete="tel">
+                      <label for="register_form_tel">Telefón</label>
+                      <input class="form-control" type="tel" name="register_form_tel" id="register_form_tel" autocomplete="tel" required>
                     </div>
                     <div class="form-group">
-                      <label for="register_form_address">Ulice a č. p.</label>
+                      <label for="register_form_address">Ulica</label>
                       <input class="form-control" type="text" name="register_form_address" id="register_form_address" autocomplete="street-address" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="register_form_descriptive">Číslo popisné</label>
+                      <input class="form-control" type="text" name="register_form_descriptive" id="register_form_descriptive" autocomplete="descriptive-address" required>
                     </div>
                     <div class="form-group">
                       <label for="register_form_locality">Město</label>
@@ -332,25 +335,25 @@
                     <div class="form-group">
                       <label for="register_form_country">Stát</label>
                       <select class="form-control" type="text" name="register_form_country" id="register_form_country" required>
-                        <option value="cz">Česká republika</option>
                         <option value="sk">Slovensko</option>
+                        <option value="cz">Česká republika</option>
                       </select>
                     </div>
                     <div class="register-form-info-collapse-wrap">  
                       <div class="form-group">
                         <div class="form-check">
                           <label class="form-check__label billing-address-toggler">
-                            <input class="form-check__input" type="checkbox" name="register_form_billing_toggler">Vyplnit fakturační adresu<span class="form-check__box checkbox"></span>
+                            <input class="form-check__input" type="checkbox" name="register_form_billing_toggler">Fakturačná adresa (pri nákupe na firmu)<span class="form-check__box checkbox"></span>
                           </label>
                         </div>
                       </div>
                       <div class="register-form-billing__wrap"> 
                         <div class="form-group">
-                          <label for="register_form_billing_name">Jméno a příjmení <span class="label__muted">(nepovinné)</span></label>
+                          <label for="register_form_billing_name">Meno a priezvisko <span class="label__muted">(nepovinné)</span></label>
                           <input class="form-control" type="text" name="register_form_billing_name" id="register_form_billing_name" autocomplete="name">
                         </div>
                         <div class="form-group">
-                          <label for="register_form_billing_company">Název firmy <span class="label__muted">(nepovinné)</span></label>
+                          <label for="register_form_billing_company">Názov firmy</label>
                           <input class="form-control" type="text" name="register_form_billing_company" id="register_form_billing_company" autocomplete="org">
                         </div>
                         <div class="form-group">
@@ -362,8 +365,12 @@
                           <input class="form-control" type="text" name="register_form_billing_dic" id="register_form_billing_dic" autocomplete="dic">
                         </div>
                         <div class="form-group">
-                          <label for="register_form_billing_address">Ulice a č. p.</label>
+                          <label for="register_form_billing_address">Ulica</label>
                           <input class="form-control" type="text" name="register_form_billing_address" id="register_form_billing_address" autocomplete="street-address">
+                        </div>
+                        <div class="form-group">
+                          <label for="register_form_billing_descriptive">Číslo popisné</label>
+                          <input class="form-control" type="text" name="register_form_billing_descriptive" id="register_form_billing_descriptive" autocomplete="descriptive-address">
                         </div>
                         <div class="form-group">
                           <label for="register_form_billing_locality">Město</label>
@@ -376,30 +383,34 @@
                         <div class="form-group">
                           <label for="register_form_billing_postal_country">Stát</label>
                           <select class="form-control" type="text" name="register_form_billing_postal_country" id="register_form_billing_postal_country">
-                            <option value="cz">Česká republika</option>
                             <option value="sk">Slovensko</option>
+                            <option value="cz">Česká republika</option>
                           </select>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="form-check">
                           <label class="form-check__label shipping-address-toggler">
-                            <input class="form-check__input" type="checkbox" name="register_form_shipping_toggler">Mám jinou dodací adresu<span class="form-check__box checkbox"> </span>
+                            <input class="form-check__input" type="checkbox" name="register_form_shipping_toggler">Iná dodacia adresa <span class="form-check__box checkbox"> </span>
                           </label>
                         </div>
                       </div>
                       <div class="register-form-shipping__wrap"> 
                         <div class="form-group">
-                          <label for="register_form_shipping_name">Jméno a příjmení <span class="label__muted">(nepovinné)</span></label>
+                          <label for="register_form_shipping_name">Meno a priezvisko</label>
                           <input class="form-control" type="text" name="register_form_shipping_name" id="register_form_shipping_name" autocomplete="name">
                         </div>
                         <div class="form-group">
-                          <label for="register_form_shipping_company">Název firmy <span class="label__muted">(nepovinné)</span></label>
+                          <label for="register_form_shipping_company">Názov firmy <span class="label__muted">(nepovinné)</span></label>
                           <input class="form-control" type="text" name="register_form_shipping_company" id="register_form_shipping_company" autocomplete="org">
                         </div>
                         <div class="form-group">
-                          <label for="register_form_shipping_address">Ulice a č. p.</label>
+                          <label for="register_form_shipping_address">Ulica</label>
                           <input class="form-control" type="text" name="register_form_shipping_address" id="register_form_shipping_address" autocomplete="street-address">
+                        </div>
+                        <div class="form-group">
+                          <label for="register_form_shipping_descriptive">Číslo popisné</label>
+                          <input class="form-control" type="text" name="register_form_shipping_descriptive" id="register_form_shipping_descriptive" autocomplete="descriptive-address">
                         </div>
                         <div class="form-group">
                           <label for="register_form_shipping_locality">Město</label>
@@ -412,19 +423,23 @@
                         <div class="form-group">
                           <label for="register_form_shipping_country">Stát</label>
                           <select class="form-control" type="text" name="register_form_shipping_country" id="register_form_shipping_country">
-                            <option value="cz">Česká republika</option>
                             <option value="sk">Slovensko</option>
+                            <option value="cz">Česká republika</option>
                           </select>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="form-check">
                           <label class="form-check__label cart-register-toggler">
-                            <input class="form-check__input" type="checkbox" name="register_form_register_toggler">Mám zájem o vytvoření účtu<span class="form-check__box checkbox"></span>
+                            <input class="form-check__input" type="checkbox" name="register_form_register_toggler">Mám záujem o vytvorenie účtu<span class="form-check__box checkbox"></span>
                           </label>
                         </div>
                       </div>
                       <div class="register-form-register__wrap">
+                        <div class="form-group">
+                          <label for="register_form_register_username">Uživatelské meno</label>
+                          <input class="form-control" type="text" name="register_form_register_username" id="register_form_register_username" autocomplete="off">
+                        </div>
                         <div class="form-group">
                           <label for="register_form_register_password">Heslo</label><span id="show_password_toggler" data-toggle="tooltip" data-placement="top" title="Zobrazit/Skrýt heslo"><span class="fa fa-eye"></span></span>
                           <input class="form-control" type="password" name="register_form_register_password" id="register_form_register_password" autocomplete="off">
@@ -434,36 +449,29 @@
                     <div class="form-group">
                       <div class="form-check">
                         <label class="form-check__label">
-                          <input class="form-check__input" type="checkbox" name="register_form_email_marketing" checked>Zasílat novinky a propagační materiály na email<span class="form-check__box checkbox"></span>
+                          <input class="form-check__input" type="checkbox" name="register_form_terms">Súhlasím so spracovaním osobných údajov<span class="form-check__box checkbox"></span>
                         </label>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <label class="form-check__label">
-                          <input class="form-check__input" type="checkbox" name="register_form_terms">Souhlasím se zpracováním osobních údajů<span class="form-check__box checkbox"></span>
-                        </label>
-                      </div>
-                    </div>
-                    <button class="d-none" type="submit" id="register_form_submit">Souhrn objednávky</button>
+                    <button class="d-none" type="submit" id="register_form_submit">Súhrn objednávky</button>
                   </div>
                 </form>
               </div>
               <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 login-form-col">
                 <form class="login-form" method="post" action="" name="login_form">
-                  <h3>Přihlásit se k existujícímu účtu</h3><a class="login-form-toggler" data-toggle="collapse" href="#login-collapse" aria-expanded="false" aria-controls="login-collapse">Přihlásit se k existujícímu účtu <span class="register-form-toggler__icon"></span></a>
+                  <h3>Prihlásiť sa k existujúcemu účtu</h3><a class="login-form-toggler" data-toggle="collapse" href="#login-collapse" aria-expanded="false" aria-controls="login-collapse">Prihlásiť sa k existujúcemu účtu <span class="register-form-toggler__icon"></span></a>
                   <div class="collapse login-form-collapse" id="login-collapse">
                     <div class="form-group">
-                      <label for="login_form_email">Emailová adresa</label>
-                      <input class="form-control" type="email" name="login_form_email" id="login_form_email" required>
+                      <label for="login_form_username">Uživatelské meno</label>
+                      <input class="form-control" type="text" name="login_form_username" id="login_form_username" required>
                     </div>
                     <div class="form-group">
                       <label for="login_form_password">Heslo</label>
                       <input class="form-control" type="password" name="login_form_password" id="login_form_password" required>
                     </div>
                     <div class="form-group">
-                      <button class="form-control btn" type="submit" name="login_form_submit" id="login_form_submit">Přihlásit se</button>
-                    </div><a class="form-link__forgotten-pass" href="#">Zapomenuté heslo?</a>
+                      <button class="form-control btn" type="submit" name="login_form_submit" id="login_form_submit">Prihlásiť sa</button>
+                    </div><a class="form-link__forgotten-pass" href="#">Zabudnuté heslo?</a>
                   </div>
                 </form>
               </div>
@@ -481,69 +489,69 @@
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
             <div class="cart-sidebar sticky-top">
-              <h3>Souhrn objednávky</h3>
+              <h3>Súhrn objednávky</h3>
               <div class="cart-sidebar-item-single">
-                <div class="cart-sidebar-item-single-img"><img class="lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-small.jpg"></div>
+                <div class="cart-sidebar-item-single-img"><img class="lazy" src="img/placeholder-200x200.png" data-src="img/product-thumb-small.jpg"></div>
                 <div class="cart-sidebar-item-single-desc-wrap">
                   <div class="cart-sidebar-item-single-name">
                     <p>MAYORAL chlapčenská obuv 42764-028 red</p>
                   </div>
                   <div class="cart-sidebar-item-single-qty"> 
-                    <p>Počet kusů: 2</p>
+                    <p>Počet kusov: 2</p>
                   </div>
                   <div class="cart-sidebar-item-single-price-wrap">
-                    <div class="cart-sidebar-item-single-stock">Skladem</div>
-                    <div class="cart-sidebar-item-single-price">8 489 Kč</div>
+                    <div class="cart-sidebar-item-single-stock">Skladom</div>
+                    <div class="cart-sidebar-item-single-price">59 €</div>
                   </div>
                 </div>
               </div>
               <div class="cart-sidebar-item-single">
-                <div class="cart-sidebar-item-single-img"><img class="lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-small.jpg"></div>
+                <div class="cart-sidebar-item-single-img"><img class="lazy" src="img/placeholder-200x200.png" data-src="img/product-thumb-small.jpg"></div>
                 <div class="cart-sidebar-item-single-desc-wrap">
                   <div class="cart-sidebar-item-single-name">
                     <p>MAYORAL chlapčenská obuv 42764-028 red</p>
                   </div>
                   <div class="cart-sidebar-item-single-qty"> 
-                    <p>Počet kusů: 2</p>
+                    <p>Počet kusov: 2</p>
                   </div>
                   <div class="cart-sidebar-item-single-price-wrap">
-                    <div class="cart-sidebar-item-single-stock">Skladem</div>
-                    <div class="cart-sidebar-item-single-price">8 489 Kč</div>
+                    <div class="cart-sidebar-item-single-stock">Skladom</div>
+                    <div class="cart-sidebar-item-single-price">59 €</div>
                   </div>
                 </div>
               </div>
               <div class="cart-sidebar-item-single">
-                <div class="cart-sidebar-item-single-img"><img class="lazy" src="http://via.placeholder.com/200x200" data-src="img/product-thumb-small.jpg"></div>
+                <div class="cart-sidebar-item-single-img"><img class="lazy" src="img/placeholder-200x200.png" data-src="img/product-thumb-small.jpg"></div>
                 <div class="cart-sidebar-item-single-desc-wrap">
                   <div class="cart-sidebar-item-single-name">
                     <p>MAYORAL chlapčenská obuv 42764-028 red</p>
                   </div>
                   <div class="cart-sidebar-item-single-qty"> 
-                    <p>Počet kusů: 2</p>
+                    <p>Počet kusov: 2</p>
                   </div>
                   <div class="cart-sidebar-item-single-price-wrap">
-                    <div class="cart-sidebar-item-single-stock">Skladem</div>
-                    <div class="cart-sidebar-item-single-price">8 489 Kč</div>
+                    <div class="cart-sidebar-item-single-stock">Skladom</div>
+                    <div class="cart-sidebar-item-single-price">59 €</div>
                   </div>
                 </div>
               </div>
               <div class="cart-sidebar-price-sort">
                 <div class="cart-sidebar-price-sort-row">
-                  <p>Česká pošta</p><span>80 Kč</span>
+                  <p>Pošta</p><span>59 €</span>
                 </div>
                 <div class="cart-sidebar-price-sort-row">
-                  <p>Dobírka</p><span>30 Kč                   </span>
+                  <p>Dobírka</p><span>59 €                  </span>
                 </div>
                 <div class="cart-sidebar-price-sort-row">
                   <p>Celková cena s DPH</p>
-                  <h4>24 989 Kč</h4>
+                  <h4>59 €</h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="cart-bottom-btns"><a class="btn btn-dark" href="#"><span class="btn__icon arrow-icon left white"></span> Krok zpět</a>
-          <button class="btn" onclick="responsive_check()">Souhrn objednávky <span class="btn__icon arrow-icon white"></span></button>
+        <div class="cart-bottom-btns"><a class="btn btn-dark" href="#"><span class="btn__icon arrow-icon left white"></span> Krok späť</a>
+          <button class="btn" onclick="responsive_check()">Súhrn objednávky <span class="btn__icon arrow-icon white"></span></button>
         </div>
       </div>
       <div class="cart-price-overview-responsive">
@@ -552,7 +560,7 @@
           <h3 class="cart-price-overview-responsive__price"><span>16 989</span> Kč</h3>
         </div>
         <div class="cart-price-overview-responsive__btn-wrap">
-          <button class="btn cart-price-overview-responsive__btn" onclick="responsive_check()">Souhrn objednávky <span class="btn__icon arrow-icon white"></span></button>
+          <button class="btn cart-price-overview-responsive__btn" onclick="responsive_check()">Súhrn objednávky <span class="btn__icon arrow-icon white"></span></button>
         </div>
       </div>
     </main><a class="scroll-to-top" href="#anchor-navbar-top"><span class="caret-icon top"></span></a>
@@ -572,13 +580,13 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">O nákupu</h5><a class="footer-main__link" href="#">Obchodní podmínky</a><a class="footer-main__link" href="#">O nás</a><a class="footer-main__link" href="#">Ako nakupovať</a><a class="footer-main__link" href="#">Poštovné</a>
+              <h5 class="footer-main__h5">O nákupe</h5><a class="footer-main__link" href="#">Obchodné podmienky</a><a class="footer-main__link" href="#">O nás</a><a class="footer-main__link" href="#">Ako Nakupovať</a><a class="footer-main__link" href="#">Poštovné</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">O společnosti</h5><a class="footer-main__link" href="#">Výhody nákupu u nás</a><a class="footer-main__link" href="#">Kamenná prodejna</a><a class="footer-main__link" href="#">Kontakty</a><a class="footer-main__link" href="#">Aktuality</a>
+              <h5 class="footer-main__h5">O spoločnosti</h5><a class="footer-main__link" href="#">Výhody nákupu u nás</a><a class="footer-main__link" href="#">Kamenná predajňa</a><a class="footer-main__link" href="#">Kontakty</a><a class="footer-main__link" href="#">Aktuality</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">Uživatel</h5><a class="footer-main__link" href="#">Přihlášení</a><a class="footer-main__link" href="#">Registrace</a><a class="footer-main__link" href="#">Zapomenuté údaje</a>
+              <h5 class="footer-main__h5">Užívateľ</h5><a class="footer-main__link" href="#">Prihlásenie</a><a class="footer-main__link" href="#">Registrácia</a><a class="footer-main__link" href="#">Zabudnuté údaje</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
               <h5 class="footer-main__h5">Kontakty</h5>
@@ -586,7 +594,7 @@
               <p class="footer-main__text">Topoľová ul. 2768/13</p>
               <p class="footer-main__text">92401 Galanta</p><br>
               <p class="footer-main__text">info@obuvkovo.sk</p>
-              <p class="footer-main__text">0918 669 804</p><a class="footer-main__link" href="#">Více kontaktů</a>
+              <p class="footer-main__text">0918 669 804</p><a class="footer-main__link" href="#">Viac kontaktov</a>
             </div>
           </div>
         </div>
@@ -595,14 +603,19 @@
     <section class="copyright">
       <div class="container copyright__container">
         <div class="copyright__wrap">
-          <h5 class="copyright__h5">Copyright © 2018 <a class="copyright__link" href="https://obuvkovo.sk">Obuvkovo.sk</a> Všechna práva vyhrazena.</h5>
-          <h5 class="copyright__pull">Vytvořeno v <a class="copyright__link" href="http://eline.cz">Eline.cz</a></h5>
+          <h5 class="copyright__h5">Copyright © 2018 <a class="copyright__link" href="https://obuvkovo.sk">Obuvkovo.sk</a> Všetky práva vyhradené.</h5>
+          <h5 class="copyright__pull">Vytvorené v <a class="copyright__link" href="http://eline.cz">Eline.cz</a></h5>
           <p class="copyright__farm"><a class="copyright__farm-link" href="#">Postele z masivu</a> za nejlepší ceny, <a class="copyright__farm-link" href="#">Dětské boty</a> a oblečení, výroba bazénových krytů a prodej <a class="copyright__farm-link" href="#">Polykarbonátu</a>, Frýdek-Místek je <a class="copyright__farm-link" href="#">FAJNEMJESTO</a>, nejlepší DJ v okolí <a class="copyright__farm-link" href="#">DJ Jan Opěla</a></p>
         </div>
       </div>
     </section>
     <!-- Popper for Bootstrap support-->
-    <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script>
+      if(typeof(Popper) === 'undefined') {
+      document.write('<script src="js/popper.min.js">\x3C/script>')}
+      
+    </script>
     <!-- Bootstrap core JavaScript-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>
@@ -611,10 +624,23 @@
       
     </script>
     <!-- FontAwesome 5-->
-    <script src="js/fontawesome-all.min.js"></script>
-    <!-- Custom js libraries-->
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" integrity="sha384-0AJY8UERsBUKdWcyF3o2kisLKeIo6G4Tbd8Y6fbyw6qYmn4WBuqcvxokp8m2UzSD" crossorigin="anonymous"></script>
+    <script>
+      if(typeof(FontAwesome) === 'undefined') {
+      document.write('<script src="js/fontawesome-all.min.js">\x3C/script>')}
+      
+    </script>
     <!-- Custom js plugins and scripts-->
     <script src="js/all.min.js"></script>
+    <!-- Custom js plugins and scripts-->
+    <script>
+      var options = {
+      	data: ["blue", "green", "pink", "red", "yellow"]
+      };
+      $("#searchbox").easyAutocomplete(options);
+      
+      
+    </script>
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="pswp__bg"></div>
       <div class="pswp__scroll-wrap">
@@ -650,18 +676,14 @@
       </div>
     </div>
     <script>
-      // Wait for the DOM to be ready
       $(function() {
-          // Initialize form validation on the registration form.
-          // It has the name attribute "registration"
           $("form[name='register_form']").validate({
-              // Specify validation rules
               errorElement: 'span',
               rules: {
-                  // The key name on the left side is the name attribute
-                  // of an input field. Validation rules are defined
-                  // on the right side
                   register_form_name:{
+                      required: true
+                  },
+                  register_form_surname:{
                       required: true
                   },
                   register_form_email: {
@@ -669,12 +691,8 @@
                       email: true
                   },
                   register_form_tel: {
-                      required: false,
-                      minlength: 9
-                  },
-                  register_form_register_password: {
                       required: true,
-                      minlength: 5
+                      minlength: 9
                   },
                   register_form_address: {
                       required: true
@@ -684,12 +702,13 @@
                       minlength: 5,
                       maxlength: 6
                   },
+      
                   register_form_billing_name: {
                       required: false,
                       minlength: 1
                   },
                   register_form_billing_company: {
-                      required: false,
+                      required: true,
                       minlength: 1
                   },
                   register_form_billing_ico: {
@@ -698,75 +717,99 @@
                       maxlength: 8
                   },
                   register_form_billing_dic: {
-                      minlength: 8,
-                      maxlength: 10
+                      minlength: 1,
+                      maxlength: 99
                   },
+                  register_form_billing_postal_code: {
+                      required: true,
+                      minlength: 5,
+                      maxlength: 6
+                  },
+      
                   register_form_shipping_name: {
-                      required: false,
+                      required: true,
                       minlength: 1
                   },
                   register_form_shipping_company: {
                       required: false,
                       minlength: 1
                   },
+                  register_form_shipping_postal_code: {
+                      required: true,
+                      minlength: 5,
+                      maxlength: 6
+                  },
+      
+                  register_form_register_password: {
+                      required: true,
+                      minlength: 5
+                  },
+                  
                   register_form_terms: {
                      required: false
                   }
                   },
-              // Specify validation error messages
               messages: {
-                  register_form_name: "Prosím zadejte své celé jméno",
-      
-                  register_form_email: "Prosím zadejte platnou emailovou adresu",
-      
+                  //udaje zaklad
+                  register_form_name: "Prosím zadajte svoje meno",
+                  register_form_surname: "Prosím zadajte svoje priezvisko",
+                  register_form_email: "Prosím zadajte platnú emailovú adresu",
                   register_form_tel: {
-                      minlength: "Telefonní číslo je neplatné, prosím zadejte alespoň 9 znaků"
+                      required: "Prosím zadajte svoje telefónne číslo", 
+                      minlength: "Telefónne číslo je neplatné, prosím zadajte aspoň 9 znakov"
                   },
-      
-                  register_form_register_password: {
-                      required: "Prosím zadejte heslo", 
-                      minlength: "Prosím zadejte heslo alespoň 5 znaků dlouhé"
-                  },
-      
-                  register_form_address: "Prosím zadejte svou adresu",
-                  register_form_billing_address: "Prosím zadejte svou adresu",
-                  register_form_shipping_address: "Prosím zadejte svou adresu",
-      
-                  register_form_locality: "Prosím zadejte město",
-                  register_form_billing_locality: "Prosím zadejte město",
-                  register_form_shipping_locality: "Prosím zadejte město",
-      
+                  register_form_address: "Prosím zadajte svoju adresu",
+                  register_form_descriptive: "Prosím zadajte číslo popisné",
+                  register_form_locality: "Prosím zadajte mesto",
                   register_form_postal_code: {
-                      required: "Prosím zadejte Poštovní směrovací číslo", 
-                      minlength: "Nesprávně zadané PSČ, zadejte jej prosím ve tvaru s mezerou (např. 102 00) nebo bez (např. 10200)", 
-                      maxlength: "Nesprávně zadané PSČ, zadejte jej prosím ve tvaru s mezerou (např. 102 00) nebo bez (např. 10200)"
+                      required: "Prosím zadajte Poštové smerovacie číslo", 
+                      minlength: "Nesprávne zadané PSČ, zadajte ho prosím v tvare s medzerou (napr. 102 00) alebo bez (napr. 10200)", 
+                      maxlength: "Nesprávne zadané PSČ, zadajte ho prosím v tvare s medzerou (napr. 102 00) alebo bez (napr. 10200)"
                   },
-                  register_form_billing_postal_code: {
-                      required: "Prosím zadejte Poštovní směrovací číslo", 
-                      minlength: "Nesprávně zadané PSČ, zadejte jej prosím ve tvaru s mezerou (např. 102 00) nebo bez (např. 10200)", 
-                      maxlength: "Nesprávně zadané PSČ, zadejte jej prosím ve tvaru s mezerou (např. 102 00) nebo bez (např. 10200)"
+                  //fakturacni
+                  register_form_billing_company: {
+                      required: "Prosím zadajte meno firmy", 
                   },
-                  register_form_shipping_postal_code: {
-                      required: "Prosím zadejte Poštovní směrovací číslo", 
-                      minlength: "Nesprávně zadané PSČ, zadejte jej prosím ve tvaru s mezerou (např. 102 00) nebo bez (např. 10200)", 
-                      maxlength: "Nesprávně zadané PSČ, zadejte jej prosím ve tvaru s mezerou (např. 102 00) nebo bez (např. 10200)"
-                  },
-      
                   register_form_billing_ico: { 
-                      required: "Prosím zadejte Osobní identifikační číslo",
-                      minlength: "Prosím zadejte IČO ve správném tvaru - 8 číslic (např. 25596641)",
-                      maxlength: "Prosím zadejte IČO ve správném tvaru - 8 číslic (např. 25596641)"
+                      required: "Prosím zadajte Osobné identifikačné číslo",
+                      minlength: "Prosím zadajte IČO v správnom tvare - 8 číslic (napr. 25596641)",
+                      maxlength: "Prosím zadajte IČO v správnom tvare - 8 číslic (napr. 25596641)"
                   },
-      
                   register_form_billing_dic: { 
-                      minlength: "Prosím zadejte DIČ ve správném tvaru - minimálně 8 číslic (např. CZ12345678)",
-                      maxlength: "Prosím zadejte DIČ ve správném tvaru - maximálně 10 číslic (např. CZ1234567890)"
+                      minlength: "Prosím zadajte DIČ v správnom tvare - minimálne 8 číslic (napr. CZ12345678)",
+                      maxlength: "Prosím zadajte DIČ v správnom tvare - maximálne 10 číslic (napr. CZ1234567890)"
+                  },
+                  register_form_billing_address: "Prosím zadajte svoju adresu",
+                  register_form_billing_descriptive: "Prosím zadajte číslo popisné",
+                  register_form_billing_locality: "Prosím zadajte mesto",
+                  register_form_billing_postal_code: {
+                      required: "Prosím zadajte Poštové smerovacie číslo", 
+                      minlength: "Nesprávne zadané PSČ, zadajte ho prosím v tvare s medzerou (napr. 102 00) alebo bez (napr. 10200)", 
+                      maxlength: "Nesprávne zadané PSČ, zadajte ho prosím v tvare s medzerou (napr. 102 00) alebo bez (napr. 10200)"
                   },
       
-                  register_form_terms: "Musíte souhlasit se zpracováním osobních údajů"
+                  //dodaci
+                  register_form_shipping_name: {
+                      required: "Prosím zadajte celé meno a priezvisko",
+                  },
+                  register_form_shipping_address: "Prosím zadajte svoju adresu",
+                  register_form_shipping_descriptive: "Prosím zadajte číslo popisné",
+                  register_form_shipping_locality: "Prosím zadajte mesto",
+                  register_form_shipping_postal_code: {
+                      required: "Prosím zadajte Poštové smerovacie číslo", 
+                      minlength: "Nesprávne zadané PSČ, zadajte ho prosím v tvare s medzerou (napr. 102 00) alebo bez (napr. 10200)", 
+                      maxlength: "Nesprávne zadané PSČ, zadajte ho prosím v tvare s medzerou (napr. 102 00) alebo bez (napr. 10200)"
+                  },
+      
+                  //registrace kosik
+                  register_form_register_username: "Prosím vyberte si používateľské meno",
+                  register_form_register_password: {
+                      required: "Prosím zadajte heslo", 
+                      minlength: "Prosím zadajte heslo aspoň 5 znakov dlhé"
+                  },
+                  //osobni udaje
+                  register_form_terms: "Musíte súhlasiť so spracovaním osobných údajov"
               },
-              // Make sure the form is submitted to the destination defined
-              // in the "action" attribute of the form when valid
               submitHandler: function(form) {
               form.submit();
               }

@@ -4,13 +4,12 @@ html(lang=lang)
     head
         meta(charset="utf-8")
         meta(content="IE=edge" http-equiv="X-UA-Compatible")
-        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
         title #{title}
         meta(content="index,follow,snippet,archive" name="robots")
         meta(content=metaDescription name="description")
         meta(content=metaKeywords lang="cs" name="keywords")
         meta(content=metaAuthor name="author")
-        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
 
         link(rel="canonical" href=metaURL)
         meta(property="og:locale" content="cs_CZ")
@@ -53,25 +52,26 @@ html(lang=lang)
 
         section.benefits
             .container.benefits__container
-                .benefits__single
-                    .benefits__img-wrap
-                        img.benefits__img(src=URLbase+"images/benefits-delivery.svg")
-                    p.benefits__text Doprava zdarma nad 5000 Kč
+                .row.benefits__row
+                    a.benefits__single(href="#")
+                        .benefits__single-wrap.post__image-container
+                            img.post__featured-image.benefits__img(src=URLbase+"img/benefits-velikost.jpg")
+                            p.benefits__text Ako merať velikost?
 
-                .benefits__single
-                    .benefits__img-wrap
-                        img.benefits__img(src=URLbase+"images/benefits-stock.svg")
-                    p.benefits__text 5727 produktů skladem
+                    a.benefits__single(href="#")
+                        .benefits__single-wrap.post__image-container
+                            img.post__featured-image.benefits__img(src=URLbase+"img/benefits-nakupovat.jpg")
+                            p.benefits__text Prečo u nás nakupovať
 
-                .benefits__single
-                    .benefits__img-wrap
-                        img.benefits__img(src=URLbase+"images/benefits-gift.svg")
-                    p.benefits__text Dárek k objednávce nad 6000 Kč
+                    a.benefits__single(href="#")
+                        .benefits__single-wrap.post__image-container
+                            img.post__featured-image.benefits__img(src=URLbase+"img/benefits-tabulky.jpg")
+                            p.benefits__text Veľkostné tabuľky
 
-                .benefits__single
-                    .benefits__img-wrap
-                        img.benefits__img(src=URLbase+"images/benefits-marker.svg")
-                    p.benefits__text 1400 výdejních míst po celé ČR
+                    a.benefits__single(href="#")
+                        .benefits__single-wrap.post__image-container
+                            img.post__featured-image.benefits__img(src=URLbase+"img/benefits-doprava.jpg")
+                            p.benefits__text #[span Doprava zadarmo] pri nákupu #[br] nad 100 €
 
 
         include _index-categories.pug

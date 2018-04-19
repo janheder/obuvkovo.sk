@@ -60,7 +60,7 @@
 		top: 56px;
 		width: 100%;
 		padding: 0;
-		z-index: 8;
+		z-index: 5;
 		height: 50px;
 		@include flexbox();
 		@include flex-direction(row);
@@ -486,7 +486,7 @@
 	padding: 15px;
 	top: 15px;
 	margin-bottom: 2rem;
-	z-index: 5;
+	z-index: 2;
 	border: 1px solid $border-primary;
 	border-radius: $border-radius-primary;
 
@@ -516,7 +516,7 @@
 			& .cart-sidebar-item-single-name{
 
 				& p{
-					font-size: 13px;
+					font-size: 14px;
 					font-weight: 500;
 					line-height: 1.2;
 					max-height: 30px;
@@ -530,6 +530,8 @@
 				& p{
 					font-size: 13px;
 					margin: 0;
+					font-weight: 500;
+					opacity: 0.8;
 				}
 			}
 			& .cart-sidebar-item-single-price-wrap{
@@ -571,7 +573,7 @@
 		& p{
 			margin: 0;
 			@include flex-grow(1);
-			font-size: 13px;
+			font-size: 14px;
 			font-weight: 500;
 		} 
 		& span{

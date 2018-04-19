@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .form-control{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 3rem;
     padding:0.5rem 1.5rem;
     height: 4.6rem;
@@ -48,11 +48,15 @@ select.form-control:not([size]):not([multiple]) {
         font-size: 13px;
         order: 1;
         margin: 0;
+        font-weight: 500;
     }
     label{
         width: 100%;
         font-weight: 500;
         font-size: 1.6rem;
+    }
+    option{
+        font-weight: 500;
     }
     h3{
         margin: 2rem 0;
@@ -241,7 +245,7 @@ input[type=number]::-webkit-outer-spin-button {
 .register-form, .login-form{
     & h3{
         padding-bottom: 1.5rem;
-        border-bottom: 2px solid $dark-grey;
+        border-bottom: 2px solid $bg-dark;
         margin: 0;
         margin-bottom: 2.5rem;
         display: none;

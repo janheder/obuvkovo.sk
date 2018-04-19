@@ -4,6 +4,7 @@
 
 .pagination{
     @include justify-content(center);
+    @include flex-wrap(wrap);
     margin: 2rem 0 4rem 0;
 }
 .page-item{

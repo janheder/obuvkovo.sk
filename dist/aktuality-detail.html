@@ -21,7 +21,7 @@
     <meta name="twitter:site" content="@obuvkovo">
     <meta name="twitter:title" content="Obuvkovo.sk - najväčší eshop pre deti na Slovensku">
     <meta name="twitter:description" content="Mayoral detské oblečenie a detská ortopedická obuv">
-    <meta name="twitter:image" content="http://via.placeholder.com/500x500">
+    <meta name="twitter:image" content="img/placeholder-200x200.png">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
@@ -36,9 +36,9 @@
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <link rel="manifest" href="images/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#441D0E">
+    <meta name="msapplication-TileColor" content="#4F3022">
     <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#441D0E">
+    <meta name="theme-color" content="#4F3022">
     <!-- Bootstrap-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" onerror="loadBootstrap()" id="loadBootstrap">
     <script>
@@ -49,16 +49,12 @@
       
       
     </script>
-    <!-- Custom CSS-->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
     <!-- Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&amp;amp;subset=latin-ext" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')
-      
-      
-    </script>
-    <!-- Hotjar Tracking Code-->
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')</script>
   </head>
   <body>
     <header>
@@ -76,42 +72,42 @@
         <div class="container navbar-main__container">
           <div class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-toggle="collapse" data-target="#navbarNav" role="button"><span class="hamburger-icon"></span>
             <p>Menu</p>
-          </div><a class="navbar-brand" href="#"><img class="navbar-brand__img" src="images/logo.png" title="#" alt="#"></a>
+          </div><a class="navbar-brand" href="#"><img class="navbar-brand__img" src="images/logo.png" title="#" alt="#"><img class="navbar-brand__img-responsive" src="images/logo-responsive.svg" title="#" alt="#"></a>
           <div class="navbar-search-responsive-toggler" id="search-toggler-responsive"><span class="search-icon"></span></div>
           <div class="navbar-search">
             <form class="navbar-search__form" method="POST" id="search-form">
               <div class="form-group navbar-search__form-group">
                 <div class="navbar-search__responsive-close" id="search-toggler-responsive-close"><span class="cross-icon navbar-search__responsive-close-icon"></span></div>
-                <input class="form-control navbar-search__input" type="text" name="searchbox" id="searchbox" placeholder="Hledejte název produktu, značku nebo typ...">
+                <input class="form-control navbar-search__input" type="text" name="searchbox" id="searchbox" placeholder="Hľadajte názov výrobku, značku alebo typ...">
                 <div class="navbar-search__submit-wrap">
-                  <div class="navbar-search__submit-speech"><span class="fa fa-microphone microphone-icon" onclick="startDictation()" title="Vyhledávejte hlasem"></span></div>
-                  <button class="btn navbar-search__button form-control" type="submit" name="search-button" id="search-button">Hledat<span class="search-icon navbar-search__button-icon"></span></button>
+                  <div class="navbar-search__submit-speech"><span class="fa fa-microphone microphone-icon" onclick="startDictation()" title="Vyhľadávajte hlasom"></span></div>
+                  <button class="btn navbar-search__button form-control" type="submit" name="search-button" id="search-button">Hľadať<span class="search-icon navbar-search__button-icon"></span></button>
                 </div>
               </div>
             </form>
             <div class="navbar-search-responsive">
               <div class="navbar-search-responsive__section">
-                <h5 class="navbar-search-responsive__title">Zákazníci často vyhledávají:</h5>
+                <h5 class="navbar-search-responsive__title">Zákazníci často vyhľadávajú:</h5>
                 <div class="navbar-search-responsive__group"><a class="navbar-search-responsive__single" href="#">Lorem ipsum</a><a class="navbar-search-responsive__single" href="#">Dolor sit amet</a><a class="navbar-search-responsive__single" href="#">Consectetur adipiscing elit</a><a class="navbar-search-responsive__single" href="#">Do eiusmod</a></div>
               </div>
               <div class="navbar-search-responsive__section">
-                <h5 class="navbar-search-responsive__title">Akční nabídka:</h5>
+                <h5 class="navbar-search-responsive__title">Akčná ponuka:</h5>
                 <div class="navbar-search-responsive__group"><a class="navbar-search-responsive__single" href="#">Lorem ipsum</a><a class="navbar-search-responsive__single" href="#">Dolor sit amet</a><a class="navbar-search-responsive__single" href="#">Consectetur adipiscing elit</a><a class="navbar-search-responsive__single" href="#">Do eiusmod</a></div>
               </div>
               <div class="navbar-search-responsive__section">
-                <h5 class="navbar-search-responsive__title">Doporučené kategorie:</h5>
+                <h5 class="navbar-search-responsive__title">Odporúčané kategórie:</h5>
                 <div class="navbar-search-responsive__group"><a class="navbar-search-responsive__single" href="#">Lorem ipsum</a><a class="navbar-search-responsive__single" href="#">Dolor sit amet</a><a class="navbar-search-responsive__single" href="#">Consectetur adipiscing elit</a><a class="navbar-search-responsive__single" href="#">Do eiusmod</a></div>
               </div>
             </div>
           </div>
           <div class="navbar-user">
             <div class="dropdown navbar-user__dropdown">
-              <div class="dropdown-toggle navbar-user__dropdown-toggle" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-icon navbar-user__icon"></span>
+              <div class="dropdown-toggle navbar-user__dropdown-toggle" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-icon navbar-user__icon"></span><span class="user-icon white navbar-user__icon-responsive"></span>
                 <div class="navbar-user__text-wrap">
                   <p class="navbar-user__text">Petroslav Novakovič</p>
                 </div><span class="caret-icon navbar-user__caret"></span>
               </div>
-              <div class="dropdown-menu dropdown-menu-left navbar-user__dropdown-menu" aria-labelledby="userDropdown"><a class="dropdown-item navbar-user__item" href="#">Detail účtu</a><a class="dropdown-item navbar-user__item" href="#">Historie objednávek</a><a class="dropdown-item navbar-user__item" href="#">Odhlásit</a></div>
+              <div class="dropdown-menu dropdown-menu-left navbar-user__dropdown-menu" aria-labelledby="userDropdown"><a class="dropdown-item navbar-user__item" href="#">Detail účtu</a><a class="dropdown-item navbar-user__item" href="#">Odhlásiť</a></div>
             </div>
           </div>
           <!-- Přihlášený uživatel
@@ -119,12 +115,12 @@
           	a.navbar-user__link(href="#")
           		span.user-icon.navbar-user__icon
           		.navbar-user__text-wrap
-          			p.navbar-user__text Můj účet
+          			p.navbar-user__text Môj účet
           
           -->
           <div class="navbar-cart"><a class="navbar-cart__link" href="#"><span class="cart-icon navbar-cart__cart-icon"><span class="navbar-cart__icon-number">3</span></span>
               <div class="navbar-cart__text-wrap">
-                <p class="navbar-cart__text">5 899Kč</p>
+                <p class="navbar-cart__text">59 €</p>
               </div><span class="caret-icon white navbar-cart__caret-icon"></span></a>
             <div class="navbar-cart__dropdown">
               <div class="navbar-cart__dropdown-inner"><a class="navbar-cart__dropdown-item navbar-cart-item" href="#">
@@ -133,8 +129,8 @@
                     <h5 class="navbar-cart-item__title">MAYORAL chlapčenská obuv 42764-028 red</h5>
                     <p class="navbar-cart-item__text">3 kusy</p>
                     <div class="navbar-cart-item__price-wrap">
-                      <div class="navbar-cart-item__price-old">1099 Kč</div>
-                      <div class="navbar-cart-item__price-main">899 Kč</div>
+                      <div class="navbar-cart-item__price-old">59 €</div>
+                      <div class="navbar-cart-item__price-main">59 €</div>
                     </div>
                   </div></a><a class="navbar-cart__dropdown-item navbar-cart-item" href="#">
                   <div class="navbar-cart-item__img-wrap"><img class="navbar-cart-item__img" src="http://via.placeholder.com/60x60" data-src="http://via.placeholder.com/60x60" alt="#" title="#"></div>
@@ -142,8 +138,8 @@
                     <h5 class="navbar-cart-item__title">MAYORAL chlapčenská obuv 42764-028 red</h5>
                     <p class="navbar-cart-item__text">3 kusy</p>
                     <div class="navbar-cart-item__price-wrap">
-                      <div class="navbar-cart-item__price-old">1099 Kč</div>
-                      <div class="navbar-cart-item__price-main">899 Kč</div>
+                      <div class="navbar-cart-item__price-old">59 €</div>
+                      <div class="navbar-cart-item__price-main">59 €</div>
                     </div>
                   </div></a><a class="navbar-cart__dropdown-item navbar-cart-item" href="#">
                   <div class="navbar-cart-item__img-wrap"><img class="navbar-cart-item__img" src="http://via.placeholder.com/60x60" data-src="http://via.placeholder.com/60x60" alt="#" title="#"></div>
@@ -151,31 +147,31 @@
                     <h5 class="navbar-cart-item__title">MAYORAL chlapčenská obuv 42764-028 red</h5>
                     <p class="navbar-cart-item__text">3 kusy</p>
                     <div class="navbar-cart-item__price-wrap">
-                      <div class="navbar-cart-item__price-old">1099 Kč</div>
-                      <div class="navbar-cart-item__price-main">899 Kč</div>
+                      <div class="navbar-cart-item__price-old">59 €</div>
+                      <div class="navbar-cart-item__price-main">59 €</div>
                     </div>
                   </div></a>
                 <div class="navbar-cart__dropdown-price-summary navbar-cart-price">
                   <p class="navbar-cart-price__text">Celková cena<span class="navbar-cart-price__small">Včetně DPH</span></p>
-                  <h4 class="navbar-cart-price__title">2697 Kč</h4>
+                  <h4 class="navbar-cart-price__title">59 €</h4>
                 </div>
                 <div class="navbar-cart__dropdown-delivery navbar-cart-delivery"> 
                   <div class="navbar-cart-delivery__text-wrap">
-                    <p class="navbar-cart-delivery__text">Nakupte ještě za 303 Kč a máte Dopravu zdarma</p>
+                    <p class="navbar-cart-delivery__text">Nakúpte ešte za 59 € a máte Dopravu zadarmo</p>
                   </div>
                 </div>
-                <div class="navbar-cart__dropdown-checkout-btn navbar-cart-checkout-btn"><a class="btn btn-grey btn-ghost-grey navbar-cart-checkout-btn__button" href="#"><span class="cross-icon navbar-cart-checkout-btn__button-icon"></span> Vyprázdnit</a><a class="btn navbar-cart-checkout-btn__button" href="#">Objednat zboží <span class="arrow-icon white navbar-cart-checkout-btn__button-icon"></span></a></div>
+                <div class="navbar-cart__dropdown-checkout-btn navbar-cart-checkout-btn"><a class="btn btn-grey btn-ghost-grey navbar-cart-checkout-btn__button" href="#"><span class="cross-icon navbar-cart-checkout-btn__button-icon"></span> Vyprázdniť</a><a class="btn navbar-cart-checkout-btn__button" href="#">Objednať tovar <span class="arrow-icon white navbar-cart-checkout-btn__button-icon"></span></a></div>
               </div>
             </div>
             <!-- Prázdný košík
             .navbar-cart__dropdown
             	.navbar-cart__dropdown-inner
             		.navbar-cart__dropdown-empty
-            			h3.navbar-cart__dropdown-empty-title Váš košík je prázdný
-            			p.navbar-cart__dropdown-empty-text Před nákupem prosím do svého košíku vložte produkt
+            			h3.navbar-cart__dropdown-empty-title Váš košík je prázdny
+            			p.navbar-cart__dropdown-empty-text Pred nákupom prosím do svojho košíka vložte produkt
             		.navbar-cart__dropdown-checkout-btn.navbar-cart-checkout-btn
             			a.btn.btn-grey.btn-ghost-grey.navbar-cart-checkout-btn__button(href="#") Kontakty
-            			a.btn.navbar-cart-checkout-btn__button(href="#") Akční nabídka <span class="arrow-icon white navbar-cart-checkout-btn__button-icon"></span>											
+            			a.btn.navbar-cart-checkout-btn__button(href="#") Akčná ponuka <span class="arrow-icon white navbar-cart-checkout-btn__button-icon"></span>											
             
             
             -->
@@ -192,23 +188,23 @@
                     <div class="container nav-item__container">
                       <div class="row nav-item__row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-item__column dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                       </div>
                     </div>
                   </div>
@@ -220,23 +216,23 @@
                     <div class="container nav-item__container">
                       <div class="row nav-item__row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-item__column dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                       </div>
                     </div>
                   </div>
@@ -248,23 +244,23 @@
                     <div class="container nav-item__container">
                       <div class="row nav-item__row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-item__column dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dropdown-column"><a class="dropdown-item dropdown-column__link" href="#">
-                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Vítr ve studiu</h5></a></div>
+                            <h5 class="dropdown-column__title"><span class="arrow-icon white dropdown-column__icon"></span> Capačky - prvá obuv</h5></a></div>
                       </div>
                     </div>
                   </div>
@@ -310,17 +306,17 @@
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"><a class="news-single" href="#">
               <div class="news-single__top post__image-container"><img class="lazy news-single__thumbnail post__featured-image" src="img/lazy/lazy-news-thumb-small.jpg" data-src="img/news-thumb-small.jpg" alt="#" title="#"></div>
               <div class="news-single__bottom">
-                <h4 class="news-single__heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4><span class="news-single__date">Napsáno: 18. 1. 2018</span>
+                <h4 class="news-single__heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4><span class="news-single__date">Napísané: 18. 1. 2018</span>
               </div></a></div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"><a class="news-single" href="#">
               <div class="news-single__top post__image-container"><img class="lazy news-single__thumbnail post__featured-image" src="img/lazy/lazy-news-thumb-small.jpg" data-src="img/news-thumb-small.jpg" alt="#" title="#"></div>
               <div class="news-single__bottom">
-                <h4 class="news-single__heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4><span class="news-single__date">Napsáno: 18. 1. 2018</span>
+                <h4 class="news-single__heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4><span class="news-single__date">Napísané: 18. 1. 2018</span>
               </div></a></div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"><a class="news-single" href="#">
               <div class="news-single__top post__image-container"><img class="lazy news-single__thumbnail post__featured-image" src="img/lazy/lazy-news-thumb-small.jpg" data-src="img/news-thumb-small.jpg" alt="#" title="#"></div>
               <div class="news-single__bottom">
-                <h4 class="news-single__heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4><span class="news-single__date">Napsáno: 18. 1. 2018</span>
+                <h4 class="news-single__heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4><span class="news-single__date">Napísané: 18. 1. 2018</span>
               </div></a></div>
         </div>
         <div class="news-bottom-btn">    <a class="btn btn-ghost" href="#">Archív novinek <span class="arrow-icon btn__icon"></span></a></div>
@@ -342,13 +338,13 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">O nákupu</h5><a class="footer-main__link" href="#">Obchodní podmínky</a><a class="footer-main__link" href="#">O nás</a><a class="footer-main__link" href="#">Ako nakupovať</a><a class="footer-main__link" href="#">Poštovné</a>
+              <h5 class="footer-main__h5">O nákupe</h5><a class="footer-main__link" href="#">Obchodné podmienky</a><a class="footer-main__link" href="#">O nás</a><a class="footer-main__link" href="#">Ako Nakupovať</a><a class="footer-main__link" href="#">Poštovné</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">O společnosti</h5><a class="footer-main__link" href="#">Výhody nákupu u nás</a><a class="footer-main__link" href="#">Kamenná prodejna</a><a class="footer-main__link" href="#">Kontakty</a><a class="footer-main__link" href="#">Aktuality</a>
+              <h5 class="footer-main__h5">O spoločnosti</h5><a class="footer-main__link" href="#">Výhody nákupu u nás</a><a class="footer-main__link" href="#">Kamenná predajňa</a><a class="footer-main__link" href="#">Kontakty</a><a class="footer-main__link" href="#">Aktuality</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <h5 class="footer-main__h5">Uživatel</h5><a class="footer-main__link" href="#">Přihlášení</a><a class="footer-main__link" href="#">Registrace</a><a class="footer-main__link" href="#">Zapomenuté údaje</a>
+              <h5 class="footer-main__h5">Užívateľ</h5><a class="footer-main__link" href="#">Prihlásenie</a><a class="footer-main__link" href="#">Registrácia</a><a class="footer-main__link" href="#">Zabudnuté údaje</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
               <h5 class="footer-main__h5">Kontakty</h5>
@@ -356,7 +352,7 @@
               <p class="footer-main__text">Topoľová ul. 2768/13</p>
               <p class="footer-main__text">92401 Galanta</p><br>
               <p class="footer-main__text">info@obuvkovo.sk</p>
-              <p class="footer-main__text">0918 669 804</p><a class="footer-main__link" href="#">Více kontaktů</a>
+              <p class="footer-main__text">0918 669 804</p><a class="footer-main__link" href="#">Viac kontaktov</a>
             </div>
           </div>
         </div>
@@ -365,14 +361,19 @@
     <section class="copyright">
       <div class="container copyright__container">
         <div class="copyright__wrap">
-          <h5 class="copyright__h5">Copyright © 2018 <a class="copyright__link" href="https://obuvkovo.sk">Obuvkovo.sk</a> Všechna práva vyhrazena.</h5>
-          <h5 class="copyright__pull">Vytvořeno v <a class="copyright__link" href="http://eline.cz">Eline.cz</a></h5>
+          <h5 class="copyright__h5">Copyright © 2018 <a class="copyright__link" href="https://obuvkovo.sk">Obuvkovo.sk</a> Všetky práva vyhradené.</h5>
+          <h5 class="copyright__pull">Vytvorené v <a class="copyright__link" href="http://eline.cz">Eline.cz</a></h5>
           <p class="copyright__farm"><a class="copyright__farm-link" href="#">Postele z masivu</a> za nejlepší ceny, <a class="copyright__farm-link" href="#">Dětské boty</a> a oblečení, výroba bazénových krytů a prodej <a class="copyright__farm-link" href="#">Polykarbonátu</a>, Frýdek-Místek je <a class="copyright__farm-link" href="#">FAJNEMJESTO</a>, nejlepší DJ v okolí <a class="copyright__farm-link" href="#">DJ Jan Opěla</a></p>
         </div>
       </div>
     </section>
     <!-- Popper for Bootstrap support-->
-    <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script>
+      if(typeof(Popper) === 'undefined') {
+      document.write('<script src="js/popper.min.js">\x3C/script>')}
+      
+    </script>
     <!-- Bootstrap core JavaScript-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>
@@ -381,10 +382,23 @@
       
     </script>
     <!-- FontAwesome 5-->
-    <script src="js/fontawesome-all.min.js"></script>
-    <!-- Custom js libraries-->
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" integrity="sha384-0AJY8UERsBUKdWcyF3o2kisLKeIo6G4Tbd8Y6fbyw6qYmn4WBuqcvxokp8m2UzSD" crossorigin="anonymous"></script>
+    <script>
+      if(typeof(FontAwesome) === 'undefined') {
+      document.write('<script src="js/fontawesome-all.min.js">\x3C/script>')}
+      
+    </script>
     <!-- Custom js plugins and scripts-->
     <script src="js/all.min.js"></script>
+    <!-- Custom js plugins and scripts-->
+    <script>
+      var options = {
+      	data: ["blue", "green", "pink", "red", "yellow"]
+      };
+      $("#searchbox").easyAutocomplete(options);
+      
+      
+    </script>
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="pswp__bg"></div>
       <div class="pswp__scroll-wrap">

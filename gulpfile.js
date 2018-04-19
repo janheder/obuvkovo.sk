@@ -14,6 +14,7 @@ gulp.task('sass', function () {
   return gulp.src('./src/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(concat('style.min.css'))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist/css'));
 });
@@ -38,8 +39,7 @@ gulp.task('pug:watch', function () {
 // MINIFY JS
 gulp.task('minifyjs', function (cb) {
   pump([
-        gulp.src(['./src/js/**/photoswipe.min.js','./src/js/**/photoswipe-ui-default.min.js','./src/js/**/jquery.cookiebar.js',
-                 './src/js/**/jquery.easy-autocomplete.min.js','./src/js/**/swiper.min.js','./src/js/**/lazyload.min.js','./src/js/**/jquery.validate.min.js', './src/js/functions.js']),
+        gulp.src(['./src/js/plugins/**/*.js', './src/js/functions.js']),
         concat('all.min.js'),
         uglify(),
         gulp.dest('./dist/js')

@@ -4,13 +4,12 @@ html(lang=lang)
     head
         meta(charset="utf-8")
         meta(content="IE=edge" http-equiv="X-UA-Compatible")
-        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
         title #{title}
         meta(content="index,follow,snippet,archive" name="robots")
         meta(content=metaDescription name="description")
         meta(content=metaKeywords lang="cs" name="keywords")
         meta(content=metaAuthor name="author")
-        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
 
         link(rel="canonical" href=metaURL)
         meta(property="og:locale" content="cs_CZ")
@@ -30,7 +29,7 @@ html(lang=lang)
         section.page-heading.post__image-container
             .container
                 h1.page-heading__title Uživatelský účet
-            img.lazy.post__featured-image(src="http://via.placeholder.com/510x510" data-src=URLbase+"img/user-thumb-large.jpg" alt="#" title="#")
+            img.lazy.post__featured-image(src=URLbase+"img/lazy/lazy-user-thumb-large.jpg" data-src=URLbase+"img/user-thumb-large.jpg" alt="#" title="#")
                 
         include _breadcrumb.pug
         main
@@ -38,10 +37,10 @@ html(lang=lang)
                 .print-area
                     article.page
                         .page-message
-                            h3.page-message__title Aktivace Vašeho účtu proběhla úspěšně, můžete se přihlásit.
+                            h3.page-message__title Aktivácia Vášho konta prebehla úspešne, môžete sa prihlásiť.
 
                             form(method="post" action="" class="login-form page-message__login-form" name="login_form")
-                                    .alert.alert-danger Zadali jste špatné údaje
+                                    .alert.alert-danger Zadali ste zlé údaje
                                     .form-group
                                         label(for="login_form-email") Emailová adresa
                                         input.form-control(type="email" name="login_form_email" id="login_form_email" required autocomplete="email")
@@ -51,62 +50,12 @@ html(lang=lang)
                                         input.form-control(type="password" name="login_form_password" id="login_form_password" required autocomplete="password")
 
                                     .form-group
-                                        button.form-control.btn(type="submit" name="login_form_submit" id="login_form_submit") Přihlásit se
+                                        button.form-control.btn(type="submit" name="login_form_submit" id="login_form_submit") Prihlásiť sa
                                         
-                                    a.form-link__forgotten-pass(href="#") Zapomenuté heslo?
+                                    a.form-link__forgotten-pass(href="#") Zabudnuté heslo?
 
         include _news-section.pug
 
         include _footer.pug
 
         include _js-include.pug
-
-        script.
-            // Wait for the DOM to be ready
-            $(function() {
-              // Initialize form validation on the registration form.
-              // It has the name attribute "registration"
-              $("form[name='register_form']").validate({
-                // Specify validation rules
-                rules: {
-                  // The key name on the left side is the name attribute
-                  // of an input field. Validation rules are defined
-                  // on the right side
-                  register_form_name: "required",      
-                  register_form_email: {
-                    required: true,
-                    email: true
-                  },
-                  register_form_tel: {
-                    required: false,
-                    minlength: 9
-                  },
-                  register_form_password: {
-                    required: true,
-                    minlength: 5
-                  },
-                  register_form_address: {
-                    required: true
-                  },
-                  route: {
-                    required: true
-                  }
-                },
-                // Specify validation error messages
-                messages: {
-                  register_form_name: "Prosím zadejte své celé jméno",
-                  register_form_email: "Prosím zadejte platnou emailovou adresu",
-                  register_form_tel: {required: "Prosím zadejte telefonní číslo", minlength: "Telefonní číslo je neplatné"},
-                  register_form_password: {required: "Prosím zadejte heslo", minlength: "Vaše heslo musí být alespoň 5 znaků dlouhé"},
-                  register_form_address: "Zadejte svou adresu"
-                },
-                // Make sure the form is submitted to the destination defined
-                // in the "action" attribute of the form when valid
-                submitHandler: function(form) {
-                  form.submit();
-                }
-              });
-            });
-            jQuery.extend(jQuery.validator.messages, {
-                required: "Toto pole je povinné"
-            });

@@ -4,13 +4,12 @@ html(lang=lang)
     head
         meta(charset="utf-8")
         meta(content="IE=edge" http-equiv="X-UA-Compatible")
-        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
         title #{title}
         meta(content="index,follow,snippet,archive" name="robots")
         meta(content=metaDescription name="description")
         meta(content=metaKeywords lang="cs" name="keywords")
         meta(content=metaAuthor name="author")
-        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
 
         link(rel="canonical" href=metaURL)
         meta(property="og:locale" content="cs_CZ")
@@ -29,8 +28,8 @@ html(lang=lang)
         include _nav.pug
         section.page-heading.post__image-container
             .container
-                h1.page-heading__title Zapomenuté heslo
-            img.lazy.post__featured-image(src="http://via.placeholder.com/510x510" data-src=URLbase+"img/user-thumb-large.jpg" alt="#" title="#")
+                h1.page-heading__title Zabudnuté heslo
+            img.lazy.post__featured-image(src=URLbase+"img/lazy/lazy-user-thumb-large.jpg" data-src=URLbase+"img/user-thumb-large.jpg" alt="#" title="#")
                 
         include _breadcrumb.pug
         main
@@ -39,13 +38,13 @@ html(lang=lang)
                     article.page
                         .forgotten-password
                             form(method="post" action="" class="register-form" name="password_form")
-                                p.forgotten-password_text Pokud jste zapomněli své heslo, pošleme Vám nové na email, který jste uvedli při registraci.
+                                p.forgotten-password_text Ak ste zabudli svoje heslo, pošleme Vám nové na email, ktorý ste uviedli pri registrácii.
                                 .form-group
                                     label(for="password_form-email") Emailová adresa
                                     input.form-control(type="email" name="password_form_email" id="password_form_email" required autocomplete="email")
 
                                 .form-group
-                                    button.form-control.btn(type="submit" name="password_form_submit" id="password_form_submit") Poslat nové heslo
+                                    button.form-control.btn(type="submit" name="password_form_submit" id="password_form_submit") Poslať nové heslo
 
 
         include _news-section.pug
