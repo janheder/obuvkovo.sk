@@ -30,7 +30,7 @@ width: 100%;
 .swiper-lazy-loaded{
     padding-bottom: 0;
 }
-
+ 
 .swiper-pagination{
     z-index: 2;
 }
@@ -82,4 +82,10 @@ width: 100%;
 }
 .swiper-pagination-bullet-active{
     background: $brand-secondary;
+}
+@media screen and (max-width:1300px){
+    .swiper-button-prev, .swiper-button-next{
+        height: 40px;
+        width: 40px;
+    }
 }

@@ -632,13 +632,14 @@
         order: 1;
         height: 100%;
         // width: 100px;
-        width: 56px;
+        width: 46px;
         padding: 0;
         border: 0;
         border-radius: 0;
         cursor: pointer;
         position: relative;
         background: transparent;
+        @include flex-shrink(0);
 
         &[aria-expanded="true"]{  
             background: $brand-primary;
@@ -668,7 +669,7 @@
     }
     .navbar-cart__link{
         padding: 0rem;
-        width:56px;
+        width:46px;
         height: 100%;
     }
     .navbar-cart__cart-icon{
@@ -727,7 +728,7 @@
         @include flex-grow(1);
         @include justify-content(center);
         margin: 0;
-        padding: 8px 0;
+        padding: 8px 5px;
         order: 3;
     }
     .navbar-brand__img{
@@ -742,11 +743,11 @@
         height: 100%;
         margin: 0;
         order: 2;
-        width: 56px;
+        width: 46px;
     }
     .navbar-user__dropdown-toggle{
         padding: 0rem;
-        width:56px;
+        width: 46px;
 
         &::before, &::after{
              content: none !important;
@@ -848,18 +849,19 @@
     .navbar-search-responsive-toggler{
         position: relative;
         height: 100%;
-        width: 56px;
+        width: 46px;
         display: block;
         cursor: pointer;
         order: 4;
+        @include flex-shrink(0);
 
         & .btn{
-            width: 56px;  
+            width: 46px;  
         }
     }
     .navbar-search__responsive-close{
         height: 56px;
-        width: 56px;
+        width: 46px;
         display: block;
         top: 0;
         z-index: 8;
