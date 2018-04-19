@@ -10,7 +10,7 @@ main article{
 }
 @media screen and (max-width:575px){
     main article{
-        padding: 4rem 0rem;
+        padding: 2rem 0rem;
         background: $white;
     }
 }
@@ -140,7 +140,10 @@ article{
 @media screen and (max-width:575px){
 	.page-contact__col{
 		margin: 0 0 4rem 0;
-	}
+    }
+    .post-back-btn{
+        margin-top: 2rem;
+    }
 }
 
 

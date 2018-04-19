@@ -68,6 +68,16 @@ footer{
     position: relative;
     margin-top: 0rem;
     width: 520px;
+    max-width: 100%;
+
+    & form{
+        position: relative;
+    }
+    & p{
+        color: $text-white;
+        font-size: 13px;
+        opacity: 0.8;
+    }
 }
 .footer-bar__input{
     border: 0;
@@ -195,6 +205,12 @@ footer{
     height: 56px;
     filter: grayscale(100%);
 }
+@media screen and (max-width:768px){
+    .footer-main__h5{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
 
 /*------------------------------------*\
     FOOTER RESPONSIVE
@@ -206,8 +222,9 @@ footer{
         background: $bg-dark;
         padding: 5rem 0;
     }
-    .footer-bar__listen, .footer-bar__email{
+     .footer-bar__email{
         text-align: center;
+        padding: 5rem 10px;
     }
 }
 
@@ -226,9 +243,6 @@ footer{
     .footer-bar__img2{
         @include absolute-position(50%, 0, 0, 0);
     }
-    .footer-bar__listen, .footer-bar__email{
-        padding: 5rem 0;
-    }
     .footer-contacts{
         @include transform(none);
     }
@@ -244,6 +258,12 @@ footer{
     }
     .footer-main{
         margin-top: 0;
+    }
+}
+@media screen and (max-width:991px){
+    .footer-bar__h3{
+        margin: 0;
+        margin-bottom: 10px;
     }
 }
 

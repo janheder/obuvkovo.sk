@@ -117,7 +117,7 @@
           			p.navbar-user__text Môj účet
           
           -->
-          <div class="navbar-cart"><a class="navbar-cart__link" href="#"><span class="cart-icon navbar-cart__cart-icon"><span class="navbar-cart__icon-number">3</span></span>
+          <div class="navbar-cart"><span class="navbar-cart__toggle"></span><a class="navbar-cart__link" href="#"><span class="cart-icon navbar-cart__cart-icon"><span class="navbar-cart__icon-number">3</span></span>
               <div class="navbar-cart__text-wrap">
                 <p class="navbar-cart__text">59 €</p>
               </div><span class="caret-icon white navbar-cart__caret-icon"></span></a>
@@ -426,6 +426,20 @@
                   </div>
                 </div>
                 <div class="form-group">
+                  <div class="form-check">
+                    <label class="form-check__label">
+                      <input class="form-check__input" type="checkbox" name="register_form_email_marketing">Zasielať novinky a propagačné materiály na email<span class="form-check__box checkbox"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <label class="form-check__label">
+                      <input class="form-check__input" type="checkbox" name="register_form_terms">Súhlasím so spracovaním osobných údajov<span class="form-check__box checkbox"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
                   <button class="form-control btn" type="submit" name="register_form_submit" id="register_form_submit">Potvrdiť úpravy</button>
                 </div>
               </div>
@@ -516,6 +530,7 @@
               <input class="form-control footer-bar__input" type="text" name="email-sub-input" id="email-sub-input" placeholder="Zadajte emailovú adresu..." required>
               <button class="btn form-control footer-bar__btn" type="submit" name="email-sub-button" id="email-sub-button">Odoberať</button>
             </form>
+            <p>Prihlásením na odber súhlasíte so spracovaním osobných údajov</p>
           </div>
         </div>
       </section>

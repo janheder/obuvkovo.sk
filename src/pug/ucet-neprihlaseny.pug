@@ -171,10 +171,17 @@ html(lang=lang)
                                 .form-group
                                     .form-check
                                         label.form-check__label
+                                            input.form-check__input(type="checkbox" name="register_form_email_marketing")
+                                            | Zasielať novinky a propagačné materiály na email
+                                            span.form-check__box.checkbox
+
+                                .form-group
+                                    .form-check
+                                        label.form-check__label
                                             input.form-check__input(type="checkbox" name="register_form_terms")
                                             | Súhlasím so spracovaním osobných údajov
                                             span.form-check__box.checkbox
-
+                                            
                                 .form-group
                                     button.form-control.btn(type="submit" name="register_form_submit" id="register_form_submit") Vytvoriť účet
 

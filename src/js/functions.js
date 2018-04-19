@@ -118,7 +118,8 @@ if (styletotest in document.body.style)
     $("#dark-overlay").toggleClass("active");
   });
 
-  $(".navbar-cart__link").click(function() { 
+
+  $(".navbar-cart__toggle").click(function() { 
     $("body").toggleClass("active-right");
     $("#dark-overlay-cart").toggleClass("active");
   });
@@ -363,11 +364,11 @@ var carousel_index1 = new Swiper('.swiper-container-index1', {
       slidesPerView: 3,
       spaceBetween: 20, 
     },
-    500: {
-      slidesPerView: 3,
+    768: {
+      slidesPerView: 2,
       spaceBetween: 10,
     },
-    320: {
+    500: {
       slidesPerView: 1,
       spaceBetween: 10,
     }
@@ -388,22 +389,22 @@ var carousel_index2 = new Swiper('.swiper-container-index2', {
       prevEl: '.swiper-button-prev--index2',
     },
     breakpoints: {
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    500: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    }
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          991: {
+            slidesPerView: 3,
+            spaceBetween: 20, 
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          500: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          }
 }
 });
 var carousel_index3 = new Swiper('.swiper-container-index3', {
@@ -421,22 +422,22 @@ var carousel_index3 = new Swiper('.swiper-container-index3', {
       prevEl: '.swiper-button-prev--index3',
     },
     breakpoints: {
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    500: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    }
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          991: {
+            slidesPerView: 3,
+            spaceBetween: 20, 
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          500: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          }
 }
 });
 

@@ -50,6 +50,9 @@
 }
 
 @media screen and (max-width: 500px){
+    .breadcrumb{
+        background: $bg-light;
+    }
     .breadcrumb__item{
         display: none;
 

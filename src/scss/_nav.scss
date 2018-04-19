@@ -622,6 +622,12 @@
     .navbar-main > .navbar-main__container {
         @include flex-wrap(nowrap);
     }
+    .navbar-cart__toggle{
+        content: "";
+        @include absolute-position(0,0,0,0);
+        display: block;
+        z-index: 5; 
+    }
     .navbar-toggler{
         order: 1;
         height: 100%;
