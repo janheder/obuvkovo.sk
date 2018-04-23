@@ -1675,7 +1675,7 @@
               <input class="form-control footer-bar__input" type="text" name="email-sub-input" id="email-sub-input" placeholder="Zadajte emailovú adresu..." required>
               <button class="btn form-control footer-bar__btn" type="submit" name="email-sub-button" id="email-sub-button">Odoberať</button>
             </form>
-            <p>Prihlásením na odber súhlasíte so spracovaním osobných údajov</p>
+            <p>Prihlásením na odber súhlasíte so <a href="#">spracovaním osobných údajov</a></p>
           </div>
         </div>
       </section>
@@ -1818,6 +1818,21 @@
       $( ".pswp__button--arrow--right" ).click(function() {
           $( ".product-detail-images .swiper-button-next" ).click();
       });
+      
+      $(function(){
+          $(".number-stepper__btn-up").click(function(){
+              var SpinnerInput = $(this).closest('.number-stepper').find('.number-stepper__input');
+              if ($(SpinnerInput).val() < 99){
+                  $(SpinnerInput).val( Number($(SpinnerInput).val()) + 1 );
+              }
+          });
+          $(".number-stepper__btn-down").click(function(){
+              var SpinnerInput = $(this).closest('.number-stepper').find('.number-stepper__input');
+              if ($(SpinnerInput).val() > 1){
+                  $(SpinnerInput).val( Number($(SpinnerInput).val()) - 1 );
+              }
+          });
+      })
     </script>
   </body>
 </html>

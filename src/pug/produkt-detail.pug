@@ -413,3 +413,18 @@ html(lang=lang)
             $( ".pswp__button--arrow--right" ).click(function() {
                 $( ".product-detail-images .swiper-button-next" ).click();
             });
+            
+            $(function(){
+                $(".number-stepper__btn-up").click(function(){
+                    var SpinnerInput = $(this).closest('.number-stepper').find('.number-stepper__input');
+                    if ($(SpinnerInput).val() < 99){
+                        $(SpinnerInput).val( Number($(SpinnerInput).val()) + 1 );
+                    }
+                });
+                $(".number-stepper__btn-down").click(function(){
+                    var SpinnerInput = $(this).closest('.number-stepper').find('.number-stepper__input');
+                    if ($(SpinnerInput).val() > 1){
+                        $(SpinnerInput).val( Number($(SpinnerInput).val()) - 1 );
+                    }
+                });
+            })

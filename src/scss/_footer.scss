@@ -77,6 +77,14 @@ footer{
         color: $text-white;
         font-size: 13px;
         opacity: 0.8;
+        & a{
+            color: $text-white;
+            font-size: 13px;
+            opacity: 1;
+            &:hover, &:active, &:focus{
+                color:  $text-white;
+            }
+        }
     }
 }
 .footer-bar__input{

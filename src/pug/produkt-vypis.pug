@@ -334,32 +334,36 @@ html(lang=lang)
                                             .tab-pane.fade(id="pohlavie" role="tabpanel" aria-labelledby="pohlavie-tab")
                                                 .filter-main__single-content
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-chlapci") 
+                                                        input.form-check__input(type="radio" name="filter-gender") 
                                                         | Chlapci
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-divky") 
+                                                        input.form-check__input(type="radio" name="filter-gender") 
                                                         | Divky
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
+                                                    label.form-check__label.filter-main__label
+                                                        input.form-check__input(type="radio" name="filter-gender") 
+                                                        | Unisex
+                                                        span.form-check__box.radio
 
                                             .tab-pane.fade(id="veľkosti" role="tabpanel" aria-labelledby="veľkosti-tab")
                                                 .filter-main__single-content
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-velikost-1") 
+                                                        input.form-check__input(type="radio" name="filter-velikost") 
                                                         | 1
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-velikost-2") 
+                                                        input.form-check__input(type="radio" name="filter-velikost") 
                                                         | 2
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-velikost-3") 
+                                                        input.form-check__input(type="radio" name="filter-velikost") 
                                                         | 3
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-velikost-4") 
+                                                        input.form-check__input(type="radio" name="filter-velikost") 
                                                         | 4
-                                                        span.form-check__box.checkbox     
+                                                        span.form-check__box.radio     
 
                                             .tab-pane.fade(id="vyrobcovia" role="tabpanel" aria-labelledby="vyrobcovia-tab")
                                                 .filter-main__single-content
@@ -389,44 +393,44 @@ html(lang=lang)
                                             .tab-pane.fade.show.active(id="druh_oblecenia" role="tabpanel" aria-labelledby="druh_oblecenia-tab")
                                                 .filter-main__single-content.type
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-druh-1") 
+                                                        input.form-check__input(type="radio" name="filter-druh") 
                                                         | Tričká
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-druh-2") 
+                                                        input.form-check__input(type="radio" name="filter-druh") 
                                                         | Spodné prádlo 
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-druh-3") 
+                                                        input.form-check__input(type="radio" name="filter-druh") 
                                                         | Nohavice
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-druh-4") 
+                                                        input.form-check__input(type="radio" name="filter-druh") 
                                                         | Legíny
-                                                        span.form-check__box.checkbox   
+                                                        span.form-check__box.radio 
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-druh-1") 
+                                                        input.form-check__input(type="radio" name="filter-druh") 
                                                         | Spodné prádlo 
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-druh-2") 
+                                                        input.form-check__input(type="radio" name="filter-druh") 
                                                         | Legíny
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-druh-3") 
+                                                        input.form-check__input(type="radio" name="filter-druh") 
                                                         | Nohavice
-                                                        span.form-check__box.checkbox
+                                                        span.form-check__box.radio
                                                     label.form-check__label.filter-main__label
-                                                        input.form-check__input(type="checkbox" name="filter-druh-4") 
+                                                        input.form-check__input(type="radio" name="filter-druh") 
                                                         | Legíny
-                                                        span.form-check__box.checkbox   
+                                                        span.form-check__box.radio 
 
                                                     a.filter-main__type-collapse(data-toggle="collapse" href="#product-filter-type" aria-expanded="false" aria-controls="product-filter-type") Zobraziť všetky možnosti
                                                     .panel-collapse.collapse.filter-main__type-collapse-wrap(id="product-filter-type") 
                                                         label.form-check__label.filter-main__label
-                                                            input.form-check__input(type="checkbox" name="filter-druh-4") 
+                                                            input.form-check__input(type="radio" name="filter-druh") 
                                                             | Legíny
-                                                            span.form-check__box.checkbox  
+                                                            span.form-check__box.radio 
 
                                     button.btn.filter-main__button(type="submit") Filtrovat produkty
 
