@@ -19,15 +19,28 @@
     padding: 20px;
 
     .close{
-        margin: 0;
+        margin: 0 0 0 auto;
         height: 100%;
         padding: 10px;
+    }
+}
+.modal-header.post__image-container{
+    padding: 20px 20px 200px 20px;
+
+    .close{
+        background: $bg-white;
+        border-radius: $border-radius-round;
+        opacity: 1;
+
+        &:hover, &:active, &:focus{
+            background: $bg-light;
+        }
     }
 }
 .modal-title{
     font-size: 3rem;
     font-weight: 600;
-    color: $brand-secondary;
+    color: $text-primary;
 }
 .modal-body{
     padding: 20px;
@@ -54,4 +67,22 @@
     .modal-header, .modal-body, .modal-footer{
         padding:  10px;
     }
+}
+
+@media (max-height: 575px){
+    .modal-dialog{
+        @include align-items(flex-start);
+    }
+}
+
+.modal-info__body{
+    text-align: center;
+}
+.modal-info__body p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.modal-info__footer .btn:last-child{
+    margin-left: auto;
+    margin-right: auto;
 }

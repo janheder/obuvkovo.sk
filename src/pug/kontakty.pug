@@ -25,13 +25,14 @@ html(lang=lang)
         meta(name="twitter:image" content=metaTwitterImg)
         include _css-include.pug  
     body
-        include _nav.pug
+        include _nav.pug 
         section.page-heading.post__image-container
             .container
                 h1.page-heading__title Kontakty
             img.lazy.post__featured-image(src="http://via.placeholder.com/510x510" data-src=URLbase+"img/page-contact-thumb-large.jpg" alt="#" title="#")
 
         include _breadcrumb.pug
+        include _modal-info.pug
 
         main
             .container

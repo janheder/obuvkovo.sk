@@ -443,9 +443,9 @@ var carousel_index3 = new Swiper('.swiper-container-index3', {
 });
 
 $(window).on('load',function(){
-    $('#modal-add-to-cart').modal('show');
+    $('#modal-info, #modal-add-to-cart').modal('show');
 });
-
+ 
 
 /* HTML5 Speech Recognition API */
   function startDictation() {
