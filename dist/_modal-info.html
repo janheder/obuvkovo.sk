@@ -6,10 +6,19 @@
         <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="cross-icon"></span></button>
       </div>
       <div class="modal-body modal-info__body">
-        <h5 class="modal-title" id="modal-info-heading">Lorem ipsum dolor sit amet</h5>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        <h5 class="modal-title" id="modal-info-heading">Príhlas sa k newsletteru a získaj výhody</h5>
+        <p>Registrovaný uživatelia môžu kupovať až o 50% lacnejšie a využívať iné výhody.</p>
+        <form method="post" name="modal_news_form">
+          <div class="form-group">
+            <label for="news_form_email">Emailová adresa</label>
+            <input class="form-control" type="email" name="news_form_email" id="news_form_email" autocomplete="email" required="required"/>
+          </div>
+          <div class="form-group">
+            <button class="form-control btn" type="submit" name="news_form_submit" id="news_form_submit">Prihlásiť sa</button>
+          </div>
+        </form>
+        <p>Prihlásením na odber súhlasíte so <a href="#">spracovaním osobných údajov</a></p>
       </div>
-      <div class="modal-footer modal-info__footer"><a class="btn" href="#">Text tlačítka <span class="btn__icon arrow-icon white"></span></a></div>
     </div>
   </div>
 </div>

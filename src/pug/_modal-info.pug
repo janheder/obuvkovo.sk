@@ -8,7 +8,15 @@
                     span.cross-icon
 
             .modal-body.modal-info__body
-                h5.modal-title(id="modal-info-heading") Lorem ipsum dolor sit amet
-                p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-            .modal-footer.modal-info__footer
-                a.btn(href="#") Text tlačítka #[span.btn__icon.arrow-icon.white]
+                h5.modal-title(id="modal-info-heading") Príhlas sa k newsletteru a získaj výhody
+                p Registrovaný uživatelia môžu kupovať až o 50% lacnejšie a využívať iné výhody.
+
+                form(method="post" name="modal_news_form")
+                    .form-group
+                        label(for="news_form_email") Emailová adresa
+                        input.form-control(type="email" name="news_form_email" id="news_form_email" autocomplete="email" required)
+                    .form-group
+                        button.form-control.btn(type="submit" name="news_form_submit" id="news_form_submit") Prihlásiť sa
+                
+                p Prihlásením na odber súhlasíte so #[a(href="#") spracovaním osobných údajov]
+                    
