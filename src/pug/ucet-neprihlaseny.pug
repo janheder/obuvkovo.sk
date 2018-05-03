@@ -174,14 +174,18 @@ html(lang=lang)
                                             input.form-check__input(type="checkbox" name="register_form_email_marketing")
                                             | Zasielať novinky a propagačné materiály na email
                                             span.form-check__box.checkbox
-
+ 
                                 .form-group
                                     .form-check
                                         label.form-check__label
                                             input.form-check__input(type="checkbox" name="register_form_terms")
                                             | Súhlasím so spracovaním osobných údajov
                                             span.form-check__box.checkbox
-                                            
+
+                                .form-group
+                                    label(for="register_form_antispam") Kontrolní otázka: kolik je dva plus dva
+                                    input.form-control(type="number" name="register_form_antispam" id="register_form_antispam" placeholder="Napište číslo" required)
+
                                 .form-group
                                     button.form-control.btn(type="submit" name="register_form_submit" id="register_form_submit") Vytvoriť účet
 
