@@ -182,6 +182,10 @@ html(lang=lang)
                                                         option(value="sk") Slovensko
                                                         option(value="cz") Česká republika
                                                         
+                                            .form-group
+                                                .form-gdpr
+                                                    label.form-gdpr__label Súhlasím so spracovaním osobných údajov
+
 
                                             .form-group
                                                 .form-check
@@ -205,19 +209,11 @@ html(lang=lang)
                                                             | Súhlasím so spracovaním osobných údajov
                                                             span.form-check__box.checkbox
 
-
                                         .form-group
                                             .form-check
                                                 label.form-check__label
                                                     input.form-check__input(type="checkbox" name="register_form_email_marketing")
                                                     | Zasielať novinky a propagačné materiály na email
-                                                    span.form-check__box.checkbox
-
-                                        .form-group
-                                            .form-check
-                                                label.form-check__label
-                                                    input.form-check__input(type="checkbox" name="register_form_terms")
-                                                    | Súhlasím so spracovaním osobných údajov
                                                     span.form-check__box.checkbox
 
                                         button.d-none(type="submit" id="register_form_submit") Súhrn objednávky
